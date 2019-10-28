@@ -9,12 +9,17 @@ import {SubscriptionComponent} from "./modules/header/components/subscription-co
 import {HeaderGuestComponent} from "./modules/header/components/header-guest/header-guest.component";
 import {HeaderUserComponent} from "./modules/header/components/header-user/header-user.component";
 import {HeaderAdvertiserComponent} from "./modules/header/components/header-advertiser/header-advertiser.component";
+import {FooterComponent} from "./modules/header/components/footer-component/footer.component";
+import {LoginComponent} from "./modules/header/components/login-component/login.component";
+import {RegistrationComponent} from "./modules/header/components/registration-component/registration.component";
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'catalog', component: CatalogComponent},
   {path: 'subscription', component: SubscriptionComponent},
   {path: '', component: HomeComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'registration', component: RegistrationComponent},
   ];
 
 @NgModule({
@@ -26,6 +31,9 @@ const appRoutes: Routes = [
     HeaderGuestComponent,
     HeaderUserComponent,
     HeaderAdvertiserComponent,
+    FooterComponent,
+    LoginComponent,
+    RegistrationComponent,
   ],
 
   imports: [

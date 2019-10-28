@@ -5,7 +5,7 @@
 
 .background-image{
   height: 580px;
-  width: 1349px;
+  width: 100%;
   background-image: url(../../../../../assets/img/background.png);
   background-size: cover;
 }
