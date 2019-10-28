@@ -1,0 +1,28 @@
+.search{
+  margin-left: 30%;
+  margin-top: 75px;
+  margin-right: 30%;
+}
+
+.searchLine{
+  width: 350px;
+  height: 25px;
+}
+
+.searchsubmit{
+  height: 25px;
+  width: 100px;
+}
+
+.tdmysub{
+  width: 10%;
+}
+
+.mysub{
+  margin-top: 50px;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  /*display: none;*/
+  /*убрал подпики*/
+}
