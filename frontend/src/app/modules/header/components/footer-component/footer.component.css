@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
 .site_name {
   color: #f4f4f4f4;
   font-size: 1.5em;
@@ -17,7 +19,7 @@ footer {
 }
 
 li{
-  display: inline; /* Отображать как строчный элемент */
+  display: inline;
   margin-right: 7%;
   margin-left: 7%;
 }

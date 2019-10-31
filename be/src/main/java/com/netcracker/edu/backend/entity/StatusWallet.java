@@ -8,7 +8,7 @@ import java.util.Collection;
 public class StatusWallet {
     private int id;
     private String name;
-    private Collection<Wallet> walletsById;
+//    private Collection<Wallet> walletsById;
 
     @Id
     @Column(name = "id")
@@ -50,12 +50,12 @@ public class StatusWallet {
         return result;
     }
 
-    @OneToMany(mappedBy = "statusWalletByStatusWalletId")
-    public Collection<Wallet> getWalletsById() {
-        return walletsById;
-    }
-
-    public void setWalletsById(Collection<Wallet> walletsById) {
-        this.walletsById = walletsById;
-    }
+//    @OneToMany(mappedBy = "statusWalletByStatusWalletId")
+//    public Collection<Wallet> getWalletsById() {
+//        return walletsById;
+//    }
+//
+//    public void setWalletsById(Collection<Wallet> walletsById) {
+//        this.walletsById = walletsById;
+//    }
 }

@@ -8,7 +8,5 @@ import {Component, OnInit} from '@angular/core';
 export class SubscriptionComponent implements OnInit{
 
   constructor(){}
-  ngOnInit(){
-
-  }
+  ngOnInit(){}
 }

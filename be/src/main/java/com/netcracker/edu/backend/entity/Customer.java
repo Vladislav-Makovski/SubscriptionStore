@@ -8,11 +8,11 @@ public class Customer {
     private int id;
     private String firstName;
     private String surname;
-    private int walletId;
-    private int userDetailsId;
+//    private int walletId;
+//    private int userDetailsId;
     private Wallet walletByWalletId;
     private UserDetails userDetailsByUserDetailsId;
-    private Collection<Subscription> subscriptionsById;
+//    private Collection<Subscription> subscriptionsById;
 
     @Id
     @Column(name = "id")
@@ -44,25 +44,41 @@ public class Customer {
         this.surname = surname;
     }
 
-    @Basic
-    @Column(name = "wallet_id")
-    public int getWalletId() {
-        return walletId;
-    }
-
-    public void setWalletId(int walletId) {
-        this.walletId = walletId;
-    }
-
-    @Basic
-    @Column(name = "user_details_id")
-    public int getUserDetailsId() {
-        return userDetailsId;
-    }
-
-    public void setUserDetailsId(int userDetailsId) {
-        this.userDetailsId = userDetailsId;
-    }
+//    @Basic
+//    @Column(name = "wallet_id")
+//    public int getWalletId() {
+//        return walletId;
+//    }
+//
+//    public void setWalletId(int walletId) {
+//        this.walletId = walletId;
+//    }
+//
+//    @Basic
+//    @Column(name = "user_details_id")
+//    public int getUserDetailsId() {
+//        return userDetailsId;
+//    }
+//
+//    public void setUserDetailsId(int userDetailsId) {
+//        this.userDetailsId = userDetailsId;
+//    }
+//
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+//
+//        Customer customer = (Customer) o;
+//
+//        if (id != customer.id) return false;
+//        if (walletId != customer.walletId) return false;
+//        if (userDetailsId != customer.userDetailsId) return false;
+//        if (firstName != null ? !firstName.equals(customer.firstName) : customer.firstName != null) return false;
+//        if (surname != null ? !surname.equals(customer.surname) : customer.surname != null) return false;
+//
+//        return true;
+//    }
 
     @Override
     public boolean equals(Object o) {
@@ -72,21 +88,31 @@ public class Customer {
         Customer customer = (Customer) o;
 
         if (id != customer.id) return false;
-        if (walletId != customer.walletId) return false;
-        if (userDetailsId != customer.userDetailsId) return false;
+        if (walletByWalletId.getId() != customer.walletByWalletId.getId()) return false;
+        if ( userDetailsByUserDetailsId.getId() != customer. userDetailsByUserDetailsId.getId()) return false;
         if (firstName != null ? !firstName.equals(customer.firstName) : customer.firstName != null) return false;
         if (surname != null ? !surname.equals(customer.surname) : customer.surname != null) return false;
 
         return true;
     }
 
-    @Override
+//    @Override
+//    public int hashCode() {
+//        int result = id;
+//        result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
+//        result = 31 * result + (surname != null ? surname.hashCode() : 0);
+//        result = 31 * result + walletId;
+//        result = 31 * result + userDetailsId;
+//        return result;
+//    }
+
+        @Override
     public int hashCode() {
         int result = id;
         result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
         result = 31 * result + (surname != null ? surname.hashCode() : 0);
-        result = 31 * result + walletId;
-        result = 31 * result + userDetailsId;
+        result = 31 * result + walletByWalletId.getId();
+        result = 31 * result + userDetailsByUserDetailsId.getId();
         return result;
     }
 
@@ -110,12 +136,12 @@ public class Customer {
         this.userDetailsByUserDetailsId = userDetailsByUserDetailsId;
     }
 
-    @OneToMany(mappedBy = "customerByUserId")
-    public Collection<Subscription> getSubscriptionsById() {
-        return subscriptionsById;
-    }
-
-    public void setSubscriptionsById(Collection<Subscription> subscriptionsById) {
-        this.subscriptionsById = subscriptionsById;
-    }
+//    @OneToMany(mappedBy = "customerByUserId")
+//    public Collection<Subscription> getSubscriptionsById() {
+//        return subscriptionsById;
+//    }
+//
+//    public void setSubscriptionsById(Collection<Subscription> subscriptionsById) {
+//        this.subscriptionsById = subscriptionsById;
+//    }
 }

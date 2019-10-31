@@ -8,7 +8,5 @@ import {Component, OnInit} from '@angular/core';
 export class HeaderGuestComponent implements OnInit{
 
   constructor(){}
-  ngOnInit(){
-
-  }
+  ngOnInit(){}
 }

@@ -7,7 +7,7 @@ import java.util.Collection;
 public class Category {
     private int id;
     private String name;
-    private Collection<Product> productsById;
+//    private Collection<Product> productsById;
 
     @Id
     @Column(name = "id")
@@ -49,12 +49,12 @@ public class Category {
         return result;
     }
 
-    @OneToMany(mappedBy = "categoryByCategoryId")
-    public Collection<Product> getProductsById() {
-        return productsById;
-    }
+//    @OneToMany(mappedBy = "categoryByCategoryId")
+//    public Collection<Product> getProductsById() {
+//        return productsById;
+//    }
 
-    public void setProductsById(Collection<Product> productsById) {
-        this.productsById = productsById;
-    }
+//    public void setProductsById(Collection<Product> productsById) {
+//        this.productsById = productsById;
+//    }
 }

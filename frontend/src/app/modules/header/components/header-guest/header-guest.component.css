@@ -33,6 +33,7 @@ header > div.logo > p {
   align-items: center;
   justify-content: center;
 }
+
 .login {
   display: block;
   float: right;

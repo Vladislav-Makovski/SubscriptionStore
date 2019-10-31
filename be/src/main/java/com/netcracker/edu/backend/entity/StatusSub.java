@@ -8,7 +8,7 @@ import java.util.Collection;
 public class StatusSub {
     private int id;
     private String name;
-    private Collection<Subscription> subscriptionsById;
+//    private Collection<Subscription> subscriptionsById;
 
     @Id
     @Column(name = "id")
@@ -50,12 +50,12 @@ public class StatusSub {
         return result;
     }
 
-    @OneToMany(mappedBy = "statusSubByStatusSubId")
-    public Collection<Subscription> getSubscriptionsById() {
-        return subscriptionsById;
-    }
-
-    public void setSubscriptionsById(Collection<Subscription> subscriptionsById) {
-        this.subscriptionsById = subscriptionsById;
-    }
+//    @OneToMany(mappedBy = "statusSubByStatusSubId")
+//    public Collection<Subscription> getSubscriptionsById() {
+//        return subscriptionsById;
+//    }
+//
+//    public void setSubscriptionsById(Collection<Subscription> subscriptionsById) {
+//        this.subscriptionsById = subscriptionsById;
+//    }
 }

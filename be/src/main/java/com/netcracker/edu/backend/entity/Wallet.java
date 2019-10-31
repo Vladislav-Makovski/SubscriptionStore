@@ -7,9 +7,9 @@ import java.util.Collection;
 public class Wallet {
     private int id;
     private int balance;
-    private int statusWalletId;
-    private Collection<Customer> customersById;
-    private Collection<Organization> organizationsById;
+//    private int statusWalletId;
+//    private Collection<Customer> customersById;
+//    private Collection<Organization> organizationsById;
     private StatusWallet statusWalletByStatusWalletId;
 
     @Id
@@ -32,15 +32,29 @@ public class Wallet {
         this.balance = balance;
     }
 
-    @Basic
-    @Column(name = "status_wallet_id")
-    public int getStatusWalletId() {
-        return statusWalletId;
-    }
+//    @Basic
+//    @Column(name = "status_wallet_id")
+//    public int getStatusWalletId() {
+//        return statusWalletId;
+//    }
+//
+//    public void setStatusWalletId(int statusWalletId) {
+//        this.statusWalletId = statusWalletId;
+//    }
 
-    public void setStatusWalletId(int statusWalletId) {
-        this.statusWalletId = statusWalletId;
-    }
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+//
+//        Wallet wallet = (Wallet) o;
+//
+//        if (id != wallet.id) return false;
+//        if (balance != wallet.balance) return false;
+//        if (statusWalletId != wallet.statusWalletId) return false;
+//
+//        return true;
+//    }
 
     @Override
     public boolean equals(Object o) {
@@ -51,36 +65,44 @@ public class Wallet {
 
         if (id != wallet.id) return false;
         if (balance != wallet.balance) return false;
-        if (statusWalletId != wallet.statusWalletId) return false;
+        if (statusWalletByStatusWalletId.getId() != wallet.statusWalletByStatusWalletId.getId()) return false;
 
         return true;
     }
+
+//    @Override
+//    public int hashCode() {
+//        int result = id;
+//        result = 31 * result + balance;
+//        result = 31 * result + statusWalletId;
+//        return result;
+//    }
 
     @Override
     public int hashCode() {
         int result = id;
         result = 31 * result + balance;
-        result = 31 * result + statusWalletId;
+        result = 31 * result + statusWalletByStatusWalletId.getId();
         return result;
     }
 
-    @OneToMany(mappedBy = "walletByWalletId")
-    public Collection<Customer> getCustomersById() {
-        return customersById;
-    }
-
-    public void setCustomersById(Collection<Customer> customersById) {
-        this.customersById = customersById;
-    }
-
-    @OneToMany(mappedBy = "walletByWalletId")
-    public Collection<Organization> getOrganizationsById() {
-        return organizationsById;
-    }
-
-    public void setOrganizationsById(Collection<Organization> organizationsById) {
-        this.organizationsById = organizationsById;
-    }
+//    @OneToMany(mappedBy = "walletByWalletId")
+//    public Collection<Customer> getCustomersById() {
+//        return customersById;
+//    }
+//
+//    public void setCustomersById(Collection<Customer> customersById) {
+//        this.customersById = customersById;
+//    }
+//
+//    @OneToMany(mappedBy = "walletByWalletId")
+//    public Collection<Organization> getOrganizationsById() {
+//        return organizationsById;
+//    }
+//
+//    public void setOrganizationsById(Collection<Organization> organizationsById) {
+//        this.organizationsById = organizationsById;
+//    }
 
     @ManyToOne
     @JoinColumn(name = "status_wallet_id", referencedColumnName = "id", nullable = false)

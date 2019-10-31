@@ -8,7 +8,7 @@ import java.util.Collection;
 public class UserRole {
     private int id;
     private String name;
-    private Collection<UserDetails> userDetailsById;
+//    private Collection<UserDetails> userDetailsById;
 
     @Id
     @Column(name = "id")
@@ -50,12 +50,12 @@ public class UserRole {
         return result;
     }
 
-    @OneToMany(mappedBy = "userRoleByUserRoleId")
-    public Collection<UserDetails> getUserDetailsById() {
-        return userDetailsById;
-    }
-
-    public void setUserDetailsById(Collection<UserDetails> userDetailsById) {
-        this.userDetailsById = userDetailsById;
-    }
+//    @OneToMany(mappedBy = "userRoleByUserRoleId")
+//    public Collection<UserDetails> getUserDetailsById() {
+//        return userDetailsById;
+//    }
+//
+//    public void setUserDetailsById(Collection<UserDetails> userDetailsById) {
+//        this.userDetailsById = userDetailsById;
+//    }
 }
