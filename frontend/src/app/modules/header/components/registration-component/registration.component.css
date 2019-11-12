@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
-.userOrAdvertiser{
-  margin-right: 30%;
-  margin-left: 30%;
-  width: 500px;
-  height: 200px;
-  background-color: #cff;
-}
+/*.userOrAdvertiser{*/
+  /*margin-right: 30%;*/
+  /*margin-left: 30%;*/
+  /*width: 500px;*/
+  /*height: 200px;*/
+  /*background-color: #cff;*/
+/*}*/
 
 .userbtn{
   margin-left: 15%;
@@ -17,7 +17,7 @@
 
 .registrationUser{
   width: 500px;
-  height: 700px;
+  height: 800px;
   margin-bottom: 30px;
   margin-left: 400px;
   margin-top: 50px;
@@ -32,8 +32,8 @@ h1,p,b{
 
 input[type=text], input[type=password] {
   width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
+  padding: 10px;
+  margin: 15px 0 22px 0;
   display: inline-block;
   border: none;
   background: #f1f1f1;
@@ -46,7 +46,7 @@ input[type=text]:focus, input[type=password]:focus {
 
 .registrationAdvertiser{
   width: 500px;
-  height: 600px;
+  height: 670px;
   margin-left: 400px;
   margin-top: 50px;
   margin-bottom: 30px;

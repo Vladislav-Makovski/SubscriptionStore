@@ -1,13 +1,14 @@
 package com.netcracker.edu.backend.entity;
 
-import javax.persistence.*;
-import java.util.Collection;
+import javax.persistence.Basic;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
 public class Category {
     private int id;
     private String name;
-//    private Collection<Product> productsById;
 
     @Id
     @Column(name = "id")
@@ -48,13 +49,4 @@ public class Category {
         result = 31 * result + (name != null ? name.hashCode() : 0);
         return result;
     }
-
-//    @OneToMany(mappedBy = "categoryByCategoryId")
-//    public Collection<Product> getProductsById() {
-//        return productsById;
-//    }
-
-//    public void setProductsById(Collection<Product> productsById) {
-//        this.productsById = productsById;
-//    }
 }

@@ -1,14 +1,22 @@
-<form  class="loginuser">
+<form  class="loginuser" [formGroup]="myForm" novalidate (ngSubmit)="submit()">
   <div class="container">
     <h1>Login</h1>
     <p>Please fill in this form to login account.</p>
     <hr>
     <label><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
+    <input type="text" placeholder="Enter Email" name="email" formControlName="email">
+    <div class="alert alert-danger"
+         *ngIf="myForm.controls['email'].invalid && myForm.controls['email'].touched">
+      incorrect email
+    </div>
     <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" name="psw"  formControlName="password">
+    <div class="alert alert-danger"
+         *ngIf="myForm.controls['password'].invalid && myForm.controls['password'].touched">
+      incorrect password
+    </div>
     <hr>
-    <button type="submit" class="loginbtn">Login</button>
+    <button type="submit" class="loginbtn" [disabled]="myForm.invalid">Login</button>
     <p>Don't have an account? <a href="#" routerLink="/registration">to register</a>.</p>
   </div>
 </form>

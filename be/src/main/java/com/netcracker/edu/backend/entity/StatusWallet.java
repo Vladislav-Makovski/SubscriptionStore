@@ -1,14 +1,12 @@
 package com.netcracker.edu.backend.entity;
 
 import javax.persistence.*;
-import java.util.Collection;
 
 @Entity
 @Table(name = "status_wallet", schema = "backend", catalog = "")
 public class StatusWallet {
     private int id;
     private String name;
-//    private Collection<Wallet> walletsById;
 
     @Id
     @Column(name = "id")
@@ -49,13 +47,4 @@ public class StatusWallet {
         result = 31 * result + (name != null ? name.hashCode() : 0);
         return result;
     }
-
-//    @OneToMany(mappedBy = "statusWalletByStatusWalletId")
-//    public Collection<Wallet> getWalletsById() {
-//        return walletsById;
-//    }
-//
-//    public void setWalletsById(Collection<Wallet> walletsById) {
-//        this.walletsById = walletsById;
-//    }
 }

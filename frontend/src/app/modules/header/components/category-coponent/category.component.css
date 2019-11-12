@@ -20,18 +20,18 @@
   width: 10%;
 }
 
-.mysub{
+.posts{
   margin-top: 50px;
   text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 table{
   background-color: white;
   height : 100px;
 }
 
-.unsubbtn{
+.subbtn{
   background-color: #e7e7e7;
   color: black;
   font-size: 25px;

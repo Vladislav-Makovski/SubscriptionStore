@@ -1,25 +1,29 @@
 import {Component, OnInit} from '@angular/core';
+import { FormGroup, FormControl, Validators} from '@angular/forms';
 
 @Component({
   selector :'my-registration',
   templateUrl: './registration.component.html',
   styleUrls: ['./registration.component.css']
 })
+
 export class RegistrationComponent implements OnInit{
 
-  userBoolean: boolean;
-  advertiserBoolean: boolean;
-  constructor(){}
-  ngOnInit(){
-    this.userBoolean = false;
-    this.advertiserBoolean = false;
+  myFormUser : FormGroup;
+
+  constructor(){
+    this.myFormUser = new FormGroup({
+
+      "email": new FormControl("", [Validators.required,Validators.email]),
+      "password": new FormControl("", Validators.required),
+      "nickname": new FormControl("", Validators.required),
+      "name": new FormControl("", Validators.required),
+      "surname": new FormControl("", Validators.required),
+    });
   }
-  userForm(){
-    this.advertiserBoolean = false;
-    this.userBoolean = !this.userBoolean;
-  }
-  advertiserForm(){
-    this.userBoolean = false;
-    this.advertiserBoolean = !this.advertiserBoolean;
+  ngOnInit(){}
+
+  submitUser(){
+    console.log(this.myFormUser);
   }
 }

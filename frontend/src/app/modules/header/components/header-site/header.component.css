@@ -55,27 +55,8 @@ header > div.logo > p {
   color: #4b515b;
 }
 
-.panel > a:first-child {
+a{
   margin-right: 5%;
-  margin-top: 2%;
-}
-
-.panel > a:nth-child(2){
-  margin-right: 5%;
-  margin-top: 2%;
-}
-
-.panel > a:nth-child(3){
-  margin-right: 5%;
-  margin-top: 2%;
-}
-
-.panel > a:nth-child(4){
-  margin-top: 2%;
-}
-
-.panel > a:last-child {
-  margin-left: 5%;
   margin-top: 2%;
 }
 

@@ -8,17 +8,17 @@ public class ProductViewModel {
     private String name;
     private String description;
     private String category;
-    private int price;
+    private int cost;
 
     public ProductViewModel() {
     }
 
-    public ProductViewModel(int id, String name, String description,String category, int price) {
+    public ProductViewModel(int id, String name, String description,String category, int cost) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.category = category;
-        this.price = price;
+        this.cost = cost;
     }
 
     public int getId() {
@@ -53,12 +53,12 @@ public class ProductViewModel {
         this.category = category;
     }
 
-    public int getPrice() {
-        return price;
+    public int getCost() {
+        return cost;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+    public void setCost(int cost) {
+        this.cost = cost;
     }
 
 }

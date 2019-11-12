@@ -1,14 +1,12 @@
 package com.netcracker.edu.backend.entity;
 
 import javax.persistence.*;
-import java.util.Collection;
 
 @Entity
 @Table(name = "user_role", schema = "backend", catalog = "")
 public class UserRole {
     private int id;
     private String name;
-//    private Collection<UserDetails> userDetailsById;
 
     @Id
     @Column(name = "id")
@@ -49,13 +47,4 @@ public class UserRole {
         result = 31 * result + (name != null ? name.hashCode() : 0);
         return result;
     }
-
-//    @OneToMany(mappedBy = "userRoleByUserRoleId")
-//    public Collection<UserDetails> getUserDetailsById() {
-//        return userDetailsById;
-//    }
-//
-//    public void setUserDetailsById(Collection<UserDetails> userDetailsById) {
-//        this.userDetailsById = userDetailsById;
-//    }
 }

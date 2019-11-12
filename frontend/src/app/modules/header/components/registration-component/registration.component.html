@@ -1,45 +1,48 @@
-<form class = "userOrAdvertiser">
-  <button type="submit" class="userbtn" (click)="userForm()" >User</button>
-  <button type="submit" class="userbtn" (click)="advertiserForm()">Advertiser</button>
-  <p class="legend">Choose who you are? </p>
-</form>
-
-<form  class="registrationUser"  *ngIf="userBoolean">
+<form  class="registrationUser" [formGroup]="myFormCustomer" novalidate (ngSubmit)="submitUser()">
   <div class="container">
     <h1>Register</h1>
     <p>Please fill in this form to create an account.</p>
     <hr>
+    <label><b>Role</b></label>
+    <select>
+      <option>Customer</option>
+      <option>Advertiser</option>
+    </select>
+    <br>
     <label><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
+    <input type="text" placeholder="Enter Email" name="email" required formControlName="email">
+    <div class="alert alert-danger"
+         *ngIf="myFormCustomer.controls['email'].invalid && myFormCustomer.controls['email'].touched">
+      incorrect email
+    </div>
     <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" name="psw" required formControlName="password">
+    <div class="alert alert-danger"
+         *ngIf="myFormCustomer.controls['password'].invalid && myFormCustomer.controls['password'].touched">
+      incorrect password
+    </div>
     <label><b>Nickname</b></label>
-    <input type="password" placeholder="Nickname" name="psw-repeat" required>
+    <input type="text" placeholder="Nickname" name="psw-repeat" required formControlName="nickname">
+    <div class="alert alert-danger"
+         *ngIf="myFormCustomer.controls['nickname'].invalid && myFormCustomer.controls['nickname'].touched">
+      incorrect nickname
+    </div>
     <label><b>Name</b></label>
-    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Name" name="name" required formControlName="name">
+    <div class="alert alert-danger"
+         *ngIf="myFormCustomer.controls['name'].invalid && myFormCustomer.controls['name'].touched">
+      incorrect name
+    </div>
+    <!--скрыть если не кастомер-->
     <label><b>Surname</b></label>
-    <input type="text" placeholder="Surname" name="surname" required>
+    <input type="text" placeholder="Surname" name="surname" required formControlName="surname">
+    <div class="alert alert-danger"
+         *ngIf="myFormCustomer.controls['surname'].invalid && myFormCustomer.controls['surname'].touched">
+      incorrect surname
+    </div>
     <hr>
-    <button type="submit" class="registerbtn">Register</button>
-    <p>Already have an account? <a href="#" routerLink="/login">Sign in</a>.</p>
+    <button type="submit" class="registerbtn" [disabled]="myFormCustomer.invalid">Register</button>
+    <!--<p>Already have an account? <a href="#" routerLink="/login">Sign in</a>.</p>-->
   </div>
 </form>
 
-<form  class="registrationAdvertiser" *ngIf="advertiserBoolean">
-  <div class="container">
-    <h1>Register</h1>
-    <p>Please fill in this form to create an account.</p>
-    <hr>
-    <label><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-    <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-    <label><b>Nickname</b></label>
-    <input type="password" placeholder="Nickname" name="psw-repeat" required>
-    <label><b>Name</b></label>
-    <input type="text" placeholder="Name" name="name" required>
-    <hr>
-    <button type="submit" class="registerbtn">Register</button>
-    <p>Already have an account? <a href="#" routerLink="/login">Sign in</a>.</p>
-  </div>
-</form>
