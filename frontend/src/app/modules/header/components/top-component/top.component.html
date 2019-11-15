@@ -1,29 +1,51 @@
 <div class="posts">
-  <table >
+  <table>
+    <thead>
     <tr>
-      <td class="tdmysub">Name</td><td>Description</td><td class="tdmysub">Category</td><td class="tdmysub">Price</td><td class="tdmysub">Subscribe</td>
+      <td class="tdmysub" scope="col">Name</td>
+      <td  scope="col">Description</td>
+      <td class="tdmysub" scope="col">number of subscriptions</td>
+      <td class="tdmysub" scope="col">Price</td>
+      <td class="tdmysub" scope="col">Subscribe</td>
     </tr>
-    <tr>
-      <td>Yandex music</td><td>Яндекс.Музыка» — стриминговый сервис компании «Яндекс», позволяющий прослушивать
-      музыкальные композиции, альбомы, подборки музыкальных треков и получать персональные рекомендации.
-    </td><td>Music</td><td>2</td><td><button class="subbtn">Subscribe</button></td>
+    </thead>
+    <tbody>
+    <tr *ngFor="let catalogItem of catalogItem">
+      <td scope="row">{{catalogItem.name}}</td>
+      <td>{{catalogItem.description}}</td>
+      <td>{{catalogItem.subscriptionCount}}</td>
+      <td>{{catalogItem.cost}}</td>
+      <td><button class="subbtn">Subscribe</button></td>
     </tr>
-    <tr>
-      <td>Apple music</td><td>Apple Music — музыкальная служба предоставляющий доступ к миллионам композиций из
-      библиотеки iTunes Store</td><td>Music</td><td>3</td><td><button class="subbtn">Subscribe</button></td>
-    </tr>
-    <tr>
-      <td>NETFLIX</td><td>NETFLIX - стриминговый сервис с фильмами и сериалами</td><td>
-      Films</td><td>10</td><td><button class="subbtn">Subscribe</button></td>
-    </tr>
-    <tr>
-      <td>Twitch</td><td>Twitch — видеостриминговый сервис, специализирующийся на тематике компьютерных игр, в том числе трансляциях
-      геймплея и киберспортивных турниров.</td><td>Games</td><td>5</td><td><button class="subbtn">Subscribe</button></td>
-    </tr>
-    <tr>
-      <td>Xbox Live</td><td>Xbox Live ― интернет-служба для Xbox One. Служба Xbox Live открывает доступ к лучшей в мире
-      многопользовательской развлекательной сети.</td><td>Games</td><td>15</td><td><button class="subbtn">Subscribe</button></td>
-    </tr>
+    </tbody>
   </table>
+
+
+  <!--<table >-->
+    <!--<tr>-->
+      <!--<td class="tdmysub">Name</td><td>Description</td><td class="tdmysub">Category</td><td class="tdmysub">Price</td><td class="tdmysub">Subscribe</td>-->
+    <!--</tr>-->
+    <!--<tr>-->
+      <!--<td>Yandex music</td><td>Яндекс.Музыка» — стриминговый сервис компании «Яндекс», позволяющий прослушивать-->
+      <!--музыкальные композиции, альбомы, подборки музыкальных треков и получать персональные рекомендации.-->
+    <!--</td><td>Music</td><td>2</td><td><button class="subbtn">Subscribe</button></td>-->
+    <!--</tr>-->
+    <!--<tr>-->
+      <!--<td>Apple music</td><td>Apple Music — музыкальная служба предоставляющий доступ к миллионам композиций из-->
+      <!--библиотеки iTunes Store</td><td>Music</td><td>3</td><td><button class="subbtn">Subscribe</button></td>-->
+    <!--</tr>-->
+    <!--<tr>-->
+      <!--<td>NETFLIX</td><td>NETFLIX - стриминговый сервис с фильмами и сериалами</td><td>-->
+      <!--Films</td><td>10</td><td><button class="subbtn">Subscribe</button></td>-->
+    <!--</tr>-->
+    <!--<tr>-->
+      <!--<td>Twitch</td><td>Twitch — видеостриминговый сервис, специализирующийся на тематике компьютерных игр, в том числе трансляциях-->
+      <!--геймплея и киберспортивных турниров.</td><td>Games</td><td>5</td><td><button class="subbtn">Subscribe</button></td>-->
+    <!--</tr>-->
+    <!--<tr>-->
+      <!--<td>Xbox Live</td><td>Xbox Live ― интернет-служба для Xbox One. Служба Xbox Live открывает доступ к лучшей в мире-->
+      <!--многопользовательской развлекательной сети.</td><td>Games</td><td>15</td><td><button class="subbtn">Subscribe</button></td>-->
+    <!--</tr>-->
+  <!--</table>-->
 </div>
 

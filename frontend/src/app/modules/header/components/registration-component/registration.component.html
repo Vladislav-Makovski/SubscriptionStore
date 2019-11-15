@@ -1,47 +1,49 @@
-<form  class="registrationUser" [formGroup]="myFormCustomer" novalidate (ngSubmit)="submitUser()">
+<form class="registrationUser" [formGroup]="myFormUser" novalidate (ngSubmit)="submitUser()">
   <div class="container">
     <h1>Register</h1>
     <p>Please fill in this form to create an account.</p>
     <hr>
     <label><b>Role</b></label>
-    <select>
-      <option>Customer</option>
-      <option>Advertiser</option>
+    <select (change)="onChange($event.target.value)">
+      <option *ngFor="let userType of userRegistrationTypes" value="{{userType}}">{{userType}}</option>
     </select>
     <br>
     <label><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" required formControlName="email">
     <div class="alert alert-danger"
-         *ngIf="myFormCustomer.controls['email'].invalid && myFormCustomer.controls['email'].touched">
+         *ngIf="myFormUser.controls['email'].invalid && myFormUser.controls['email'].touched">
       incorrect email
     </div>
     <label><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required formControlName="password">
     <div class="alert alert-danger"
-         *ngIf="myFormCustomer.controls['password'].invalid && myFormCustomer.controls['password'].touched">
+         *ngIf="myFormUser.controls['password'].invalid && myFormUser.controls['password'].touched">
       incorrect password
     </div>
     <label><b>Nickname</b></label>
     <input type="text" placeholder="Nickname" name="psw-repeat" required formControlName="nickname">
     <div class="alert alert-danger"
-         *ngIf="myFormCustomer.controls['nickname'].invalid && myFormCustomer.controls['nickname'].touched">
+         *ngIf="myFormUser.controls['nickname'].invalid && myFormUser.controls['nickname'].touched">
       incorrect nickname
     </div>
     <label><b>Name</b></label>
     <input type="text" placeholder="Name" name="name" required formControlName="name">
     <div class="alert alert-danger"
-         *ngIf="myFormCustomer.controls['name'].invalid && myFormCustomer.controls['name'].touched">
+         *ngIf="myFormUser.controls['name'].invalid && myFormUser.controls['name'].touched">
       incorrect name
     </div>
     <!--скрыть если не кастомер-->
-    <label><b>Surname</b></label>
-    <input type="text" placeholder="Surname" name="surname" required formControlName="surname">
-    <div class="alert alert-danger"
-         *ngIf="myFormCustomer.controls['surname'].invalid && myFormCustomer.controls['surname'].touched">
-      incorrect surname
-    </div>
+    <ng-container *ngIf="currentRegistrationType !== 'Advertiser'">
+      <label><b>Surname</b></label>
+      <input type="text" placeholder="Surname" name="surname" required formControlName="surname">
+      <div class="alert alert-danger"
+           *ngIf="myFormUser.controls['surname'].invalid && myFormUser.controls['surname'].touched">
+        incorrect surname
+      </div>
+    </ng-container>
+
     <hr>
-    <button type="submit" class="registerbtn" [disabled]="myFormCustomer.invalid">Register</button>
+    <button type="submit" class="registerbtn" [disabled]="myFormUser.invalid">Register</button>
     <!--<p>Already have an account? <a href="#" routerLink="/login">Sign in</a>.</p>-->
   </div>
 </form>

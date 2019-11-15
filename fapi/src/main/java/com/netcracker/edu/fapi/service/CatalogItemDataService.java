@@ -6,5 +6,7 @@ import org.springframework.http.ResponseEntity;
 import java.util.List;
 
 public interface CatalogItemDataService {
-    List<ProductViewModel> getAll();
+    List<ProductViewModel> getAllByName();
+    List<ProductViewModel> getAllByCategoryId();
+    List<ProductViewModel> getAllBySubscriptionCount();
 }

@@ -16,9 +16,23 @@ public class CatalogItemDataServiceImpl implements CatalogItemDataService {
     private String backendServerUrl;
 
     @Override
-    public List<ProductViewModel> getAll() {
+    public List<ProductViewModel> getAllByName() {
         RestTemplate restTemplate = new RestTemplate();
-        ProductViewModel[] productViewModelResponse = restTemplate.getForObject(backendServerUrl + "/api/catalog-item/", ProductViewModel[].class);
+        ProductViewModel[] productViewModelResponse = restTemplate.getForObject(backendServerUrl + "/api/catalog-item/name", ProductViewModel[].class);
+        return productViewModelResponse == null ? Collections.emptyList() : Arrays.asList(productViewModelResponse);
+    }
+
+    @Override
+    public List<ProductViewModel> getAllByCategoryId() {
+        RestTemplate restTemplate = new RestTemplate();
+        ProductViewModel[] productViewModelResponse = restTemplate.getForObject(backendServerUrl + "/api/catalog-item/category", ProductViewModel[].class);
+        return productViewModelResponse == null ? Collections.emptyList() : Arrays.asList(productViewModelResponse);
+    }
+
+    @Override
+    public List<ProductViewModel> getAllBySubscriptionCount() {
+        RestTemplate restTemplate = new RestTemplate();
+        ProductViewModel[] productViewModelResponse = restTemplate.getForObject(backendServerUrl + "/api/catalog-item/top", ProductViewModel[].class);
         return productViewModelResponse == null ? Collections.emptyList() : Arrays.asList(productViewModelResponse);
     }
 }

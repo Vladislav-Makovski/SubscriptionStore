@@ -9,13 +9,16 @@ export class CatalogService {
   constructor(private http: HttpClient) {
   }
 
-  // Ajax request for billing account data
-  getCatalogItem(): Observable<CatalogItem[]> {
+  getCatalogItemByCategoryId(): Observable<CatalogItem[]> {
+    return this.http.get<CatalogItem[]>('/api/bb');
+  }
+
+  getCatalogItemByName(): Observable<CatalogItem[]> {
     return this.http.get<CatalogItem[]>('/api/ba');
   }
-  
-  getCatalogItemById(id: string): Observable<CatalogItem> {
-    return this.http.get<CatalogItem>('/api/ba/' + id);
+
+  getCatalogItemBySubscriptionCount(): Observable<CatalogItem[]> {
+    return this.http.get<CatalogItem[]>('/api/bc');
   }
 
 }

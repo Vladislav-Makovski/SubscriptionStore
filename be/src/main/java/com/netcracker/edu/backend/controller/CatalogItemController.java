@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/catalog-item")
 public class CatalogItemController {
 
     private CatalogItemService catalogItemService;
@@ -17,10 +16,23 @@ public class CatalogItemController {
         this.catalogItemService = catalogItemService;
     }
 
-    @RequestMapping(value = "", method = RequestMethod.GET)
-    public Iterable<Product> getAllCatalogItem() {
-        return catalogItemService.getAllCatalogItem();
+    @RequestMapping("/api/catalog-item/name")
+    @GetMapping
+    public Iterable<Product> getAllCatalogItemByName()
+    {
+        return catalogItemService.getAllCatalogItemByName();
     }
 
+    @RequestMapping("/api/catalog-item/category")
+    @GetMapping
+    public Iterable<Product> getAllCatalogItemByCategoryId() {
+        return catalogItemService.getAllCatalogItemByCategoryId();
+    }
+
+    @RequestMapping("/api/catalog-item/top")
+    @GetMapping
+    public Iterable<Product> getAllCatalogItemBySubscriptionCount() {
+        return catalogItemService.getAllCatalogItemBySubscriptionCount();
+    }
 }
 

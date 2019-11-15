@@ -23,6 +23,7 @@ import {CatalogService} from "./services/catalog.service";
 import {Ng4LoadingSpinnerModule} from "ng4-loading-spinner";
 import {HttpClient, HttpClientModule, HttpHeaders} from "@angular/common/http";
 import {BsModalService, ModalModule} from "ngx-bootstrap";
+import {CategoryService} from "./services/category.service";
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -75,7 +76,7 @@ const appRoutes: Routes = [
 
   bootstrap: [AppComponent],
   exports: [],
-  providers: [CatalogService,HttpClient,BsModalService]
+  providers: [CatalogService,CategoryService,HttpClient,BsModalService]
 })
 
 export class AppModule {
