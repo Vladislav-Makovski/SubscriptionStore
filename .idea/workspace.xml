@@ -5,42 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9936576c-781c-45c6-bde6-8a87560a0cdf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_0_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_0_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_0_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_0_8_RELEASE.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/CategoryController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/controller/CategoryController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/category-coponent/category.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/category-coponent/category.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/category-coponent/category.component.ts" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/controller/CatalogItemController.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/controller/CatalogItemController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/ProductViewModel.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/ProductViewModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/impl/CatalogItemDataServiceImpl.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/impl/CatalogItemDataServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/fapi-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/fapi/target/fapi-0.0.1-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/be/pom.xml" afterPath="$PROJECT_DIR$/be/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/CatalogItemController.java" afterPath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/CatalogItemController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/repository/CatalogItemRepository.java" afterPath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/repository/CatalogItemRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/CatalogItemService.java" afterPath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/CatalogItemService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/CatalogItemServiceImpl.java" afterPath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/CatalogItemServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/fapi.iml" afterPath="$PROJECT_DIR$/fapi/fapi.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/pom.xml" afterPath="$PROJECT_DIR$/fapi/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/CatalogItemController.java" afterPath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/CatalogItemController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/ProductViewModel.java" afterPath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/ProductViewModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/CatalogItemDataService.java" afterPath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/CatalogItemDataService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/CatalogItemDataServiceImpl.java" afterPath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/CatalogItemDataServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/fapi/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/fapi/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/catalog-component/catalog.component.css" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/catalog-component/catalog.component.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/catalog-component/catalog.component.ts" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/catalog-component/catalog.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/catalog-component/catalog.html" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/catalog-component/catalog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/header-site/header.component.html" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/header-site/header.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/header-site/header.component.ts" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/header-site/header.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/login-component/login.component.ts" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/login-component/login.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/models/catalog-item.ts" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/models/catalog-item.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/services/catalog.service.ts" afterPath="$PROJECT_DIR$/frontend/src/app/services/catalog.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/converter/ProductAndCategory.java" afterPath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/converter/ProductAndCategory.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/be/target/" />
@@ -103,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductAndCategory.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProductAndCategory.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/converter/ProductAndCategory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="47" column="82" lean-forward="true" selection-start-line="47" selection-start-column="82" selection-end-line="47" selection-end-column="82" />
+            <state relative-caret-position="1394">
+              <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,10 +100,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CatalogItemController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CatalogItemController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/CatalogItemController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
+            <state relative-caret-position="673">
               <caret line="53" column="60" lean-forward="false" selection-start-line="53" selection-start-column="60" selection-end-line="53" selection-end-column="60" />
               <folding>
                 <element signature="e#1559#1560#0" expanded="true" />
@@ -264,12 +229,12 @@
         <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/catalog-component/catalog.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/catalog-component/catalog.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/services/catalog.service.ts" />
-        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/converter/ProductAndCategory.java" />
         <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/CatalogItemDataService.java" />
         <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/CatalogItemController.java" />
         <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/CatalogItemService.java" />
         <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/CatalogItemServiceImpl.java" />
         <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/CatalogItemDataServiceImpl.java" />
+        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/converter/ProductAndCategory.java" />
       </list>
     </option>
   </component>
@@ -713,7 +678,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.FapiApplication">
+  <component name="RunManager" selected="npm.Unnamed">
     <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.netcracker.edu.backend.BackendApplication" />
@@ -897,12 +862,12 @@
       <workItem from="1574098328567" duration="10778000" />
       <workItem from="1574164483665" duration="278000" />
       <workItem from="1574179754111" duration="6194000" />
-      <workItem from="1574196877797" duration="3472000" />
+      <workItem from="1574196877797" duration="4485000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200187000" />
+    <option name="totallyTimeSpent" value="201200000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1219,7 +1184,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#0#48#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1332,16 +1297,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/converter/ProductAndCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="47" column="82" lean-forward="true" selection-start-line="47" selection-start-column="82" selection-end-line="47" selection-end-column="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/CatalogItemDataService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1360,11 +1315,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/CatalogItemController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
+        <state relative-caret-position="673">
           <caret line="53" column="60" lean-forward="false" selection-start-line="53" selection-start-column="60" selection-end-line="53" selection-end-column="60" />
           <folding>
             <element signature="e#1559#1560#0" expanded="true" />
             <element signature="e#1630#1631#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/converter/ProductAndCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

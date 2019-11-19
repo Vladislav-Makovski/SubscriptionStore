@@ -80,22 +80,22 @@ public class ProductAndCategory {
     }
 
 
-//todo  переделать через foreach
+
     public List<ConvertProductViewModel> fillConvertModel(List<ProductViewModel> catalogItem,List<CategoryViewModel> category){
         List<ConvertProductViewModel> convertProductViewModels = new ArrayList<>();
-        for (int i = 0; i < catalogItem.size(); i++) {
+        for (ProductViewModel item: catalogItem  ) {
             ConvertProductViewModel a = new ConvertProductViewModel();
-            a.setId(catalogItem.get(i).getId());
-            a.setName(catalogItem.get(i).getName());
-            a.setDescription(catalogItem.get(i).getDescription());
-            a.setCost(catalogItem.get(i).getCost());
-            a.setSubscriptionCount(catalogItem.get(i).getSubscriptionCount());
-            for (int j = 0; j < category.size(); j++) {
-                if (catalogItem.get(i).getCategoryId() == category.get(j).getId()) {
-                    a.setCategory(category.get(j).getName());
+            a.setId(item.getId());
+            a.setName(item.getName());
+            a.setDescription(item.getDescription());
+            a.setCost(item.getCost());
+            a.setSubscriptionCount(item.getSubscriptionCount());
+            for (CategoryViewModel cat: category) {
+                if (item.getCategoryId() == cat.getId()) {
+                a.setCategory(cat.getName());
                 }
             }
-            convertProductViewModels.add(i, a);
+            convertProductViewModels.add(a);
         }
         return convertProductViewModels;
     }
