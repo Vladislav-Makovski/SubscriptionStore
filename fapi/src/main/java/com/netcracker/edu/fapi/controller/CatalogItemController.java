@@ -12,18 +12,6 @@ public class CatalogItemController {
     @Autowired
     private CatalogItemDataService productDataService;
 
-    @RequestMapping("/api/ba")
-    @GetMapping
-    public ResponseEntity<List<ProductViewModel>> getAllProductByName() {
-        return ResponseEntity.ok(productDataService.getAllByName());
-    }
-
-    @RequestMapping("/api/bb")
-    @GetMapping
-    public ResponseEntity<List<ProductViewModel>> getAllProductByCategoryId() {
-        return ResponseEntity.ok(productDataService.getAllByCategoryId());
-    }
-
     @RequestMapping("/api/bc")
     @GetMapping
     public ResponseEntity<List<ProductViewModel>> getAllProductBySubscriptionCount() {

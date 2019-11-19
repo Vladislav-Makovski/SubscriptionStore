@@ -28,3 +28,34 @@ td{
 .tdmysub{
   width: 10%;
 }
+
+.name {
+  background: #3ad5d2;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+
+}
+
+ .name:before,
+ .name:after {
+  border-style: solid;
+  border-width: 8px 5px;
+  border-color: transparent;
+  content: '';
+  height: 0;
+  position: absolute;
+  right: 10px;
+  width: 0;
+}
+.name:before {
+  border-bottom-color: black;
+  top: 0;
+}
+ .name:after {
+  border-top-color: black;
+  bottom: 0;
+}
+

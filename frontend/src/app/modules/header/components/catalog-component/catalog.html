@@ -3,10 +3,10 @@
   <table>
     <thead>
     <tr>
-      <td class="tdmysub" scope="col">Name</td>
+      <td class="tdmysub" scope="col"><button class="name" (click)="sortByName()">Name</button></td>
       <td  scope="col">Description</td>
-      <td class="tdmysub" scope="col">Category</td>
-      <td class="tdmysub" scope="col">Price</td>
+      <td class="tdmysub" scope="col"><button class="name" (click)="sortByCategory()">Category</button></td>
+      <td class="tdmysub" scope="col"><button class="name" (click)="sortByPrice()">Price</button></td>
       <td class="tdmysub" scope="col">Subscribe</td>
     </tr>
     </thead>
@@ -14,7 +14,7 @@
     <tr *ngFor="let catalogItem of catalogItem">
       <td scope="row">{{catalogItem.name}}</td>
       <td>{{catalogItem.description}}</td>
-      <td>{{viewCategory[catalogItem.id - 1]}}</td>
+      <td>{{catalogItem.category}}</td>
       <td>{{catalogItem.cost}}</td>
       <td><button class="subbtn">Subscribe</button></td>
     </tr>

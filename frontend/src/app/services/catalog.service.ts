@@ -9,12 +9,28 @@ export class CatalogService {
   constructor(private http: HttpClient) {
   }
 
-  getCatalogItemByCategoryId(): Observable<CatalogItem[]> {
-    return this.http.get<CatalogItem[]>('/api/bb');
+  getCatalogItemByNameAsc(): Observable<CatalogItem[]> {
+    return this.http.get<CatalogItem[]>('/api/NameAsc');
   }
 
-  getCatalogItemByName(): Observable<CatalogItem[]> {
-    return this.http.get<CatalogItem[]>('/api/ba');
+  getCatalogItemByNameDesc(): Observable<CatalogItem[]> {
+    return this.http.get<CatalogItem[]>('/api/NameDesc');
+  }
+
+  getCatalogItemByCategoryAsc(): Observable<CatalogItem[]> {
+    return this.http.get<CatalogItem[]>('/api/CategoryAsc');
+  }
+
+  getCatalogItemByCategoryDesc(): Observable<CatalogItem[]> {
+    return this.http.get<CatalogItem[]>('/api/CategoryDesc');
+  }
+
+  getCatalogItemByPriceAsc(): Observable<CatalogItem[]> {
+    return this.http.get<CatalogItem[]>('/api/PriceAsc');
+  }
+
+  getCatalogItemByPriceDesc(): Observable<CatalogItem[]> {
+    return this.http.get<CatalogItem[]>('/api/PriceDesc');
   }
 
   getCatalogItemBySubscriptionCount(): Observable<CatalogItem[]> {

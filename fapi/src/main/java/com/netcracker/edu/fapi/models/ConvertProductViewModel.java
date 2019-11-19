@@ -1,25 +1,24 @@
 package com.netcracker.edu.fapi.models;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ProductViewModel{
-
+public class ConvertProductViewModel {
     private int id;
     private String name;
     private String description;
-    private int categoryId;
+    private String category;
     private int cost;
     private int subscriptionCount;
 
-    public ProductViewModel() {
+    public ConvertProductViewModel() {
     }
 
-    public ProductViewModel(int id, String name, String description,int categoryId, int cost,int subscriptionCount) {
+    public ConvertProductViewModel(int id, String name, String description, String category, int cost, int subscriptionCount) {
         this.id = id;
         this.name = name;
         this.description = description;
-        this.categoryId = categoryId;
+        this.category = category;
         this.cost = cost;
         this.subscriptionCount = subscriptionCount;
     }
@@ -48,12 +47,12 @@ public class ProductViewModel{
         this.description = description;
     }
 
-    public int getCategoryId() {
-        return categoryId;
+    public String getCategory() {
+        return category;
     }
 
-    public void setCategoryId(int categoryId) {
-        this.categoryId = categoryId;
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     public int getCost() {
@@ -67,5 +66,4 @@ public class ProductViewModel{
     public int getSubscriptionCount(){return subscriptionCount;}
 
     public void setSubscriptionCount(int subscriptionCount){this.subscriptionCount = subscriptionCount;}
-
 }

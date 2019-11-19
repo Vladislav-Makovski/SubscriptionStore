@@ -16,16 +16,44 @@ public class CatalogItemDataServiceImpl implements CatalogItemDataService {
     private String backendServerUrl;
 
     @Override
-    public List<ProductViewModel> getAllByName() {
+    public List<ProductViewModel> getAllByNameAsc() {
         RestTemplate restTemplate = new RestTemplate();
-        ProductViewModel[] productViewModelResponse = restTemplate.getForObject(backendServerUrl + "/api/catalog-item/name", ProductViewModel[].class);
+        ProductViewModel[] productViewModelResponse = restTemplate.getForObject(backendServerUrl + "/api/catalog-item/nameAsc", ProductViewModel[].class);
         return productViewModelResponse == null ? Collections.emptyList() : Arrays.asList(productViewModelResponse);
     }
 
     @Override
-    public List<ProductViewModel> getAllByCategoryId() {
+    public List<ProductViewModel> getAllByNameDesc() {
         RestTemplate restTemplate = new RestTemplate();
-        ProductViewModel[] productViewModelResponse = restTemplate.getForObject(backendServerUrl + "/api/catalog-item/category", ProductViewModel[].class);
+        ProductViewModel[] productViewModelResponse = restTemplate.getForObject(backendServerUrl + "/api/catalog-item/nameDesc", ProductViewModel[].class);
+        return productViewModelResponse == null ? Collections.emptyList() : Arrays.asList(productViewModelResponse);
+    }
+
+    @Override
+    public List<ProductViewModel> getAllByCategoryIdAsc() {
+        RestTemplate restTemplate = new RestTemplate();
+        ProductViewModel[] productViewModelResponse = restTemplate.getForObject(backendServerUrl + "/api/catalog-item/categoryAsc", ProductViewModel[].class);
+        return productViewModelResponse == null ? Collections.emptyList() : Arrays.asList(productViewModelResponse);
+    }
+
+    @Override
+    public List<ProductViewModel> getAllByCategoryIdDesc() {
+        RestTemplate restTemplate = new RestTemplate();
+        ProductViewModel[] productViewModelResponse = restTemplate.getForObject(backendServerUrl + "/api/catalog-item/categoryDesc", ProductViewModel[].class);
+        return productViewModelResponse == null ? Collections.emptyList() : Arrays.asList(productViewModelResponse);
+    }
+
+    @Override
+    public List<ProductViewModel> getAllByPriceAsc() {
+        RestTemplate restTemplate = new RestTemplate();
+        ProductViewModel[] productViewModelResponse = restTemplate.getForObject(backendServerUrl + "/api/catalog-item/priceAsc", ProductViewModel[].class);
+        return productViewModelResponse == null ? Collections.emptyList() : Arrays.asList(productViewModelResponse);
+    }
+
+    @Override
+    public List<ProductViewModel> getAllByPriceDesc() {
+        RestTemplate restTemplate = new RestTemplate();
+        ProductViewModel[] productViewModelResponse = restTemplate.getForObject(backendServerUrl + "/api/catalog-item/priceDesc", ProductViewModel[].class);
         return productViewModelResponse == null ? Collections.emptyList() : Arrays.asList(productViewModelResponse);
     }
 
@@ -33,6 +61,7 @@ public class CatalogItemDataServiceImpl implements CatalogItemDataService {
     public List<ProductViewModel> getAllBySubscriptionCount() {
         RestTemplate restTemplate = new RestTemplate();
         ProductViewModel[] productViewModelResponse = restTemplate.getForObject(backendServerUrl + "/api/catalog-item/top", ProductViewModel[].class);
+
         return productViewModelResponse == null ? Collections.emptyList() : Arrays.asList(productViewModelResponse);
     }
 }

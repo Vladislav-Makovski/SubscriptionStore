@@ -2,7 +2,7 @@ export class CatalogItem {
   id: string;
   name: string;
   description: string;
-  categoryId: string;
+  category: string;
   cost: string;
   subscriptionCount: string;
 
@@ -11,7 +11,7 @@ export class CatalogItem {
     clonedCatalogItem.id = catalogItem.id;
     clonedCatalogItem.name = catalogItem.name;
     clonedCatalogItem.description = catalogItem.description;
-    clonedCatalogItem.categoryId = catalogItem.categoryId;
+    clonedCatalogItem.category = catalogItem.category;
     clonedCatalogItem.cost = catalogItem.cost;
     clonedCatalogItem.subscriptionCount = catalogItem.subscriptionCount;
     return clonedCatalogItem;

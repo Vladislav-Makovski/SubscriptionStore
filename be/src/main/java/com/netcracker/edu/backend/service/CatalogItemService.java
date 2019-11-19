@@ -3,7 +3,11 @@ import com.netcracker.edu.backend.entity.Product;
 import java.util.Optional;
 
 public interface CatalogItemService {
-    Iterable<Product> getAllCatalogItemByName();
-    Iterable<Product> getAllCatalogItemByCategoryId();
+    Iterable<Product> getAllCatalogItemByNameAsc();
+    Iterable<Product> getAllCatalogItemByNameDesc();
+    Iterable<Product> getAllCatalogItemByCategoryIdAsc();
+    Iterable<Product> getAllCatalogItemByCategoryIdDesc();
+    Iterable<Product> getAllCatalogItemByPriceAsc();
+    Iterable<Product> getAllCatalogItemByPriceDesc();
     Iterable<Product> getAllCatalogItemBySubscriptionCount();
 }

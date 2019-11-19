@@ -10,7 +10,6 @@ import {FooterComponent} from "./modules/header/components/footer-component/foot
 import {LoginComponent} from "./modules/header/components/login-component/login.component";
 import {RegistrationComponent} from "./modules/header/components/registration-component/registration.component";
 import {TopComponent} from "./modules/header/components/top-component/top.component";
-import {CategoryComponent} from "./modules/header/components/category-coponent/category.component";
 import {AddComponent} from "./modules/header/components/add-product/add.component";
 import {MyProductComponent} from "./modules/header/components/my-product/my-product.component";
 import {BlockCustomerComponent} from "./modules/header/components/block-customer/block-customer.component";
@@ -33,7 +32,6 @@ const appRoutes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'registration', component: RegistrationComponent},
   {path: 'top', component: TopComponent},
-  {path: 'category', component: CategoryComponent},
   {path: 'add', component: AddComponent},
   {path: 'myProduct', component: MyProductComponent},
   {path: 'blockCustomer', component: BlockCustomerComponent},
@@ -53,7 +51,6 @@ const appRoutes: Routes = [
     LoginComponent,
     RegistrationComponent,
     TopComponent,
-    CategoryComponent,
     AddComponent,
     MyProductComponent,
     BlockCustomerComponent,

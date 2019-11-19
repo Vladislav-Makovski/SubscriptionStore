@@ -16,23 +16,51 @@ public class CatalogItemController {
         this.catalogItemService = catalogItemService;
     }
 
-    @RequestMapping("/api/catalog-item/name")
+    @RequestMapping("/api/catalog-item/nameAsc")
     @GetMapping
-    public Iterable<Product> getAllCatalogItemByName()
+    public Iterable<Product> getAllCatalogItemByNameAsc()
     {
-        return catalogItemService.getAllCatalogItemByName();
+        return catalogItemService.getAllCatalogItemByNameAsc();
     }
 
-    @RequestMapping("/api/catalog-item/category")
+    @RequestMapping("/api/catalog-item/nameDesc")
     @GetMapping
-    public Iterable<Product> getAllCatalogItemByCategoryId() {
-        return catalogItemService.getAllCatalogItemByCategoryId();
+    public Iterable<Product> getAllCatalogItemByNameDesc()
+    {
+        return catalogItemService.getAllCatalogItemByNameDesc();
     }
+
+    @RequestMapping("/api/catalog-item/categoryAsc")
+    @GetMapping
+    public Iterable<Product> getAllCatalogItemByCategoryIdAsc() {
+        return catalogItemService.getAllCatalogItemByCategoryIdAsc();
+    }
+
+    @RequestMapping("/api/catalog-item/categoryDesc")
+    @GetMapping
+    public Iterable<Product> getAllCatalogItemByCategoryIdDesc() {
+        return catalogItemService.getAllCatalogItemByCategoryIdDesc();
+    }
+
+    @RequestMapping("/api/catalog-item/priceAsc")
+    @GetMapping
+    public Iterable<Product> getAllCatalogItemByPriceAsc() {
+        return catalogItemService.getAllCatalogItemByPriceAsc();
+    }
+
+    @RequestMapping("/api/catalog-item/priceDesc")
+    @GetMapping
+    public Iterable<Product> getAllCatalogItemByPriceDesc() {
+        return catalogItemService.getAllCatalogItemByPriceDesc();
+    }
+
+
 
     @RequestMapping("/api/catalog-item/top")
     @GetMapping
     public Iterable<Product> getAllCatalogItemBySubscriptionCount() {
-        return catalogItemService.getAllCatalogItemBySubscriptionCount();
+        Iterable<Product> a = catalogItemService.getAllCatalogItemBySubscriptionCount();
+        return a;
     }
 }
 

@@ -1,9 +1,13 @@
-com\netcracker\edu\fapi\service\impl\CatalogItemDataServiceImpl.class
+com\netcracker\edu\fapi\converter\ProductAndCategory.class
+com\netcracker\edu\fapi\controller\LoginControler.class
 com\netcracker\edu\fapi\service\CatalogItemDataService.class
 com\netcracker\edu\fapi\service\CategoryDataService.class
 com\netcracker\edu\fapi\controller\CatalogItemController.class
 com\netcracker\edu\fapi\FapiApplication.class
-com\netcracker\edu\fapi\models\ProductViewModel.class
+com\netcracker\edu\fapi\security\config\SecurityConfig.class
 com\netcracker\edu\fapi\service\impl\CategoryDataServiceImpl.class
 com\netcracker\edu\fapi\models\CategoryViewModel.class
+com\netcracker\edu\fapi\service\impl\CatalogItemDataServiceImpl.class
+com\netcracker\edu\fapi\models\ProductViewModel.class
+com\netcracker\edu\fapi\models\ConvertProductViewModel.class
 com\netcracker\edu\fapi\controller\CategoryController.class
