@@ -11,5 +11,5 @@ export class Category {
   }
 }
 
-export class CatalogItemStr {
+export class CategoryStr {
 }

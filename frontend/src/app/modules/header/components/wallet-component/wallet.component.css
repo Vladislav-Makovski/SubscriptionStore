@@ -6,7 +6,8 @@ legend{
 }
 
 label{
-  margin-left: 5%;
+
+  margin-left: 20%;
   color: white;
   font-family: 'Exo 2', sans-serif;
 }
@@ -31,7 +32,7 @@ form{
 
 input[type=number]{
   width: 90%;
-  padding: 10px;
+  padding: 5px;
   margin-left: 5%;
   margin-right: 5%;
   display: inline-block;

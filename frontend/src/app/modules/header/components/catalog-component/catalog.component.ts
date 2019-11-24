@@ -1,8 +1,7 @@
-import {ChangeDetectorRef, Component, OnInit, TemplateRef} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {CatalogItem} from "../../models/catalog-item";
 import {Subscription} from "rxjs/internal/Subscription";
 import {Ng4LoadingSpinnerService} from "ng4-loading-spinner";
-import {CategoryService} from "../../../../services/category.service";
 import {CatalogService} from "../../../../services/catalog.service";
 
 @Component({
@@ -21,9 +20,7 @@ export class CatalogComponent implements OnInit{
   // public items$ = this.catalogItemService.getCatalogItemByName();
 
   constructor(private catalogItemService: CatalogService,
-              private categoryService: CategoryService,
-              private loadingService: Ng4LoadingSpinnerService,
-              private cdr: ChangeDetectorRef) {
+              private loadingService: Ng4LoadingSpinnerService) {
     }
 
   ngOnInit(){
@@ -32,7 +29,7 @@ export class CatalogComponent implements OnInit{
     this.booleanForPrice = false;
     this.loadCatalogItemByNameAsc();
   }
-//desc asc
+
   private loadCatalogItemByNameAsc(): void {
     this.loadingService.show();
 
