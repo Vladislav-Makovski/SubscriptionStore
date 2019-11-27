@@ -1,9 +1,13 @@
-<form>
+<form [formGroup]="myFormWallet">
   <fieldset>
     <legend>Wallet</legend>
     <label type="text">Status: {{currentWallet.status}}</label>
     <label type = "text">Balance: {{currentWallet.balance}}</label>
-    <input type="number" >
-    <p><button class="blockbtn">Recharge</button><button class="blockbtn">Withdraw</button></p>
+    <input type="number" required formControlName="total">
+    <div class="alert alert-danger"
+         *ngIf="myFormWallet.controls['total'].invalid && myFormWallet.controls['total'].touched">
+      incorrect number
+    </div>
+    <p><button class="blockbtn"  [disabled]="myFormWallet.invalid" (click)="walletRecharge()">Recharge</button><button class="blockbtn" [disabled]="myFormWallet.invalid" onclick="walletWithdraw()">Withdraw</button></p>
   </fieldset>
 </form>

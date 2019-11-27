@@ -4,8 +4,13 @@ import com.netcracker.edu.fapi.models.StatusWalletViewModel;
 import com.netcracker.edu.fapi.models.WalletViewModel;
 import com.netcracker.edu.fapi.service.WalletDataService;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.util.UriComponentsBuilder;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -27,5 +32,11 @@ public class WalletDataServiceImpl implements WalletDataService{
     public WalletViewModel getUserWalletById(Integer id) {
         RestTemplate restTemplate = new RestTemplate();
         return restTemplate.getForObject(backendServerUrl + "/api/wallet/" + id, WalletViewModel.class);
+    }
+
+    @Override
+    public WalletViewModel saveBalanceRecharge(WalletViewModel wallet){
+        RestTemplate restTemplate = new RestTemplate();
+        return restTemplate.postForEntity(backendServerUrl + "/api/recharge", wallet, WalletViewModel.class).getBody();
     }
 }

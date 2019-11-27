@@ -22,4 +22,9 @@ public class WalletServiceImpl implements WalletService{
     public Optional<Wallet> getWalletById(Integer id){
         return walletRepository.findById(id);
     }
+
+    @Override
+    public Wallet saveBalanceRecharge(Wallet wallet){
+        return walletRepository.save(wallet);
+    }
 }

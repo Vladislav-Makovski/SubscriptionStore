@@ -1,8 +1,8 @@
 package com.netcracker.edu.backend.entity;
 
 import javax.persistence.*;
+import java.sql.Date;
 import java.sql.Timestamp;
-import java.util.Objects;
 
 @Entity
 public class Product {
@@ -12,7 +12,7 @@ public class Product {
     private String name;
     private int cost;
     private int subscriptionCount;
-    private Timestamp date;
+    private Date date;
     private int statusProductId;
     private int organizationId;
     private int categoryId;
@@ -60,11 +60,11 @@ public class Product {
 
     @Basic
     @Column(name = "date")
-    public Timestamp getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(Timestamp date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 

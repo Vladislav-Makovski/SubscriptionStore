@@ -7,4 +7,5 @@ import java.util.List;
 public interface WalletDataService {
     List<StatusWalletViewModel> getWalletStatus();
     WalletViewModel getUserWalletById(Integer id);
+    WalletViewModel saveBalanceRecharge(WalletViewModel wallet);
 }

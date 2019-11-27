@@ -13,4 +13,8 @@ export class WalletService {
     return this.http.get<Wallet>('/api/walletById/' + id);
   }
 
+  saveBalanceRecharge(wallet: Wallet): Observable<Wallet> {
+
+    return this.http.post<Wallet>('/api/recharge',wallet);
+  }
 }

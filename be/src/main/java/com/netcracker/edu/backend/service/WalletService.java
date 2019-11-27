@@ -7,5 +7,6 @@ import java.util.Optional;
 public interface WalletService {
 
     Optional<Wallet> getWalletById(Integer id);
+    Wallet saveBalanceRecharge(Wallet wallet);
 
 }
