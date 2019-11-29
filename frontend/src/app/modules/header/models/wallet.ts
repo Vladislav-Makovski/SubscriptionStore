@@ -1,7 +1,7 @@
 export class Wallet {
   id: string;
   status: string;
-  balance: string;
+  balance: number;
 
   static cloneBase(wallet: Wallet): Wallet {
     const clonedWallet: Wallet = new Wallet();

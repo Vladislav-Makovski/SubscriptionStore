@@ -2,6 +2,7 @@ import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {Wallet} from "../modules/header/models/wallet";
+import {WalletUpdate} from "../modules/header/models/walletUpdate";
 
 @Injectable()
 export class WalletService {
@@ -13,8 +14,11 @@ export class WalletService {
     return this.http.get<Wallet>('/api/walletById/' + id);
   }
 
-  saveBalanceRecharge(wallet: Wallet): Observable<Wallet> {
+  saveBalanceRecharge(wallet: WalletUpdate): Observable<WalletUpdate> {
+    return this.http.post<WalletUpdate>('/api/recharge',wallet);
+  }
 
-    return this.http.post<Wallet>('/api/recharge',wallet);
+  saveBalanceWithdraw(wallet: WalletUpdate): Observable<WalletUpdate>{
+    return this.http.post<WalletUpdate>('/api/withdraw',wallet)
   }
 }

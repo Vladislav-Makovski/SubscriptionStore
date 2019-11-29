@@ -8,17 +8,18 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/recharge/")
-public class UpdateWalletController {
+@RequestMapping("/api/wallet/")
+public class WalletControllerRecharge {
+
     private WalletService walletService;
 
     @Autowired
-    public UpdateWalletController(WalletService walletService) {
+    public WalletControllerRecharge(WalletService walletService) {
         this.walletService = walletService;
     }
 
-    @RequestMapping(method = RequestMethod.POST)
-    public Wallet saveBillingAccount(@RequestBody Wallet wallet) {
+    @RequestMapping(value = "recharge",method = RequestMethod.POST)
+    public Wallet saveBalanceRecharge(@RequestBody Wallet wallet) {
         return walletService.saveBalanceRecharge(wallet);
     }
 }

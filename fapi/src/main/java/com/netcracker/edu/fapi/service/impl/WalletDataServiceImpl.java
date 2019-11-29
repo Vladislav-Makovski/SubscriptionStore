@@ -37,6 +37,12 @@ public class WalletDataServiceImpl implements WalletDataService{
     @Override
     public WalletViewModel saveBalanceRecharge(WalletViewModel wallet){
         RestTemplate restTemplate = new RestTemplate();
-        return restTemplate.postForEntity(backendServerUrl + "/api/recharge", wallet, WalletViewModel.class).getBody();
+        return restTemplate.postForEntity(backendServerUrl + "/api/wallet/recharge", wallet, WalletViewModel.class).getBody();
+    }
+
+    @Override
+    public  WalletViewModel saveBalanceWithdraw(WalletViewModel wallet){
+        RestTemplate restTemplate = new RestTemplate();
+        return  restTemplate.postForEntity(backendServerUrl + "/api/wallet/withdraw",wallet, WalletViewModel.class).getBody();
     }
 }

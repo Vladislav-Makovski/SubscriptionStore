@@ -5,6 +5,7 @@ import {WalletService} from "../../../../services/wallet.service";
 import {Wallet} from "../../models/wallet";
 import {Subscription} from "rxjs/internal/Subscription";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {WalletUpdate} from "../../models/walletUpdate";
 
 @Component({
   selector :'wallet',
@@ -17,7 +18,7 @@ export class WalletComponent implements OnInit{
   public currentWallet: Wallet = new Wallet();
   private subscriptions: Subscription[] = [];
   myFormWallet: FormGroup;
-  public a:number;
+  rechargeWallet : WalletUpdate = new WalletUpdate();
 
   constructor(private walletService: WalletService,
               private loadingService: Ng4LoadingSpinnerService) {
@@ -35,9 +36,7 @@ export class WalletComponent implements OnInit{
 
 
     this.subscriptions.push(this.walletService.getWalletById(walletUserId).subscribe(accounts => {
-
       this.currentWallet = accounts as Wallet;
-      console.log(this.currentWallet);
       this.loadingService.hide();
     }));
   }
@@ -48,21 +47,34 @@ export class WalletComponent implements OnInit{
   }
 
    walletRecharge():void{
-     this.currentWallet.balance+=this.myFormWallet.controls['total'].value;
+
+     this.rechargeWallet.id = this.currentWallet.id;
+     this.rechargeWallet.statusWalletId = "1";
+      this.rechargeWallet.balance =  this.currentWallet.balance + this.myFormWallet.controls['total'].value;
+     console.log(this.rechargeWallet);
      this.loadingService.show();
-    this.subscriptions.push(this.walletService.saveBalanceRecharge(this.currentWallet).subscribe(accounts => {
-      this.currentWallet = accounts as Wallet;
-      console.log(this.currentWallet.balance);
+    this.subscriptions.push(this.walletService.saveBalanceRecharge(this.rechargeWallet).subscribe(accounts => {
+      this.rechargeWallet = accounts as WalletUpdate;
+      this.currentWallet.balance = this.rechargeWallet.balance;
       this.loadingService.hide();
 
     }));
 
   }
   walletWithdraw():void{
-    if(this.currentWallet.status != 'active'&& this.currentWallet.balance < this.myFormWallet.controls['total'].value){
+    if((this.currentWallet.status != 'active') && (this.currentWallet.balance < this.myFormWallet.controls['total'].value)){
       console.log('Error');
     }else{
+      this.rechargeWallet.id = this.currentWallet.id;
+      this.rechargeWallet.statusWalletId = "1";
+      this.rechargeWallet.balance =  this.currentWallet.balance - this.myFormWallet.controls['total'].value;
+      this.loadingService.show();
+      this.subscriptions.push(this.walletService.saveBalanceWithdraw(this.rechargeWallet).subscribe(accounts => {
+        this.rechargeWallet = accounts as WalletUpdate;
+        this.currentWallet.balance = this.rechargeWallet.balance;
+        this.loadingService.hide();
 
+      }));
     }
 
   }

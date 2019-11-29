@@ -8,6 +8,6 @@
          *ngIf="myFormWallet.controls['total'].invalid && myFormWallet.controls['total'].touched">
       incorrect number
     </div>
-    <p><button class="blockbtn"  [disabled]="myFormWallet.invalid" (click)="walletRecharge()">Recharge</button><button class="blockbtn" [disabled]="myFormWallet.invalid" onclick="walletWithdraw()">Withdraw</button></p>
+    <p><button class="blockbtn"  [disabled]="myFormWallet.invalid" (click)="walletRecharge()">Recharge</button><button class="blockbtn" [disabled]="myFormWallet.invalid" (click) ="walletWithdraw()">Withdraw</button></p>
   </fieldset>
 </form>

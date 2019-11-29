@@ -17,7 +17,6 @@ export class CatalogComponent implements OnInit{
   public catalogItem: CatalogItem[] = [];
   private subscriptions: Subscription[] = [];
 
-  // public items$ = this.catalogItemService.getCatalogItemByName();
 
   constructor(private catalogItemService: CatalogService,
               private loadingService: Ng4LoadingSpinnerService) {

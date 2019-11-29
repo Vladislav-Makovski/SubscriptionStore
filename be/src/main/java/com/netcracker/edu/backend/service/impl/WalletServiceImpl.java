@@ -27,4 +27,8 @@ public class WalletServiceImpl implements WalletService{
     public Wallet saveBalanceRecharge(Wallet wallet){
         return walletRepository.save(wallet);
     }
+    @Override
+    public Wallet saveBalanceWithdraw(Wallet wallet){
+        return walletRepository.save(wallet);
+    }
 }
