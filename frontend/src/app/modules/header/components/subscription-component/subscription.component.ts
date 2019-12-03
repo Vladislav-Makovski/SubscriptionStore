@@ -1,10 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {Subscription} from "rxjs/index";
 import {CustomerSubscription} from "../../models/customerSubscription";
-import {CatalogService} from "../../../../services/catalog.service";
 import {Ng4LoadingSpinnerService} from "ng4-loading-spinner";
 import {CustomerSubscriptionService} from "../../../../services/customerSubscription.service";
-import {UserSignature} from "../../../../UserInformation/user-signature";
+import {DefultUser} from "../../../../UserInformation/defult-user";
 
 @Component({
   selector :'subscription-page',
@@ -13,7 +12,7 @@ import {UserSignature} from "../../../../UserInformation/user-signature";
 })
 export class SubscriptionComponent implements OnInit{
 
-  public currentUser: UserSignature = new UserSignature();
+  public currentUser: DefultUser = new DefultUser();
   public mySubscription: CustomerSubscription[] = [];
   private subscriptions: Subscription[] = [];
 

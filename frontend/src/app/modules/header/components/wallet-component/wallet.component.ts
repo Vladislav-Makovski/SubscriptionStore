@@ -41,11 +41,6 @@ export class WalletComponent implements OnInit{
     }));
   }
 
-
-  ngOnDestroy(): void {
-    this.subscriptions.forEach(subscription => subscription.unsubscribe());
-  }
-
    walletRecharge():void{
 
      this.rechargeWallet.id = this.currentWallet.id;
@@ -77,6 +72,10 @@ export class WalletComponent implements OnInit{
       }));
     }
 
+  }
+
+  ngOnDestroy(): void {
+    this.subscriptions.forEach(subscription => subscription.unsubscribe());
   }
 
 }

@@ -1,4 +1,5 @@
 package com.netcracker.edu.fapi.service;
+import com.netcracker.edu.fapi.models.NewWalletViewModel;
 import com.netcracker.edu.fapi.models.StatusWalletViewModel;
 import com.netcracker.edu.fapi.models.WalletViewModel;
 
@@ -9,4 +10,5 @@ public interface WalletDataService {
     WalletViewModel getUserWalletById(Integer id);
     WalletViewModel saveBalanceRecharge(WalletViewModel wallet);
     WalletViewModel saveBalanceWithdraw(WalletViewModel wallet);
+    WalletViewModel saveNewWallet(WalletViewModel wallet);
 }

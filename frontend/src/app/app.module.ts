@@ -25,6 +25,7 @@ import {BsModalService, ModalModule} from "ngx-bootstrap";
 import {CategoryService} from "./services/category.service";
 import {WalletService} from "./services/wallet.service";
 import {CustomerSubscriptionService} from "./services/customerSubscription.service";
+import {RegistrationService} from "./services/registration.service";
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -75,7 +76,7 @@ const appRoutes: Routes = [
 
   bootstrap: [AppComponent],
   exports: [],
-  providers: [CatalogService,CategoryService,HttpClient,BsModalService,WalletService,CustomerSubscriptionService]
+  providers: [CatalogService,CategoryService,HttpClient,BsModalService,WalletService,CustomerSubscriptionService,RegistrationService]
 })
 
 export class AppModule {

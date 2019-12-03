@@ -24,4 +24,9 @@ public class WalletController {
     public Optional<Wallet> getWalletById(@PathVariable(name = "id") Integer id) {
         return walletService.getWalletById(id);
     }
+
+    @RequestMapping(value = "new",method = RequestMethod.POST)
+    public Wallet saveNewWallet(@RequestBody Wallet wallet) {
+        return walletService.saveNewWallet(wallet);
+    }
 }

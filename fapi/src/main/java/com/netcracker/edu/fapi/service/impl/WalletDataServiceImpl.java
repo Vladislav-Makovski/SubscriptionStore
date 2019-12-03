@@ -1,5 +1,6 @@
 package com.netcracker.edu.fapi.service.impl;
 
+import com.netcracker.edu.fapi.models.NewWalletViewModel;
 import com.netcracker.edu.fapi.models.StatusWalletViewModel;
 import com.netcracker.edu.fapi.models.WalletViewModel;
 import com.netcracker.edu.fapi.service.WalletDataService;
@@ -44,5 +45,12 @@ public class WalletDataServiceImpl implements WalletDataService{
     public  WalletViewModel saveBalanceWithdraw(WalletViewModel wallet){
         RestTemplate restTemplate = new RestTemplate();
         return  restTemplate.postForEntity(backendServerUrl + "/api/wallet/withdraw",wallet, WalletViewModel.class).getBody();
+    }
+
+    @Override
+    public WalletViewModel saveNewWallet(WalletViewModel wallet) {
+        RestTemplate restTemplate = new RestTemplate();
+        return  restTemplate.postForEntity(backendServerUrl + "/api/wallet/new",wallet, WalletViewModel.class).getBody();
+
     }
 }

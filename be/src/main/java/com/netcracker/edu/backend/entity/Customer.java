@@ -7,11 +7,12 @@ public class Customer {
     private int id;
     private String firstName;
     private String surname;
+    private Integer walletId;
     private int userDetailsId;
-    private Wallet walletByWalletId;
 
     @Id
     @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int getId() {
         return id;
     }
@@ -21,7 +22,7 @@ public class Customer {
     }
 
     @Basic
-    @Column(name = "firstName")
+    @Column(name = "firstname")
     public String getFirstName() {
         return firstName;
     }
@@ -38,6 +39,16 @@ public class Customer {
 
     public void setSurname(String surname) {
         this.surname = surname;
+    }
+
+    @Basic
+    @Column(name = "wallet_id")
+    public Integer getWalletId() {
+        return walletId;
+    }
+
+    public void setWalletId(Integer walletId) {
+        this.walletId = walletId;
     }
 
     @Basic
@@ -61,6 +72,7 @@ public class Customer {
         if (userDetailsId != customer.userDetailsId) return false;
         if (firstName != null ? !firstName.equals(customer.firstName) : customer.firstName != null) return false;
         if (surname != null ? !surname.equals(customer.surname) : customer.surname != null) return false;
+        if (walletId != null ? !walletId.equals(customer.walletId) : customer.walletId != null) return false;
 
         return true;
     }
@@ -70,17 +82,8 @@ public class Customer {
         int result = id;
         result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
         result = 31 * result + (surname != null ? surname.hashCode() : 0);
+        result = 31 * result + (walletId != null ? walletId.hashCode() : 0);
         result = 31 * result + userDetailsId;
         return result;
-    }
-
-    @ManyToOne
-    @JoinColumn(name = "wallet_id", referencedColumnName = "id")
-    public Wallet getWalletByWalletId() {
-        return walletByWalletId;
-    }
-
-    public void setWalletByWalletId(Wallet walletByWalletId) {
-        this.walletByWalletId = walletByWalletId;
     }
 }
