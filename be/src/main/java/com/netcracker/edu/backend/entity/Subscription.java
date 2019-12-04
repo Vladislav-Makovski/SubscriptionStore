@@ -4,6 +4,7 @@ import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.sql.Date;
 
 @Entity
 public class Subscription {
@@ -11,6 +12,7 @@ public class Subscription {
     private int userId;
     private int productId;
     private int statusSubId;
+    private Date dateSub;
 
     @Id
     @Column(name = "id")
@@ -52,6 +54,16 @@ public class Subscription {
         this.statusSubId = statusSubId;
     }
 
+    @Basic
+    @Column(name = "date_sub")
+    public Date getDateSub() {
+        return dateSub;
+    }
+
+    public void setDateSub(Date dateSub) {
+        this.dateSub = dateSub;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -63,6 +75,7 @@ public class Subscription {
         if (userId != that.userId) return false;
         if (productId != that.productId) return false;
         if (statusSubId != that.statusSubId) return false;
+        if (dateSub != null ? !dateSub.equals(that.dateSub) : that.dateSub != null) return false;
 
         return true;
     }
@@ -73,6 +86,7 @@ public class Subscription {
         result = 31 * result + userId;
         result = 31 * result + productId;
         result = 31 * result + statusSubId;
+        result = 31 * result + (dateSub != null ? dateSub.hashCode() : 0);
         return result;
     }
 }

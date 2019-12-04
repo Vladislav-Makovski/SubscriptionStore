@@ -1,9 +1,10 @@
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\ConvertSubscriptionViewModel.java
+C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\AdvertiserViewModel.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\service\impl\UserDetailsDataServiceImpl.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\converter\SubscriptionConverter.java
-C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\NewWalletViewModel.java
+C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\RegistrationAdvertiserViewModel.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\UserSignatureViewModel.java
-C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\NewCustomerViewModel.java
+C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\service\impl\AdvertiserDataServiceImpl.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\controller\RegistrationController.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\converter\WalletAndStatus.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\RegistrationCustomerViewModel.java
@@ -15,6 +16,7 @@ C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\servi
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\service\impl\CustomerDataServiceImpl.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\controller\WalletControllerWithdraw.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\ConverterStatusWallet.java
+C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\service\AdvertiserDataService.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\SubscriptionViewModel.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\ProductViewModel.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\ConvertProductViewModel.java
@@ -23,7 +25,6 @@ C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\servi
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\StatusWalletViewModel.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\security\config\SecurityConfig.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\converter\ProductAndCategory.java
-C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\NewUserDetailsViewModel.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\CategoryViewModel.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\CustomerViewModel.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\service\impl\SubscriptionDataServiceImpl.java

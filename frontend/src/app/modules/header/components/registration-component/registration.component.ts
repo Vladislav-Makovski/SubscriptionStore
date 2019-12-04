@@ -1,11 +1,11 @@
 import {Component, OnInit} from '@angular/core';
 import {FormGroup, FormControl, Validators} from '@angular/forms';
-import {RegistrationModel} from "../../models/registration-model";
 import {Subscription} from "rxjs/index";
 import {Ng4LoadingSpinnerService} from "ng4-loading-spinner";
-import {WalletService} from "../../../../services/wallet.service";
 import {RegistrationService} from "../../../../services/registration.service";
 import {UserSignature} from "../../../../UserInformation/user-signature";
+import {RegistrationCustomer} from "../../models/registration-customer";
+import {RegistrationAdvertiser} from "../../models/registration-advertiser";
 
 @Component({
   selector: 'my-registration',
@@ -17,9 +17,10 @@ export class RegistrationComponent implements OnInit {
 
   myFormUser: FormGroup;
   public userRegistrationTypes = ["Customer", "Advertiser"];
-  public user :UserSignature = new UserSignature();
+  public user: UserSignature = new UserSignature();
   public currentRegistrationType: string = this.userRegistrationTypes[0];
-  public  userInformation: RegistrationModel = new RegistrationModel();
+  public customerInformation: RegistrationCustomer = new RegistrationCustomer();
+  public advertiserInformation: RegistrationAdvertiser = new RegistrationAdvertiser();
   private subscriptions: Subscription[] = [];
 
   constructor(private registrationService: RegistrationService,
@@ -39,16 +40,29 @@ export class RegistrationComponent implements OnInit {
 
   submitUser():void {
     if(this.currentRegistrationType == this.userRegistrationTypes[0]){
-      this.userInformation.username = this.myFormUser.controls['nickname'].value;
-      this.userInformation.password = this.myFormUser.controls['password'].value;
-      this.userInformation.email = this.myFormUser.controls['email'].value;
-      this.userInformation.userRoleId = "1";
-      this.userInformation.firstName = this.myFormUser.controls['name'].value;
-      this.userInformation.surname = this.myFormUser.controls['surname'].value;
-      this.userInformation.balance = "0";
-      this.userInformation.statusWalletId = "1";
+      this.customerInformation.username = this.myFormUser.controls['nickname'].value;
+      this.customerInformation.password = this.myFormUser.controls['password'].value;
+      this.customerInformation.email = this.myFormUser.controls['email'].value;
+      this.customerInformation.userRoleId = "1";
+      this.customerInformation.firstName = this.myFormUser.controls['name'].value;
+      this.customerInformation.surname = this.myFormUser.controls['surname'].value;
+      this.customerInformation.balance = "0";
+      this.customerInformation.statusWalletId = "1";
       this.loadingService.show();
-      this.subscriptions.push(this.registrationService.saveNewCustomer(this.userInformation).subscribe(accounts => {
+      this.subscriptions.push(this.registrationService.saveNewCustomer(this.customerInformation).subscribe(accounts => {
+        this.user = accounts as UserSignature ;
+        console.log(this.user);
+        this.loadingService.hide();
+      }));
+    }else{
+      this.advertiserInformation.username = this.myFormUser.controls['nickname'].value;
+      this.advertiserInformation.password = this.myFormUser.controls['password'].value;
+      this.advertiserInformation.email = this.myFormUser.controls['email'].value;
+      this.advertiserInformation.userRoleId = "2";
+      this.advertiserInformation.name = this.myFormUser.controls['name'].value;
+      this.advertiserInformation.balance = "0";
+      this.advertiserInformation.statusWalletId = "1";
+      this.subscriptions.push(this.registrationService.saveNewAdvertiser(this.advertiserInformation).subscribe(accounts => {
         this.user = accounts as UserSignature ;
         console.log(this.user);
         this.loadingService.hide();

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/new/userDetails")
+@RequestMapping("/api/new/")
 public class UserDetailsController {
 
     private UserDetailsService userDetailsService;
@@ -19,8 +19,13 @@ public class UserDetailsController {
         this.userDetailsService = userDetailsService;
     }
 
-    @RequestMapping(method = RequestMethod.POST)
+    @RequestMapping(value = "customer/userDetails",method = RequestMethod.POST)
     public UserDetails saveUserDetails(@RequestBody UserDetails userDetails) {
+        return userDetailsService.saveUserDetails(userDetails);
+    }
+
+    @RequestMapping(value = "advertiser/userDetails",method = RequestMethod.POST)
+    public UserDetails saveAdvertiserDetails(@RequestBody UserDetails userDetails) {
         return userDetailsService.saveUserDetails(userDetails);
     }
 

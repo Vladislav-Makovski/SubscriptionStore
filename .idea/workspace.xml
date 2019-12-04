@@ -5,27 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9936576c-781c-45c6-bde6-8a87560a0cdf" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/Customer.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/converter/SubscriptionConverter.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/converter/SubscriptionConverter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/WalletDataService.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/WalletDataService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/impl/WalletDataServiceImpl.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/impl/WalletDataServiceImpl.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/Subscription.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/NewCustomerViewModel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/NewUserDetailsViewModel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/NewWalletViewModel.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/edu-parent.iml" afterPath="$PROJECT_DIR$/vladislav-makovski.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/models/registration-model.ts" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/models/registration-customer.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/fapi-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/fapi/target/fapi-0.0.1-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/9d16340e-964b-4e6d-874e-c952925f392c.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/9d16340e-964b-4e6d-874e-c952925f392c.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/UserDetailsController.java" afterPath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/UserDetailsController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/WalletController.java" afterPath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/WalletController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/UserDetails.java" afterPath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/UserDetails.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/Wallet.java" afterPath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/Wallet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/WalletService.java" afterPath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/WalletService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/WalletServiceImpl.java" afterPath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/WalletServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/Organization.java" afterPath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/Organization.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/RegistrationController.java" afterPath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/RegistrationController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/CustomerDataService.java" afterPath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/CustomerDataService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/UserDetailsDataService.java" afterPath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/UserDetailsDataService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/WalletDataService.java" afterPath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/WalletDataService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/CustomerDataServiceImpl.java" afterPath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/CustomerDataServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/UserDetailsDataServiceImpl.java" afterPath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/UserDetailsDataServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/WalletDataServiceImpl.java" afterPath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/WalletDataServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/fapi/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/fapi/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/UserInformation/user-signature.ts" afterPath="$PROJECT_DIR$/frontend/src/app/UserInformation/user-signature.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/registration-component/registration.component.ts" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/registration-component/registration.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/subscription-component/subscription.component.ts" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/subscription-component/subscription.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/wallet-component/wallet.component.ts" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/wallet-component/wallet.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/services/registration.service.ts" afterPath="$PROJECT_DIR$/frontend/src/app/services/registration.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/be/target/" />
@@ -70,26 +74,83 @@
     </expand>
     <select />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="edu-parent" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/CustomerController.java">
+      <file leaf-file-name="AdvertiserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/AdvertiserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#933#934#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/CustomerService.java">
+      <file leaf-file-name="CategoryDataServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/CategoryDataServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="68">
+              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdvertiserDataServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/AdvertiserDataServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="88" lean-forward="true" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="88" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WalletDataServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/WalletDataServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="51" column="79" lean-forward="true" selection-start-line="51" selection-start-column="79" selection-end-line="51" selection-end-column="87" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WalletController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/WalletController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="32" column="73" lean-forward="true" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="73" />
+              <folding>
+                <element signature="e#1155#1156#0" expanded="true" />
+                <element signature="e#1213#1214#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDetailsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/UserDetailsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDetailsService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/UserDetailsService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -98,81 +159,28 @@
       <file leaf-file-name="UserDetailsServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/UserDetailsServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-              <folding>
-                <element signature="e#766#767#0" expanded="true" />
-                <element signature="e#821#822#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomerServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/CustomerServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StatusSub.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/StatusSub.java">
+      <file leaf-file-name="WalletAndStatus.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/converter/WalletAndStatus.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StatusWallet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/StatusWallet.java">
+      <file leaf-file-name="UserDetailsDataServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/UserDetailsDataServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Wallet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/Wallet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Customer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/Customer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InvocableHandlerMethod.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServletInvocableHandlerMethod.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.9.RELEASE/spring-webmvc-5.0.9.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+            <state relative-caret-position="214">
+              <caret line="24" column="79" lean-forward="false" selection-start-line="24" selection-start-column="79" selection-end-line="24" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -185,9 +193,9 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="TypeScript File" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -200,7 +208,11 @@
       <find>/api/recharge</find>
       <find>first_</find>
       <find>first_name</find>
+      <find>edu-parent</find>
     </findStrings>
+    <dirStrings>
+      <dir>C:\Netcracker\SubscriptionStore</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -213,48 +225,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/src/app/services/customerSubscription.service.ts" />
-        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/SubscriptionDataService.java" />
-        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/WalletControllerWithdraw.java" />
-        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/WalletControllerRecharge.java" />
-        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/SubscriptionService.java" />
-        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/repository/SubscriptionRepository.java" />
-        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/SubscriptionServiceImpl.java" />
-        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/converter/SubscriptionConverter.java" />
-        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/SubscriptionDataServiceImpl.java" />
-        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/SubscriptionController.java" />
-        <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/subscription-component/subscription.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/registration-component/registration.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/modules/header/models/registration-model.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/services/registration.service.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/wallet-component/wallet.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/registration-component/registration.component.ts" />
-        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/RegistrationCustomerViewModel.java" />
-        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/RegistrationDataService.java" />
         <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/RegistrationDataServiceImpl.java" />
         <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/NewWalletViewModel.java" />
         <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/NewUserDetailsViewModel.java" />
         <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/UserDetailsViewModel.java" />
-        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/CustomerDataService.java" />
         <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/WalletService.java" />
         <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/WalletServiceImpl.java" />
         <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/repository/UserDetailsRepository.java" />
         <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/UserDetailsService.java" />
-        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/UserDetailsController.java" />
-        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/WalletController.java" />
-        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/WalletDataService.java" />
-        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/WalletDataServiceImpl.java" />
-        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/UserDetailsDataServiceImpl.java" />
-        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/UserDetailsDataService.java" />
         <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/repository/CustomerRepository.java" />
         <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/CustomerService.java" />
         <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/UserDetailsServiceImpl.java" />
         <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/NewCustomerViewModel.java" />
         <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/CustomerViewModel.java" />
         <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/UserSignatureViewModel.java" />
-        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/RegistrationController.java" />
-        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/CustomerDataServiceImpl.java" />
         <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/CustomerController.java" />
         <option value="$PROJECT_DIR$/frontend/src/app/UserInformation/defult-user.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/UserInformation/user-signature.ts" />
@@ -264,6 +248,34 @@
         <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/UserDetails.java" />
         <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/CustomerServiceImpl.java" />
         <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/Customer.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/wallet-component/wallet.component.ts" />
+        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/repository/SubscriptionRepository.java" />
+        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/SubscriptionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/SubscriptionService.java" />
+        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/SubscriptionController.java" />
+        <option value="$PROJECT_DIR$/frontend/src/app/modules/header/models/registration-advertiser.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/modules/header/models/registration-customer.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/services/registration.service.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/registration-component/registration.component.ts" />
+        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/RegistrationAdvertiserViewModel.java" />
+        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/CustomerDataService.java" />
+        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/CustomerDataServiceImpl.java" />
+        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/WalletDataService.java" />
+        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/UserDetailsDataService.java" />
+        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/AdvertiserViewModel.java" />
+        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/AdvertiserDataService.java" />
+        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/AdvertiserDataServiceImpl.java" />
+        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/RegistrationController.java" />
+        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/Organization.java" />
+        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/repository/AdvertiserRepository.java" />
+        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/AdvertiserService.java" />
+        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/AdvertiserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/AdvertiserController.java" />
+        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/WalletDataServiceImpl.java" />
+        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/UserDetailsDataServiceImpl.java" />
+        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/UserDetailsController.java" />
+        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/WalletController.java" />
       </list>
     </option>
   </component>
@@ -297,20 +309,20 @@
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="edu-parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="fapi" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="edu-parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="fapi" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="fapi" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="vladislav-makovski" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="fapi" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="vladislav-makovski" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
@@ -361,9 +373,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -587,60 +596,6 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="header" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SubscriptionStore" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="header" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="header-site" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SubscriptionStore" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="header" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="registration-component" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SubscriptionStore" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="header" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="subscription-component" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SubscriptionStore" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="header" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="wallet-component" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SubscriptionStore" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="header" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -659,139 +614,13 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="UserInformation" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.34" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.34" type="70bed36:NamedLibraryElementNode" />
-              <item name="tomcat-embed-core-8.5.34.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.34" type="70bed36:NamedLibraryElementNode" />
-              <item name="tomcat-embed-core-8.5.34.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.34" type="70bed36:NamedLibraryElementNode" />
-              <item name="tomcat-embed-core-8.5.34.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
-              <item name="catalina" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.34" type="70bed36:NamedLibraryElementNode" />
-              <item name="tomcat-embed-core-8.5.34.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="apache" type="462c0819:PsiDirectoryNode" />
-              <item name="catalina" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.0.9.RELEASE" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.0.9.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-web-5.0.9.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.0.9.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-web-5.0.9.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="springframework" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.0.9.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-web-5.0.9.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="springframework" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.0.9.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-web-5.0.9.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="springframework" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="method" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.0.9.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-web-5.0.9.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="springframework" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="method" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-webmvc:5.0.9.RELEASE" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-webmvc:5.0.9.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-webmvc-5.0.9.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-webmvc:5.0.9.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-webmvc-5.0.9.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-webmvc:5.0.9.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-webmvc-5.0.9.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-              <item name="mvc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-webmvc:5.0.9.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-webmvc-5.0.9.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-              <item name="mvc" type="462c0819:PsiDirectoryNode" />
-              <item name="method" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-webmvc:5.0.9.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-webmvc-5.0.9.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-              <item name="mvc" type="462c0819:PsiDirectoryNode" />
-              <item name="method" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -814,15 +643,15 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Netcracker\subStore\frontend\src\app\modules\header\components\home-component\img" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Netcracker\subStore\frontend\src\assets\img" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="com.netcracker.edu.backend.entity" />
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Netcracker\subStore\frontend\src\assets\img" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Netcracker\subStore\frontend\src\app\modules\header\components\home-component\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -896,6 +725,18 @@
       </option>
       <envs />
       <patterns />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="edu-parent" />
+      <envs />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
@@ -1036,11 +877,13 @@
       <workItem from="1575301301491" duration="3769000" />
       <workItem from="1575320390884" duration="3884000" />
       <workItem from="1575361446193" duration="17049000" />
+      <workItem from="1575393656926" duration="2094000" />
+      <workItem from="1575463276291" duration="9494000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="281364000" />
+    <option name="totallyTimeSpent" value="292952000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1073,55 +916,21 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3809524" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64455783" sideWeight="0.4924357" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3161876" sideWeight="0.483965" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3161876" sideWeight="0.51603496" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4744898" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34013605" sideWeight="0.5075643" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27987897" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4387755" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25113463" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.49144253" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39795917" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6258503" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3809524" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64455783" sideWeight="0.4924357" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40242058" sideWeight="0.4727891" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40242058" sideWeight="0.5272109" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3260212" sideWeight="0.14795919" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3260212" sideWeight="0.8520408" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4744898" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3207262" sideWeight="0.12414966" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4744898" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1136,196 +945,102 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE.jar!/org/springframework/web/filter/RequestContextFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE.jar!/org/springframework/web/filter/OncePerRequestFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.34/tomcat-embed-core-8.5.34.jar!/org/apache/catalina/core/StandardWrapperValve.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="204" column="0" lean-forward="false" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.34/tomcat-embed-core-8.5.34.jar!/org/apache/catalina/core/StandardContextValve.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.34/tomcat-embed-core-8.5.34.jar!/org/apache/catalina/authenticator/AuthenticatorBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="319" column="0" lean-forward="false" selection-start-line="319" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.34/tomcat-embed-core-8.5.34.jar!/org/apache/catalina/core/StandardHostValve.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="36" column="103" lean-forward="false" selection-start-line="36" selection-start-column="103" selection-end-line="36" selection-end-column="103" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.34/tomcat-embed-core-8.5.34.jar!/org/apache/catalina/valves/ErrorReportValve.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.34/tomcat-embed-core-8.5.34.jar!/org/apache/catalina/core/StandardEngineValve.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.34/tomcat-embed-core-8.5.34.jar!/org/apache/catalina/connector/CoyoteAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="412" column="0" lean-forward="false" selection-start-line="412" selection-start-column="0" selection-end-line="412" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.34/tomcat-embed-core-8.5.34.jar!/org/apache/coyote/http11/Http11Processor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="493" column="0" lean-forward="false" selection-start-line="493" selection-start-column="0" selection-end-line="493" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/UserDetailsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/StatusWalletController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/WalletService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/UserDetailsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/StatusWalletServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/ProductViewModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.module.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/models/walletUpdate.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/models/wallet.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/models/customerSubscription.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/models/category.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/models/catalog-item.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/UserInformation/user-signature.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/models/registration-customer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/registration-component/registration.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/registration-component/registration.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="65" column="44" lean-forward="true" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
           <folding>
-            <element signature="e#0#39#0" expanded="false" />
+            <element signature="e#0#48#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/services/registration.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        <state relative-caret-position="238">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/CustomerViewModel.java">
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/WalletControllerWithdraw.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding>
-            <element signature="e#654#655#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/UserInformation/user-signature.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/UserInformation/defult-user.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/subscription-component/subscription.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#48#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/registration-component/registration.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#48#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/header-site/header.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state relative-caret-position="102">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1338,42 +1053,192 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/UserDetailsViewModel.java">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/models/registration-advertiser.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="7" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.9.RELEASE/spring-webmvc-5.0.9.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/RegistrationCustomerViewModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="570" column="0" lean-forward="false" selection-start-line="570" selection-start-column="0" selection-end-line="570" selection-end-column="0" />
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.9.RELEASE/spring-webmvc-5.0.9.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/WalletControllerRecharge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="425" column="0" lean-forward="false" selection-start-line="425" selection-start-column="0" selection-end-line="425" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.9.RELEASE/spring-webmvc-5.0.9.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/services/wallet.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="502" column="0" lean-forward="false" selection-start-line="502" selection-start-column="0" selection-end-line="502" selection-end-column="0" />
+        <state relative-caret-position="357">
+          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/WalletDataService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="74" lean-forward="true" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.34/tomcat-embed-core-8.5.34.jar!/org/apache/catalina/core/ApplicationFilterChain.class">
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/UserDetailsDataService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="9" column="53" lean-forward="false" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/CustomerViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="10" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/CustomerDataService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="131" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="131" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/RegistrationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="49" column="22" lean-forward="true" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/SubscriptionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/RegistrationAdvertiserViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/AdvertiserViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding>
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#756#757#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#869#870#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <element signature="e#974#975#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/AdvertiserDataService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="38" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/SubscriptionDataServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/CustomerDataServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/CustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="25" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/Organization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/repository/WalletRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/repository/CategoryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1381,112 +1246,17 @@
     <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/repository/CustomerRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="7" column="60" lean-forward="false" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+          <caret line="7" column="74" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="74" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/CatalogItemController.java">
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/repository/AdvertiserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="50" lean-forward="true" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1296">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/StatusProduct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/Organization.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/UserRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/UserDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/WalletServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="e#1079#1080#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/CustomerDataService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/CustomerDataServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="114" lean-forward="false" selection-start-line="17" selection-start-column="114" selection-end-line="17" selection-end-column="114" />
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/RegistrationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="44" column="71" lean-forward="false" selection-start-line="44" selection-start-column="71" selection-end-line="44" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/UserDetailsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#821#822#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1494,75 +1264,129 @@
     <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/CustomerService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/StatusSub.java">
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/AdvertiserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/StatusWallet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/Wallet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/CustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#933#934#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.9.RELEASE/spring-webmvc-5.0.9.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/CustomerServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="22" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/CatalogItemServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/AdvertiserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/AdvertiserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/CategoryDataServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/AdvertiserDataServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="88" lean-forward="true" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/WalletDataServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="51" column="79" lean-forward="true" selection-start-line="51" selection-start-column="79" selection-end-line="51" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/UserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/UserDetailsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/converter/WalletAndStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/UserDetailsDataServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="24" column="79" lean-forward="false" selection-start-line="24" selection-start-column="79" selection-end-line="24" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/UserDetailsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/WalletController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="32" column="73" lean-forward="true" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="73" />
+          <folding>
+            <element signature="e#1155#1156#0" expanded="true" />
+            <element signature="e#1213#1214#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -6,6 +6,7 @@ import {Wallet} from "../../models/wallet";
 import {Subscription} from "rxjs/internal/Subscription";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {WalletUpdate} from "../../models/walletUpdate";
+import {DefultUser} from "../../../../UserInformation/defult-user";
 
 @Component({
   selector :'wallet',
@@ -14,7 +15,7 @@ import {WalletUpdate} from "../../models/walletUpdate";
 })
 export class WalletComponent implements OnInit{
 
-  public currentUser: UserSignature = new UserSignature();
+  public currentUser: DefultUser = new DefultUser();
   public currentWallet: Wallet = new Wallet();
   private subscriptions: Subscription[] = [];
   myFormWallet: FormGroup;

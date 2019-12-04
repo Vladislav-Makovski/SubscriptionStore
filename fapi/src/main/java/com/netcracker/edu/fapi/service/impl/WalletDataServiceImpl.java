@@ -1,17 +1,13 @@
 package com.netcracker.edu.fapi.service.impl;
 
-import com.netcracker.edu.fapi.models.NewWalletViewModel;
+import com.netcracker.edu.fapi.models.RegistrationAdvertiserViewModel;
+import com.netcracker.edu.fapi.models.RegistrationCustomerViewModel;
 import com.netcracker.edu.fapi.models.StatusWalletViewModel;
 import com.netcracker.edu.fapi.models.WalletViewModel;
 import com.netcracker.edu.fapi.service.WalletDataService;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.web.util.UriComponentsBuilder;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -48,9 +44,20 @@ public class WalletDataServiceImpl implements WalletDataService{
     }
 
     @Override
-    public WalletViewModel saveNewWallet(WalletViewModel wallet) {
+    public WalletViewModel saveNewWalletCustomer(RegistrationCustomerViewModel inf) {
+        WalletViewModel wallet = new WalletViewModel();
+        wallet.setBalance(inf.getBalance());
+        wallet.setStatusWalletId(inf.getStatusWalletId());
         RestTemplate restTemplate = new RestTemplate();
-        return  restTemplate.postForEntity(backendServerUrl + "/api/wallet/new",wallet, WalletViewModel.class).getBody();
+        return  restTemplate.postForEntity(backendServerUrl + "/api/wallet/new/customer",wallet, WalletViewModel.class).getBody();
+    }
 
+    @Override
+    public WalletViewModel saveNewWalletAdvertiser(RegistrationAdvertiserViewModel information) {
+        WalletViewModel wallet = new WalletViewModel();
+        wallet.setBalance(information.getBalance());
+        wallet.setStatusWalletId(information.getStatusWalletId());
+        RestTemplate restTemplate = new RestTemplate();
+        return  restTemplate.postForEntity(backendServerUrl + "/api/wallet/new/advertiser",wallet, WalletViewModel.class).getBody();
     }
 }

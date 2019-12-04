@@ -1,7 +1,7 @@
 package com.netcracker.edu.fapi.service.impl;
 
-import com.netcracker.edu.fapi.models.CustomerViewModel;
-import com.netcracker.edu.fapi.models.NewUserDetailsViewModel;
+import com.netcracker.edu.fapi.models.RegistrationAdvertiserViewModel;
+import com.netcracker.edu.fapi.models.RegistrationCustomerViewModel;
 import com.netcracker.edu.fapi.models.UserDetailsViewModel;
 import com.netcracker.edu.fapi.service.UserDetailsDataService;
 import org.springframework.beans.factory.annotation.Value;
@@ -15,8 +15,25 @@ public class UserDetailsDataServiceImpl implements UserDetailsDataService {
     private String backendServerUrl;
 
     @Override
-    public UserDetailsViewModel saveNewUserDetails(UserDetailsViewModel userDetails) {
+    public UserDetailsViewModel saveNewUserDetailsCustomer(RegistrationCustomerViewModel inf) {
+        UserDetailsViewModel userDetails = new UserDetailsViewModel();
+        userDetails.setEmail(inf.getEmail());
+        userDetails.setPassword(inf.getPassword());
+        userDetails.setUsername(inf.getUsername());
+        userDetails.setUserRoleId(inf.getUserRoleId());
         RestTemplate restTemplate = new RestTemplate();
-        return restTemplate.postForEntity(backendServerUrl + "/api/new/userDetails", userDetails, UserDetailsViewModel.class).getBody();
+        return restTemplate.postForEntity(backendServerUrl + "/api/new/customer/userDetails", userDetails, UserDetailsViewModel.class).getBody();
     }
+
+    @Override
+    public UserDetailsViewModel saveNewUserDetailsAdvertiser(RegistrationAdvertiserViewModel inf) {
+        UserDetailsViewModel userDetails = new UserDetailsViewModel();
+        userDetails.setEmail(inf.getEmail());
+        userDetails.setPassword(inf.getPassword());
+        userDetails.setUsername(inf.getUsername());
+        userDetails.setUserRoleId(inf.getUserRoleId());
+        RestTemplate restTemplate = new RestTemplate();
+        return restTemplate.postForEntity(backendServerUrl + "/api/new/advertiser/userDetails", userDetails, UserDetailsViewModel.class).getBody();
+    }
+
 }

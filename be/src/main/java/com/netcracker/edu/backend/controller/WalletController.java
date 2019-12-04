@@ -25,8 +25,13 @@ public class WalletController {
         return walletService.getWalletById(id);
     }
 
-    @RequestMapping(value = "new",method = RequestMethod.POST)
+    @RequestMapping(value = "new/customer",method = RequestMethod.POST)
     public Wallet saveNewWallet(@RequestBody Wallet wallet) {
+        return walletService.saveNewWallet(wallet);
+    }
+
+    @RequestMapping(value = "new/advertiser",method = RequestMethod.POST)
+    public Wallet saveNewWalletAdvertiser(@RequestBody Wallet wallet) {
         return walletService.saveNewWallet(wallet);
     }
 }
