@@ -6,10 +6,7 @@ import com.netcracker.edu.fapi.service.CategoryDataService;
 import com.netcracker.edu.fapi.service.SubscriptionDataService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -26,6 +23,11 @@ public class SubscriptionConverter {
 
     @Autowired
     private  CategoryDataService categoryDataService;
+
+    @RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
+    public void deleteSubscription(@PathVariable String id) {
+        subscriptionDataService.deleteSubscription(Integer.valueOf(id));
+    }
 
     @GetMapping
     @RequestMapping(value = "/{id}")

@@ -19,7 +19,7 @@
       <td scope="row">{{sub.name}}</td>
       <td>{{sub.category}}</td>
       <td>{{sub.cost}}</td>
-      <td><button class="unsubbtn">Unsubscribe</button></td>
+      <td><button class="unsubbtn" (click)="unsubscribe(sub.id)">Unsubscribe</button></td>
     </tr>
     </tbody>
   </table>

@@ -12,4 +12,9 @@ export class CustomerSubscriptionService{
   getSubscriptionByUserId(id: string): Observable<CustomerSubscription[]> {
     return this.http.get<CustomerSubscription[]>('/api/customerSubscription/' + id);
   }
+
+  deleteSubscription(subscriptionId: string): Observable<void> {
+    return this.http.delete<void>('/api/customerSubscription/delete/' + subscriptionId);
+  }
+
 }

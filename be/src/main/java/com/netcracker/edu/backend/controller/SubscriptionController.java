@@ -21,4 +21,9 @@ public class SubscriptionController {
     public Iterable<Subscription> SubscriptionByUserId(@PathVariable(name = "id") Integer id) {
         return subscriptionService.getSubscriptionByUserId(id);
     }
+
+    @RequestMapping(value = "delete/{id}", method = RequestMethod.DELETE)
+    public void deleteSubscription(@PathVariable(name = "id") Integer id) {
+       subscriptionService.deleteSubscription(id);
+    }
 }

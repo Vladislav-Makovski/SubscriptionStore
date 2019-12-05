@@ -4,6 +4,7 @@ import {CustomerSubscription} from "../../models/customerSubscription";
 import {Ng4LoadingSpinnerService} from "ng4-loading-spinner";
 import {CustomerSubscriptionService} from "../../../../services/customerSubscription.service";
 import {DefultUser} from "../../../../UserInformation/defult-user";
+import {forEach} from "@angular/router/src/utils/collection";
 
 @Component({
   selector :'subscription-page',
@@ -15,6 +16,7 @@ export class SubscriptionComponent implements OnInit{
   public currentUser: DefultUser = new DefultUser();
   public mySubscription: CustomerSubscription[] = [];
   private subscriptions: Subscription[] = [];
+  public subDel: Subscription;
 
   constructor(private customerSubscription: CustomerSubscriptionService,
               private loadingService: Ng4LoadingSpinnerService) {
@@ -22,6 +24,7 @@ export class SubscriptionComponent implements OnInit{
   ngOnInit() {
     this.loadSubscription();
   }
+
   private loadSubscription(): void {
     this.loadingService.show();
     this.subscriptions.push(this.customerSubscription.getSubscriptionByUserId(this.currentUser.id).subscribe(accounts => {
@@ -29,6 +32,18 @@ export class SubscriptionComponent implements OnInit{
       console.log(this.mySubscription);
       this.loadingService.hide();
     }));
+  }
+
+  public unsubscribe(id :string): void{
+    this.loadingService.show();
+    this.subscriptions.push(this.customerSubscription.deleteSubscription(id).subscribe(() => {
+      this.updateCustomerSubscription();
+    }));
+  }
+
+
+  public updateCustomerSubscription(): void {
+    this.loadSubscription();
   }
 
   ngOnDestroy(): void {
