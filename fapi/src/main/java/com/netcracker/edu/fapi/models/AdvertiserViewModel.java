@@ -1,10 +1,10 @@
 package com.netcracker.edu.fapi.models;
 
 public class AdvertiserViewModel {
-    int id;
-    String name;
-    int walletId;
-    int userDetailsId;
+    private int id;
+    private String name;
+    private int walletId;
+    private int userDetailsId;
 
     public AdvertiserViewModel() {
     }

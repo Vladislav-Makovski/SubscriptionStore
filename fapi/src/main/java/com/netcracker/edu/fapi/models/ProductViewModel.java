@@ -10,18 +10,20 @@ public class ProductViewModel{
     private String description;
     private int categoryId;
     private int cost;
+    private int statusProductId;
     private int subscriptionCount;
 
     public ProductViewModel() {
     }
 
-    public ProductViewModel(int id, String name, String description,int categoryId, int cost,int subscriptionCount) {
+    public ProductViewModel(int id, String name, String description,int categoryId, int cost,int subscriptionCount,int statusProductId) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.categoryId = categoryId;
         this.cost = cost;
         this.subscriptionCount = subscriptionCount;
+        this.statusProductId = statusProductId;
     }
 
     public int getId() {
@@ -68,4 +70,11 @@ public class ProductViewModel{
 
     public void setSubscriptionCount(int subscriptionCount){this.subscriptionCount = subscriptionCount;}
 
+    public int getStatusProductId() {
+        return statusProductId;
+    }
+
+    public void setStatusProductId(int statusProductId) {
+        this.statusProductId = statusProductId;
+    }
 }

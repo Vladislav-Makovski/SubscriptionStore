@@ -31,7 +31,6 @@ export class CatalogComponent implements OnInit{
 
   private loadCatalogItemByNameAsc(): void {
     this.loadingService.show();
-
     this.subscriptions.push(this.catalogItemService.getCatalogItemByNameAsc().subscribe(accounts => {
       this.catalogItem = accounts as CatalogItem[];
       console.log(this.catalogItem);

@@ -53,14 +53,12 @@ export class AddComponent implements OnInit{
     this.productSave.cost = this.formProduct.controls['cost'].value;
     this.productSave.categoryId = this.productCategory.find(x => x.name == this.formProduct.controls['category'].value).id;
     this.productSave.subscriptionCount = "0";
-    this.productSave.statusProductId = "2";
+    this.productSave.statusProductId = "3";
     this.productSave.organizationId = this.currentAdvertiser.id;
     console.log(this.productSave);
     this.loadingService.show();
     this.subscriptions.push(this.addProductService.saveNewProduct(this.productSave).subscribe(() => {
-      // this.prod = accounts as AddProductModel ;
-      // console.log(this.prod);
-      console.log("ok")
+      console.log("ok");
       this.loadingService.hide();
     }));
 

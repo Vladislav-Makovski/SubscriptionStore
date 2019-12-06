@@ -91,19 +91,21 @@ public class ProductAndCategory {
     public List<ConvertProductViewModel> fillConvertModel(List<ProductViewModel> catalogItem,List<CategoryViewModel> category){
         List<ConvertProductViewModel> convertProductViewModels = new ArrayList<>();
         for (ProductViewModel item: catalogItem  ) {
-            ConvertProductViewModel a = new ConvertProductViewModel();
-            a.setId(item.getId());
-            a.setName(item.getName());
-            a.setDescription(item.getDescription());
-            a.setCost(item.getCost());
-            a.setSubscriptionCount(item.getSubscriptionCount());
-            for (CategoryViewModel cat: category) {
-                if (item.getCategoryId() == cat.getId()) {
-                a.setCategory(cat.getName());
+            if (item.getStatusProductId() == 1) {
+                ConvertProductViewModel a = new ConvertProductViewModel();
+                a.setId(item.getId());
+                a.setName(item.getName());
+                a.setDescription(item.getDescription());
+                a.setCost(item.getCost());
+                a.setSubscriptionCount(item.getSubscriptionCount());
+                for (CategoryViewModel cat : category) {
+                    if (item.getCategoryId() == cat.getId()) {
+                        a.setCategory(cat.getName());
+                    }
                 }
+                convertProductViewModels.add(a);
             }
-            convertProductViewModels.add(a);
         }
         return convertProductViewModels;
     }
-    }
+}
