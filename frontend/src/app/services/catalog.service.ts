@@ -37,4 +37,8 @@ export class CatalogService {
     return this.http.get<CatalogItem[]>('/api/bc');
   }
 
+  getProductByAdvertiserId(id: string): Observable<CatalogItem[]> {
+    return this.http.get<CatalogItem[]>('/api/advertiser/product/' + id);
+  }
+
 }

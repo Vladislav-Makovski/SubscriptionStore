@@ -1,5 +1,6 @@
 package com.netcracker.edu.backend.controller;
 import com.netcracker.edu.backend.entity.Product;
+import com.netcracker.edu.backend.entity.Subscription;
 import com.netcracker.edu.backend.service.CatalogItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -54,13 +55,17 @@ public class CatalogItemController {
         return catalogItemService.getAllCatalogItemByPriceDesc();
     }
 
-
-
     @RequestMapping("/api/catalog-item/top")
     @GetMapping
     public Iterable<Product> getAllCatalogItemBySubscriptionCount() {
         Iterable<Product> a = catalogItemService.getAllCatalogItemBySubscriptionCount();
         return a;
+    }
+
+    @GetMapping
+    @RequestMapping(value = "/api/advertiser/product/{id}", method = RequestMethod.GET)
+    public Iterable<Product> getProductByAdvertiserId(@PathVariable(name = "id") Integer id) {
+        return catalogItemService.getProductByAdvertiserId(id);
     }
 }
 

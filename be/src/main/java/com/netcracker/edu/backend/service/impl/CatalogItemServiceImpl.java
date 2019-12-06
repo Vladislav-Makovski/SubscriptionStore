@@ -1,6 +1,8 @@
 package com.netcracker.edu.backend.service.impl;
 import com.netcracker.edu.backend.entity.Product;
+import com.netcracker.edu.backend.entity.Subscription;
 import com.netcracker.edu.backend.repository.CatalogItemRepository;
+import com.netcracker.edu.backend.repository.ProductAdvertiserRepository;
 import com.netcracker.edu.backend.service.CatalogItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
@@ -15,6 +17,7 @@ import java.util.Optional;
 public class CatalogItemServiceImpl implements CatalogItemService {
 
     private CatalogItemRepository repository;
+    private ProductAdvertiserRepository advertiserRepository;
     Sort sort = Sort.by(Sort.Order.desc("SubscriptionCount"));
     Sort sortNameDesc = Sort.by(Sort.Order.desc("Name"));
     Sort sortCategoryDesc = Sort.by(Sort.Order.desc("CategoryId"));
@@ -22,8 +25,9 @@ public class CatalogItemServiceImpl implements CatalogItemService {
     Pageable pageable = PageRequest.of(0, 2);
 
     @Autowired
-    public CatalogItemServiceImpl(CatalogItemRepository repository) {
+    public CatalogItemServiceImpl(CatalogItemRepository repository,ProductAdvertiserRepository advRepository) {
         this.repository = repository;
+        this.advertiserRepository = advRepository;
     }
 
     @Override
@@ -57,6 +61,11 @@ public class CatalogItemServiceImpl implements CatalogItemService {
     @Override
     public  Iterable<Product> getAllCatalogItemBySubscriptionCount() {
         return repository.findAll(PageRequest.of(0, 1)).getContent();
+    }
+
+    @Override
+    public Iterable<Product> getProductByAdvertiserId(Integer id){
+        return advertiserRepository.findByOrganizationId(id);
     }
 }
 

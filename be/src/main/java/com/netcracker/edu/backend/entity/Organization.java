@@ -6,8 +6,8 @@ import javax.persistence.*;
 public class Organization {
     private int id;
     private String name;
+    private Integer walletId;
     private int userDetailsId;
-    private Wallet walletByWalletId;
 
     @Id
     @Column(name = "id")
@@ -31,6 +31,16 @@ public class Organization {
     }
 
     @Basic
+    @Column(name = "wallet_id")
+    public Integer getWalletId() {
+        return walletId;
+    }
+
+    public void setWalletId(Integer walletId) {
+        this.walletId = walletId;
+    }
+
+    @Basic
     @Column(name = "user_details_id")
     public int getUserDetailsId() {
         return userDetailsId;
@@ -50,6 +60,7 @@ public class Organization {
         if (id != that.id) return false;
         if (userDetailsId != that.userDetailsId) return false;
         if (name != null ? !name.equals(that.name) : that.name != null) return false;
+        if (walletId != null ? !walletId.equals(that.walletId) : that.walletId != null) return false;
 
         return true;
     }
@@ -58,17 +69,8 @@ public class Organization {
     public int hashCode() {
         int result = id;
         result = 31 * result + (name != null ? name.hashCode() : 0);
+        result = 31 * result + (walletId != null ? walletId.hashCode() : 0);
         result = 31 * result + userDetailsId;
         return result;
-    }
-
-    @ManyToOne
-    @JoinColumn(name = "wallet_id", referencedColumnName = "id")
-    public Wallet getWalletByWalletId() {
-        return walletByWalletId;
-    }
-
-    public void setWalletByWalletId(Wallet walletByWalletId) {
-        this.walletByWalletId = walletByWalletId;
     }
 }

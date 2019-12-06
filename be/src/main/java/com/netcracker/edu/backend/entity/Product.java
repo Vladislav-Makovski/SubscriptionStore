@@ -7,12 +7,10 @@ import java.sql.Timestamp;
 @Entity
 public class Product {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
     private int cost;
     private int subscriptionCount;
-    private Date date;
     private int statusProductId;
     private int organizationId;
     private int categoryId;
@@ -20,6 +18,7 @@ public class Product {
 
     @Id
     @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int getId() {
         return id;
     }
@@ -56,16 +55,6 @@ public class Product {
 
     public void setSubscriptionCount(int subscriptionCount) {
         this.subscriptionCount = subscriptionCount;
-    }
-
-    @Basic
-    @Column(name = "date")
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
     }
 
     @Basic
@@ -122,7 +111,6 @@ public class Product {
         if (organizationId != product.organizationId) return false;
         if (categoryId != product.categoryId) return false;
         if (name != null ? !name.equals(product.name) : product.name != null) return false;
-        if (date != null ? !date.equals(product.date) : product.date != null) return false;
         if (description != null ? !description.equals(product.description) : product.description != null) return false;
 
         return true;
@@ -134,7 +122,6 @@ public class Product {
         result = 31 * result + (name != null ? name.hashCode() : 0);
         result = 31 * result + cost;
         result = 31 * result + subscriptionCount;
-        result = 31 * result + (date != null ? date.hashCode() : 0);
         result = 31 * result + statusProductId;
         result = 31 * result + organizationId;
         result = 31 * result + categoryId;

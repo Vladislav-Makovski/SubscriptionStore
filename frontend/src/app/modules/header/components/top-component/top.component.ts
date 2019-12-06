@@ -15,7 +15,7 @@ export class TopComponent implements OnInit{
   private subscriptions: Subscription[] = [];
 
   constructor(private catalogItemService: CatalogService,
-              private loadingService: Ng4LoadingSpinnerService,) {
+              private loadingService: Ng4LoadingSpinnerService) {
   }
 
   ngOnInit(){

@@ -10,4 +10,5 @@ public interface CatalogItemService {
     Iterable<Product> getAllCatalogItemByPriceAsc();
     Iterable<Product> getAllCatalogItemByPriceDesc();
     Iterable<Product> getAllCatalogItemBySubscriptionCount();
+    Iterable<Product> getProductByAdvertiserId(Integer id);
 }

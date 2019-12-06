@@ -26,6 +26,7 @@ import {CategoryService} from "./services/category.service";
 import {WalletService} from "./services/wallet.service";
 import {CustomerSubscriptionService} from "./services/customerSubscription.service";
 import {RegistrationService} from "./services/registration.service";
+import {AddProductService} from "./services/add-product.service";
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -76,7 +77,7 @@ const appRoutes: Routes = [
 
   bootstrap: [AppComponent],
   exports: [],
-  providers: [CatalogService,CategoryService,HttpClient,BsModalService,WalletService,CustomerSubscriptionService,RegistrationService]
+  providers: [CatalogService,CategoryService,HttpClient,BsModalService,WalletService,CustomerSubscriptionService,RegistrationService,AddProductService]
 })
 
 export class AppModule {

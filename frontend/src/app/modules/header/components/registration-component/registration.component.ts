@@ -62,6 +62,7 @@ export class RegistrationComponent implements OnInit {
       this.advertiserInformation.name = this.myFormUser.controls['name'].value;
       this.advertiserInformation.balance = "0";
       this.advertiserInformation.statusWalletId = "1";
+      console.log(this.advertiserInformation);
       this.subscriptions.push(this.registrationService.saveNewAdvertiser(this.advertiserInformation).subscribe(accounts => {
         this.user = accounts as UserSignature ;
         console.log(this.user);

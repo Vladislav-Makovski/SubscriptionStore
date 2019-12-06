@@ -13,4 +13,5 @@ public interface CatalogItemDataService {
     List<ProductViewModel> getAllByPriceAsc();
     List<ProductViewModel> getAllByPriceDesc();
     List<ProductViewModel> getAllBySubscriptionCount();
+    List<ProductViewModel> getProductByAdvertiserId(Integer id);
 }

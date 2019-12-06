@@ -1,13 +1,12 @@
 package com.netcracker.edu.fapi.converter;
 
-import com.netcracker.edu.fapi.models.CategoryViewModel;
-import com.netcracker.edu.fapi.models.ConvertProductViewModel;
-import com.netcracker.edu.fapi.models.ProductViewModel;
+import com.netcracker.edu.fapi.models.*;
 import com.netcracker.edu.fapi.service.CatalogItemDataService;
 import com.netcracker.edu.fapi.service.CategoryDataService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -79,7 +78,15 @@ public class ProductAndCategory {
         return ResponseEntity.ok(convertProductViewModels == null ? Collections.emptyList() : convertProductViewModels);
     }
 
-
+    @RequestMapping("/api/advertiser/product/{id}")
+    @GetMapping
+    public ResponseEntity<List<ConvertProductViewModel>> getAdvertiserProduct(@PathVariable String id) {
+        Integer userId = Integer.valueOf(id);
+        List<ProductViewModel> catalogItem = productDataService.getProductByAdvertiserId(userId);
+        List<CategoryViewModel> category = categoryDataService.getAll();
+        List<ConvertProductViewModel> convertProductViewModels = fillConvertModel(catalogItem,category);
+        return ResponseEntity.ok(convertProductViewModels == null ? Collections.emptyList() :convertProductViewModels);
+    }
 
     public List<ConvertProductViewModel> fillConvertModel(List<ProductViewModel> catalogItem,List<CategoryViewModel> category){
         List<ConvertProductViewModel> convertProductViewModels = new ArrayList<>();

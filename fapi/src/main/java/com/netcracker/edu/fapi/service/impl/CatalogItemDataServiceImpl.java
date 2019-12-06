@@ -1,5 +1,6 @@
 package com.netcracker.edu.fapi.service.impl;
 import com.netcracker.edu.fapi.models.ProductViewModel;
+import com.netcracker.edu.fapi.models.SubscriptionViewModel;
 import com.netcracker.edu.fapi.service.CatalogItemDataService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -64,4 +65,12 @@ public class CatalogItemDataServiceImpl implements CatalogItemDataService {
 
         return productViewModelResponse == null ? Collections.emptyList() : Arrays.asList(productViewModelResponse);
     }
+
+    @Override
+    public List<ProductViewModel> getProductByAdvertiserId(Integer id){
+        RestTemplate restTemplate = new RestTemplate();
+        ProductViewModel[] productViewModelResponse = restTemplate.getForObject(backendServerUrl + "/api/advertiser/product/" + id, ProductViewModel[].class);
+        return productViewModelResponse == null ? Collections.emptyList() : Arrays.asList(productViewModelResponse);
+    }
+
 }
