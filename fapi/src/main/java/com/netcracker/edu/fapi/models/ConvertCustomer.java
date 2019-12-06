@@ -3,23 +3,25 @@ package com.netcracker.edu.fapi.models;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class CustomerViewModel {
+public class ConvertCustomer {
+
     int id;
     String firstName;
     String surname;
     Integer walletId;
     int userDetailsId;
+    int balance;
 
-
-    public CustomerViewModel() {
+    public ConvertCustomer() {
     }
 
-    public CustomerViewModel(int id, String firstName, String surname, Integer walletId, int userDetailsId) {
+    public ConvertCustomer(int id, String firstName, String surname, Integer walletId, int userDetailsId, int balance) {
         this.id = id;
         this.firstName = firstName;
         this.surname = surname;
         this.walletId = walletId;
         this.userDetailsId = userDetailsId;
+        this.balance = balance;
     }
 
     public int getId() {
@@ -60,5 +62,13 @@ public class CustomerViewModel {
 
     public void setUserDetailsId(int userDetailsId) {
         this.userDetailsId = userDetailsId;
+    }
+
+    public int getBalance() {
+        return balance;
+    }
+
+    public void setBalance(int balance) {
+        this.balance = balance;
     }
 }

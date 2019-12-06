@@ -16,7 +16,7 @@ public class RegistrationCustomerViewModel {
     public RegistrationCustomerViewModel() {
     }
 
-    public RegistrationCustomerViewModel(String username, String password, String email, int userRoleId, String firstName, String surname, int balance, int statusWalletId) {
+    public RegistrationCustomerViewModel(String username, String password, String email, int userRoleId, String firstname, String surname, int balance, int statusWalletId) {
         this.username = username;
         this.password = password;
         this.email = email;
@@ -63,8 +63,8 @@ public class RegistrationCustomerViewModel {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFirstName(String firstname) {
+        this.firstName = firstname;
     }
 
     public String getSurname() {

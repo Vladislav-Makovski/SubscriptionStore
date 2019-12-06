@@ -1,13 +1,23 @@
 <div class="userlist">
   <table>
+    <thead>
     <tr>
-      <td class = "blocktext">Username</td><td class = "blocktext">Email</td><td class = "blocktext">Status</td><td class = "blocktext">Wallet balance</td><td class = "blocktext">Block</td>
+      <td class="blocktext" scope="col">Name</td>
+      <td class="blocktext" scope="col">Surname</td>
+      <td class="blocktext">User Details Id</td>
+      <td class="blocktext" scope="col">Balance</td>
+      <td class="blocktext" scope="col">Block</td>
     </tr>
-    <tr>
-      <td class = "blocktext">Alex1999</td><td class="blocktext">ivanov20@mail.ru</td><td class = "blocktext">Block</td><td class = "blocktext">1000</td><td><button class="blockbtn">Block</button></td>
+    </thead>
+    <tbody>
+    <tr *ngFor="let customer of siteCustomer">
+      <td scope="row" class="blocktext">{{customer.firstName}}</td>
+      <td scope="row" class="blocktext">{{customer.surname}}</td>
+      <td class="blocktext">{{customer.userDetailsId}}</td>
+      <td class="blocktext">{{customer.balance}}</td>
+      <td><button class="blockbtn" (click)="block(prod)">Block</button></td>
     </tr>
-    <tr>
-      <td class = "blocktext">Marinka228</td><td class = "blocktext">marina@gmail.com</td><td class = "blocktext">Active</td><td class = "blocktext">1500</td><td><button class="blockbtn">Block</button></td>
-    </tr>
+    </tbody>
   </table>
 </div>
+

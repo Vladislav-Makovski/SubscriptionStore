@@ -1,3 +1,4 @@
+C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\ConvertAdvertiser.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\ConvertSubscriptionViewModel.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\controller\CategoryController.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\AdvertiserViewModel.java
@@ -24,7 +25,9 @@ C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\model
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\ProductViewModel.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\ConvertProductViewModel.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\service\CustomerDataService.java
+C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\converter\CustomerConverter.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\service\SubscriptionDataService.java
+C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\converter\AdvertiserConverter.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\StatusWalletViewModel.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\security\config\SecurityConfig.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\converter\ProductAndCategory.java
@@ -36,6 +39,7 @@ C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\FapiA
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\service\impl\CategoryDataServiceImpl.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\controller\ProductController.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\service\ProductDataService.java
+C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\ConvertCustomer.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\service\UserDetailsDataService.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\controller\CatalogItemController.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\controller\WalletControllerRecharge.java

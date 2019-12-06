@@ -14,7 +14,8 @@
       <td scope="row">{{prod.name}}</td>
       <td>{{prod.category}}</td>
       <td>{{prod.subscriptionCount}}</td>
-      <td><button class="unsubbtn" (click)="pause(prod.id)">Pause</button></td>
+      <td>{{prod.cost}}</td>
+      <td><button class="pausebtn" (click)="pause(prod.id)">Pause</button></td>
     </tr>
     </tbody>
   </table>

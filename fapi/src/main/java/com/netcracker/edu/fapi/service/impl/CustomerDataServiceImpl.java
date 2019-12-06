@@ -1,13 +1,14 @@
 package com.netcracker.edu.fapi.service.impl;
 
-import com.netcracker.edu.fapi.models.CustomerViewModel;
-import com.netcracker.edu.fapi.models.RegistrationCustomerViewModel;
-import com.netcracker.edu.fapi.models.UserDetailsViewModel;
-import com.netcracker.edu.fapi.models.WalletViewModel;
+import com.netcracker.edu.fapi.models.*;
 import com.netcracker.edu.fapi.service.CustomerDataService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 @Service
 public class CustomerDataServiceImpl implements CustomerDataService {
@@ -22,6 +23,13 @@ public class CustomerDataServiceImpl implements CustomerDataService {
         saveCustomer.setUserDetailsId(userDetails.getId());
         saveCustomer.setWalletId(wallet.getId());
         RestTemplate restTemplate = new RestTemplate();
-        return restTemplate.postForEntity(backendServerUrl + "/api/new/customer/create", saveCustomer, CustomerViewModel.class).getBody();
+        return restTemplate.postForEntity(backendServerUrl + "/api/customer/new/create", saveCustomer, CustomerViewModel.class).getBody();
+    }
+
+    @Override
+    public List<CustomerViewModel> getAllByNameAsc() {
+        RestTemplate restTemplate = new RestTemplate();
+        CustomerViewModel[] customerViewModelResponse = restTemplate.getForObject(backendServerUrl + "/api/customer/nameAsc", CustomerViewModel[].class);
+        return customerViewModelResponse == null ? Collections.emptyList() : Arrays.asList(customerViewModelResponse);
     }
 }

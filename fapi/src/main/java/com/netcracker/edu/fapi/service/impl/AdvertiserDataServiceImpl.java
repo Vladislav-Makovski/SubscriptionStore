@@ -6,6 +6,10 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 @Service
 public class AdvertiserDataServiceImpl implements AdvertiserDataService {
 
@@ -19,6 +23,13 @@ public class AdvertiserDataServiceImpl implements AdvertiserDataService {
         saveCustomer.setUserDetailsId(userDetails.getId());
         saveCustomer.setWalletId(wallet.getId());
         RestTemplate restTemplate = new RestTemplate();
-        return restTemplate.postForEntity(backendServerUrl + "/api/new/advertiser/create", saveCustomer, AdvertiserViewModel.class).getBody();
+        return restTemplate.postForEntity(backendServerUrl + "/api/advertiser/new/create", saveCustomer, AdvertiserViewModel.class).getBody();
+    }
+
+    @Override
+    public List<AdvertiserViewModel> getAllByNameAsc() {
+        RestTemplate restTemplate = new RestTemplate();
+        AdvertiserViewModel[] advertiserViewModelResponse = restTemplate.getForObject(backendServerUrl + "/api/advertiser/nameAsc", AdvertiserViewModel[].class);
+        return advertiserViewModelResponse == null ? Collections.emptyList() : Arrays.asList(advertiserViewModelResponse);
     }
 }

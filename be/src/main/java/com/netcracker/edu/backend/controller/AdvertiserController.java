@@ -1,15 +1,13 @@
 package com.netcracker.edu.backend.controller;
 
 import com.netcracker.edu.backend.entity.Organization;
+import com.netcracker.edu.backend.entity.Product;
 import com.netcracker.edu.backend.service.AdvertiserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/new/advertiser/")
+@RequestMapping("/api/advertiser/")
 public class AdvertiserController {
 
     private AdvertiserService advertiserService;
@@ -19,8 +17,15 @@ public class AdvertiserController {
         this.advertiserService = advertiserService;
     }
 
-    @RequestMapping(value = "create",method = RequestMethod.POST)
+    @RequestMapping(value = "new/create",method = RequestMethod.POST)
     public Organization saveAdvertiser(@RequestBody Organization advertiser) {
         return advertiserService.saveAdvertiser(advertiser);
+    }
+
+    @RequestMapping("nameAsc")
+    @GetMapping
+    public Iterable<Organization> getAllOrganizationByNameAsc()
+    {
+        return advertiserService.getAllOrganizationByNameAsc();
     }
 }
