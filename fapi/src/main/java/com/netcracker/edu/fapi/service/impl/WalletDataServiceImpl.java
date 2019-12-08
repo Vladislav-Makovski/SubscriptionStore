@@ -60,4 +60,10 @@ public class WalletDataServiceImpl implements WalletDataService{
         RestTemplate restTemplate = new RestTemplate();
         return  restTemplate.postForEntity(backendServerUrl + "/api/wallet/new/advertiser",wallet, WalletViewModel.class).getBody();
     }
+
+    @Override
+    public void deleteWalletById(Integer id) {
+        RestTemplate restTemplate = new RestTemplate();
+        restTemplate.delete(backendServerUrl + "/api/wallet/delete/" + id);
+    }
 }

@@ -11,4 +11,8 @@ export class CustomerService{
   getCustomerByNameAsc(): Observable<Customer[]> {
     return this.http.get<Customer[]>('/api/customer/byNameAsc');
   }
+
+  deleteCustomer(id: string): Observable<void> {
+    return this.http.delete<void>('/api/customer/delete/'+ id);
+  }
 }

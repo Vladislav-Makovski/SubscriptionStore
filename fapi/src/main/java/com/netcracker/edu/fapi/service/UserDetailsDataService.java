@@ -8,5 +8,7 @@ public interface UserDetailsDataService {
 
     UserDetailsViewModel saveNewUserDetailsCustomer(RegistrationCustomerViewModel info);
     UserDetailsViewModel saveNewUserDetailsAdvertiser(RegistrationAdvertiserViewModel info);
+    UserDetailsViewModel getUserDetailsById(Integer id);
+    void deleteUserDetailsById(Integer id);
 
 }

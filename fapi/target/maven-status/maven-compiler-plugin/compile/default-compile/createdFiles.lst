@@ -17,6 +17,7 @@ com\netcracker\edu\fapi\service\impl\UserDetailsDataServiceImpl.class
 com\netcracker\edu\fapi\models\AdvertiserViewModel.class
 com\netcracker\edu\fapi\models\ConverterStatusWallet.class
 com\netcracker\edu\fapi\service\UserDetailsDataService.class
+com\netcracker\edu\fapi\controller\CustomerController.class
 com\netcracker\edu\fapi\service\impl\ProductDataServiceImpl.class
 com\netcracker\edu\fapi\controller\WalletControllerRecharge.class
 com\netcracker\edu\fapi\converter\SubscriptionConverter.class

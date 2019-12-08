@@ -3,6 +3,7 @@ package com.netcracker.edu.fapi.service.impl;
 import com.netcracker.edu.fapi.models.RegistrationAdvertiserViewModel;
 import com.netcracker.edu.fapi.models.RegistrationCustomerViewModel;
 import com.netcracker.edu.fapi.models.UserDetailsViewModel;
+import com.netcracker.edu.fapi.models.WalletViewModel;
 import com.netcracker.edu.fapi.service.UserDetailsDataService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -34,6 +35,18 @@ public class UserDetailsDataServiceImpl implements UserDetailsDataService {
         userDetails.setUserRoleId(inf.getUserRoleId());
         RestTemplate restTemplate = new RestTemplate();
         return restTemplate.postForEntity(backendServerUrl + "/api/new/advertiser/userDetails", userDetails, UserDetailsViewModel.class).getBody();
+    }
+
+    @Override
+    public UserDetailsViewModel getUserDetailsById(Integer id){
+        RestTemplate restTemplate = new RestTemplate();
+        return restTemplate.getForObject(backendServerUrl + "/api/new/customer/userDetails/" + id, UserDetailsViewModel.class);
+    }
+
+    @Override
+    public void deleteUserDetailsById(Integer id) {
+        RestTemplate restTemplate = new RestTemplate();
+        restTemplate.delete(backendServerUrl + "/api/new/delete/" + id);
     }
 
 }

@@ -34,4 +34,9 @@ public class WalletController {
     public Wallet saveNewWalletAdvertiser(@RequestBody Wallet wallet) {
         return walletService.saveNewWallet(wallet);
     }
+
+    @RequestMapping(value = "delete/{id}", method = RequestMethod.DELETE)
+    public void deleteWalletById(@PathVariable(name = "id") Integer id) {
+       walletService.deleteWalletById(id);
+    }
 }

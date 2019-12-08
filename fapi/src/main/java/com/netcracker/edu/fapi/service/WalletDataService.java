@@ -13,4 +13,5 @@ public interface WalletDataService {
     WalletViewModel saveBalanceWithdraw(WalletViewModel wallet);
     WalletViewModel saveNewWalletCustomer(RegistrationCustomerViewModel info);
     WalletViewModel saveNewWalletAdvertiser(RegistrationAdvertiserViewModel info);
+    void deleteWalletById(Integer id);
 }

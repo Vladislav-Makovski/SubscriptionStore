@@ -11,4 +11,6 @@ public interface CustomerDataService {
 
     CustomerViewModel saveNewCustomer(RegistrationCustomerViewModel inf, WalletViewModel wallet, UserDetailsViewModel userDetails);
     List<CustomerViewModel> getAllByNameAsc();
+    void deleteCustomerById(Integer id);
+    CustomerViewModel getCustomerById(Integer id);
 }

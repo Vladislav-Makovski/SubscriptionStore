@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, ElementRef, EmbeddedViewRef, OnInit, TemplateRef, ViewChild} from '@angular/core';
 import {FormGroup, FormControl, Validators} from '@angular/forms';
 import {Subscription} from "rxjs/index";
 import {Ng4LoadingSpinnerService} from "ng4-loading-spinner";
@@ -6,6 +6,7 @@ import {RegistrationService} from "../../../../services/registration.service";
 import {UserSignature} from "../../../../UserInformation/user-signature";
 import {RegistrationCustomer} from "../../models/registration-customer";
 import {RegistrationAdvertiser} from "../../models/registration-advertiser";
+import {BsModalRef, BsModalService} from "ngx-bootstrap";
 
 @Component({
   selector: 'my-registration',
@@ -15,7 +16,11 @@ import {RegistrationAdvertiser} from "../../models/registration-advertiser";
 
 export class RegistrationComponent implements OnInit {
 
+  @ViewChild('registrationSuccessful')
+  private registrationSuccessful: ElementRef;
+
   myFormUser: FormGroup;
+  public modalRef: BsModalRef;
   public userRegistrationTypes = ["Customer", "Advertiser"];
   public user: UserSignature = new UserSignature();
   public currentRegistrationType: string = this.userRegistrationTypes[0];
@@ -24,11 +29,13 @@ export class RegistrationComponent implements OnInit {
   private subscriptions: Subscription[] = [];
 
   constructor(private registrationService: RegistrationService,
-              private loadingService: Ng4LoadingSpinnerService) {
+              private loadingService: Ng4LoadingSpinnerService,
+              private modalService: BsModalService) {
   }
 
 
   ngOnInit() {
+    this.modalService.show(this.registrationSuccessful);
     this.myFormUser = new FormGroup({
       "email": new FormControl("", [Validators.required, Validators.email]),
       "password": new FormControl("", Validators.required),
@@ -73,6 +80,14 @@ export class RegistrationComponent implements OnInit {
 
   onChange(value: string) {
     this.currentRegistrationType = value;
+  }
+
+  public _openModal(template: TemplateRef<any>): void {
+    this.modalRef = this.modalService.show(template);
+  }
+
+  public _closeModal(): void {
+    this.modalRef.hide();
   }
 
   ngOnDestroy(): void {

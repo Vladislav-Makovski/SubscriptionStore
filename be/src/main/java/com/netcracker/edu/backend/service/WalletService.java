@@ -10,5 +10,6 @@ public interface WalletService {
     Wallet saveBalanceRecharge(Wallet wallet);
     Wallet saveBalanceWithdraw(Wallet wallet);
     Wallet saveNewWallet(Wallet wallet);
+    void deleteWalletById(Integer id);
 
 }

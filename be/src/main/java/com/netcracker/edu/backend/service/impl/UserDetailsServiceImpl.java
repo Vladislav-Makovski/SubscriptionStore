@@ -1,11 +1,14 @@
 package com.netcracker.edu.backend.service.impl;
 
 import com.netcracker.edu.backend.entity.UserDetails;
+import com.netcracker.edu.backend.entity.Wallet;
 import com.netcracker.edu.backend.repository.SubscriptionRepository;
 import com.netcracker.edu.backend.repository.UserDetailsRepository;
 import com.netcracker.edu.backend.service.UserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import java.util.Optional;
 
 @Component
 public class UserDetailsServiceImpl implements UserDetailsService {
@@ -20,5 +23,15 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     @Override
     public UserDetails saveUserDetails(UserDetails user) {
         return userDetailsRepository.save(user);
+    }
+
+    @Override
+    public Optional<UserDetails> getUserDetailsById(Integer id){
+        return userDetailsRepository.findById(id);
+    }
+
+    @Override
+    public void deleteUserDetailsById(Integer id) {
+        userDetailsRepository.deleteById(id);
     }
 }

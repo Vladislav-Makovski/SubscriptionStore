@@ -2,6 +2,7 @@ package com.netcracker.edu.fapi.converter;
 
 import com.netcracker.edu.fapi.models.*;
 import com.netcracker.edu.fapi.service.CustomerDataService;
+import com.netcracker.edu.fapi.service.UserDetailsDataService;
 import com.netcracker.edu.fapi.service.WalletDataService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -22,6 +23,9 @@ public class CustomerConverter {
     @Autowired
     private WalletDataService walletDataService;
 
+    @Autowired
+    private UserDetailsDataService userDetailsDataService;
+
     @RequestMapping("/api/customer/byNameAsc")
     @GetMapping
     public ResponseEntity<List<ConvertCustomer>> getAllCustomerByNameAsc() {
@@ -33,15 +37,18 @@ public class CustomerConverter {
     public List<ConvertCustomer> fillConvertModel(List<CustomerViewModel> customer){
         List<ConvertCustomer> convertCustomer = new ArrayList<>();
         for (CustomerViewModel item: customer ) {
-            ConvertCustomer a = new ConvertCustomer();
-            WalletViewModel walletViewModel = walletDataService.getUserWalletById(item.getWalletId());
-            a.setId(item.getId());
-            a.setFirstName(item.getFirstName());
-            a.setSurname(item.getSurname());
-            a.setWalletId(item.getWalletId());
-            a.setUserDetailsId(item.getUserDetailsId());
-            a.setBalance(walletViewModel.getBalance());
-            convertCustomer.add(a);
+            UserDetailsViewModel details = userDetailsDataService.getUserDetailsById(item.getUserDetailsId());
+            if(details.getUserRoleId() != 3) {
+                ConvertCustomer a = new ConvertCustomer();
+                WalletViewModel walletViewModel = walletDataService.getUserWalletById(item.getWalletId());
+                a.setId(item.getId());
+                a.setFirstName(item.getFirstName());
+                a.setSurname(item.getSurname());
+                a.setWalletId(item.getWalletId());
+                a.setUserDetailsId(item.getUserDetailsId());
+                a.setBalance(walletViewModel.getBalance());
+                convertCustomer.add(a);
+            }
         }
         return convertCustomer;
     }

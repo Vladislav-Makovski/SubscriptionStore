@@ -32,4 +32,16 @@ public class CustomerDataServiceImpl implements CustomerDataService {
         CustomerViewModel[] customerViewModelResponse = restTemplate.getForObject(backendServerUrl + "/api/customer/nameAsc", CustomerViewModel[].class);
         return customerViewModelResponse == null ? Collections.emptyList() : Arrays.asList(customerViewModelResponse);
     }
+
+    @Override
+    public void deleteCustomerById(Integer id) {
+        RestTemplate restTemplate = new RestTemplate();
+        restTemplate.delete(backendServerUrl + "/api/customer/delete/" + id);
+    }
+
+    @Override
+    public CustomerViewModel getCustomerById(Integer id) {
+        RestTemplate restTemplate = new RestTemplate();
+        return restTemplate.getForObject(backendServerUrl + "/api/customer/information/" + id, CustomerViewModel.class);
+    }
 }

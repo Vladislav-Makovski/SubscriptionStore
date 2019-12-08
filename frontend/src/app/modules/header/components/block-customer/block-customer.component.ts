@@ -33,4 +33,17 @@ export class BlockCustomerComponent implements OnInit{
   ngOnDestroy(): void {
     this.subscriptions.forEach(subscription => subscription.unsubscribe());
   }
+
+  private updateCustomer():void{
+    this.loadCustomer();
+  }
+
+  public block(id: string){
+
+    this.loadingService.show();
+    this.subscriptions.push(this.customerService.deleteCustomer(id).subscribe(() => {
+      this.updateCustomer();
+    }));
+
+  }
 }
