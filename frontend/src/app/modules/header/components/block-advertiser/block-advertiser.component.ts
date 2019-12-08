@@ -31,6 +31,18 @@ export class BlockAdvertiserComponent implements OnInit{
     }));
   }
 
+  private updateAdvertiser():void{
+    this.loadAdvertiser();
+  }
+
+  public block(id: string){
+    this.loadingService.show();
+    this.subscriptions.push(this.advertiserService.deleteAdvertiser(id).subscribe(() => {
+      this.updateAdvertiser();
+    }));
+
+  }
+
   ngOnDestroy(): void {
     this.subscriptions.forEach(subscription => subscription.unsubscribe());
   }

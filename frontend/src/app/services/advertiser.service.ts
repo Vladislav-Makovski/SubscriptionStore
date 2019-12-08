@@ -11,4 +11,8 @@ export class AdvertiserService{
   getAdvertiserByNameAsc(): Observable<Advertiser[]> {
     return this.http.get<Advertiser[]>('/api/advertiser/byNameAsc');
   }
+
+  deleteAdvertiser(id: string): Observable<void> {
+    return this.http.delete<void>('/api/advertiser/delete/'+ id);
+  }
 }

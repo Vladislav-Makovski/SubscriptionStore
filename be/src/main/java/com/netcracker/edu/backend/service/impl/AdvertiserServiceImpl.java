@@ -1,5 +1,6 @@
 package com.netcracker.edu.backend.service.impl;
 
+import com.netcracker.edu.backend.entity.Customer;
 import com.netcracker.edu.backend.entity.Organization;
 import com.netcracker.edu.backend.entity.Product;
 import com.netcracker.edu.backend.repository.AdvertiserRepository;
@@ -8,6 +9,8 @@ import com.netcracker.edu.backend.service.AdvertiserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Component;
+
+import java.util.Optional;
 
 @Component
 public class AdvertiserServiceImpl implements AdvertiserService {
@@ -31,4 +34,15 @@ public class AdvertiserServiceImpl implements AdvertiserService {
     public  Iterable<Organization> getAllOrganizationByNameAsc() {
         return repositorySort.findAll(Sort.by("Name"));
     }
+
+    @Override
+    public void deleteAdvertiserById(Integer id) {
+        repository.deleteById(id);
+    }
+
+    @Override
+    public Optional<Organization> getAdvertiserById(Integer id){
+        return repository.findById(id);
+    }
+
 }

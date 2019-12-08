@@ -36,9 +36,10 @@ public class CustomerController {
     public void deleteCustomerById(@PathVariable(name = "id") Integer id) {
         customerService.deleteCustomerById(id);
     }
+
     @GetMapping
     @RequestMapping(value = "information/{id}", method = RequestMethod.GET)
-    public Optional<Customer> getWalletById(@PathVariable(name = "id") Integer id) {
+    public Optional<Customer> getCustomerById(@PathVariable(name = "id") Integer id) {
         return customerService.getCustomerById(id);
     }
 }

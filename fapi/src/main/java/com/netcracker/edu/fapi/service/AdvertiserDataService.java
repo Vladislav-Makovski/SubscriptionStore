@@ -8,5 +8,7 @@ public interface AdvertiserDataService {
 
     AdvertiserViewModel saveNewAdvertiser(RegistrationAdvertiserViewModel inf, WalletViewModel wallet, UserDetailsViewModel userDetails);
     List<AdvertiserViewModel> getAllByNameAsc();
+    void deleteAdvertiserById(Integer id);
+    AdvertiserViewModel getAdvertiserById(Integer id);
 }
 

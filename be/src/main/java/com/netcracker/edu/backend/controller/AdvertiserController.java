@@ -6,6 +6,8 @@ import com.netcracker.edu.backend.service.AdvertiserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Optional;
+
 @RestController
 @RequestMapping("/api/advertiser/")
 public class AdvertiserController {
@@ -27,5 +29,16 @@ public class AdvertiserController {
     public Iterable<Organization> getAllOrganizationByNameAsc()
     {
         return advertiserService.getAllOrganizationByNameAsc();
+    }
+
+    @RequestMapping(value = "delete/{id}", method = RequestMethod.DELETE)
+    public void deleteAdvertiserById(@PathVariable(name = "id") Integer id) {
+        advertiserService.deleteAdvertiserById(id);
+    }
+
+    @GetMapping
+    @RequestMapping(value = "information/{id}", method = RequestMethod.GET)
+    public Optional<Organization> getAdvertiserById(@PathVariable(name = "id") Integer id) {
+        return advertiserService.getAdvertiserById(id);
     }
 }

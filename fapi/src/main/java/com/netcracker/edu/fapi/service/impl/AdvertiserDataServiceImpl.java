@@ -32,4 +32,16 @@ public class AdvertiserDataServiceImpl implements AdvertiserDataService {
         AdvertiserViewModel[] advertiserViewModelResponse = restTemplate.getForObject(backendServerUrl + "/api/advertiser/nameAsc", AdvertiserViewModel[].class);
         return advertiserViewModelResponse == null ? Collections.emptyList() : Arrays.asList(advertiserViewModelResponse);
     }
+
+    @Override
+    public void deleteAdvertiserById(Integer id) {
+        RestTemplate restTemplate = new RestTemplate();
+        restTemplate.delete(backendServerUrl + "/api/advertiser/delete/" + id);
+    }
+
+    @Override
+    public AdvertiserViewModel getAdvertiserById(Integer id) {
+        RestTemplate restTemplate = new RestTemplate();
+        return restTemplate.getForObject(backendServerUrl + "/api/advertiser/information/" + id, AdvertiserViewModel.class);
+    }
 }
