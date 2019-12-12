@@ -8,6 +8,7 @@ import com.netcracker.edu.backend.service.UserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
 import java.util.Optional;
 
 @Component
@@ -33,5 +34,15 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     @Override
     public void deleteUserDetailsById(Integer id) {
         userDetailsRepository.deleteById(id);
+    }
+
+    @Override
+    public List<UserDetails> findAll() {
+        return (List<UserDetails>) userDetailsRepository.findAll();
+    }
+
+    @Override
+    public UserDetails findByUsername(String login) {
+        return userDetailsRepository.findByUsername(login);
     }
 }

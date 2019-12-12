@@ -7,7 +7,11 @@
   /*height: 200px;*/
   /*background-color: #cff;*/
 /*}*/
-
+.modal{
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
 .userbtn{
   margin-left: 15%;
   margin-top: 70px;

@@ -4,9 +4,9 @@
     <p>Please fill in this form to login account.</p>
     <hr>
     <label><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" formControlName="email">
+    <input type="text" placeholder="Enter Email" name="username" formControlName="username">
     <div class="alert alert-danger"
-         *ngIf="myForm.controls['email'].invalid && myForm.controls['email'].touched">
+         *ngIf="myForm.controls['username'].invalid && myForm.controls['username'].touched">
       incorrect email
     </div>
     <label><b>Password</b></label>

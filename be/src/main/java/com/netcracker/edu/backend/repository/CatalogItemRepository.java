@@ -9,5 +9,5 @@ import org.springframework.data.domain.Sort;
 import java.util.List;
 
 @Repository
-public interface CatalogItemRepository extends PagingAndSortingRepository<Product, Long> {
+public interface CatalogItemRepository extends PagingAndSortingRepository<Product, Integer> {
 }

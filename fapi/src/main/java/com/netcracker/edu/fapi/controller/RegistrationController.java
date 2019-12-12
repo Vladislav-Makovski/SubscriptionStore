@@ -32,26 +32,26 @@ public class RegistrationController {
     @RequestMapping(value = "/api/new/customer", method = RequestMethod.POST)
     public ResponseEntity<UserSignatureViewModel> saveCustomer(@RequestBody RegistrationCustomerViewModel information) {
         WalletViewModel wallet = walletDataService.saveNewWalletCustomer(information);
-        UserDetailsViewModel userDetails = userDetailsDataService.saveNewUserDetailsCustomer(information);
-        CustomerViewModel customerViewModel = customerDataService.saveNewCustomer(information,wallet,userDetails);
+//        UserDetailsViewModel userDetails = userDetailsDataService.saveNewUserDetailsCustomer(information);
+//        CustomerViewModel customerViewModel = customerDataService.saveNewCustomer(information,wallet,userDetails);
         UserSignatureViewModel userSignatureViewModel = new UserSignatureViewModel();
-        userSignatureViewModel.setId(customerViewModel.getId());
-        userSignatureViewModel.setUserDetailsId(userDetails.getId());
+//        userSignatureViewModel.setId(customerViewModel.getId());
+//        userSignatureViewModel.setUserDetailsId(userDetails.getId());
         userSignatureViewModel.setWalletId(wallet.getId());
-        userSignatureViewModel.setUserRole(userDetails.getUserRoleId());
+//        userSignatureViewModel.setUserRole(userDetails.getUserRoleId());
         return ResponseEntity.ok(userSignatureViewModel);
     }
 
     @RequestMapping(value = "/api/new/advertiser", method = RequestMethod.POST)
     public ResponseEntity<UserSignatureViewModel> saveAdvertiser(@RequestBody RegistrationAdvertiserViewModel information) {
         WalletViewModel wallet = walletDataService.saveNewWalletAdvertiser(information);
-        UserDetailsViewModel userDetails = userDetailsDataService.saveNewUserDetailsAdvertiser(information);
-        AdvertiserViewModel advertiserViewModel = advertiserDataService.saveNewAdvertiser(information,wallet,userDetails);
+//        UserDetailsViewModel userDetails = userDetailsDataService.saveNewUserDetailsAdvertiser(information);
+//        AdvertiserViewModel advertiserViewModel = advertiserDataService.saveNewAdvertiser(information,wallet,userDetails);
         UserSignatureViewModel userSignatureViewModel = new UserSignatureViewModel();
-        userSignatureViewModel.setId(advertiserViewModel.getId());
-        userSignatureViewModel.setUserDetailsId(userDetails.getId());
+//        userSignatureViewModel.setId(advertiserViewModel.getId());
+//        userSignatureViewModel.setUserDetailsId(userDetails.getId());
         userSignatureViewModel.setWalletId(wallet.getId());
-        userSignatureViewModel.setUserRole(userDetails.getUserRoleId());
+//        userSignatureViewModel.setUserRole(userDetails.getUserRoleId());
         return ResponseEntity.ok(userSignatureViewModel);
     }
 }

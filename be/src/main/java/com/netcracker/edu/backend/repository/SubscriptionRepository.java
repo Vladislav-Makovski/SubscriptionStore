@@ -9,4 +9,5 @@ import java.util.List;
 @Repository
 public interface SubscriptionRepository extends JpaRepository<Subscription, Integer> {
     List<Subscription> findByUserId(Integer id);
+    List<Subscription> findByProductId(Integer id);
 }

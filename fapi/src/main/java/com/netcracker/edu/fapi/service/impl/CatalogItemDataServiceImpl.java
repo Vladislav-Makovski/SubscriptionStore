@@ -73,4 +73,18 @@ public class CatalogItemDataServiceImpl implements CatalogItemDataService {
         return productViewModelResponse == null ? Collections.emptyList() : Arrays.asList(productViewModelResponse);
     }
 
+    @Override
+    public List<ProductViewModel> getAllByStatusId() {
+        RestTemplate restTemplate = new RestTemplate();
+        ProductViewModel[] productViewModelResponse = restTemplate.getForObject(backendServerUrl + "/api/catalog-item/new/product", ProductViewModel[].class);
+        return productViewModelResponse == null ? Collections.emptyList() : Arrays.asList(productViewModelResponse);
+    }
+
+    @Override
+    public void confirmNewProduct(Integer id) {
+        RestTemplate restTemplate = new RestTemplate();
+        ProductViewModel prod = new ProductViewModel();
+        prod.setId(id);
+        restTemplate.postForEntity(backendServerUrl + "/api/product/new/confirm", prod, ProductViewModel.class);
+    }
 }

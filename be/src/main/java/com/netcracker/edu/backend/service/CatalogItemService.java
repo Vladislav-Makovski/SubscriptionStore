@@ -11,4 +11,6 @@ public interface CatalogItemService {
     Iterable<Product> getAllCatalogItemByPriceDesc();
     Iterable<Product> getAllCatalogItemBySubscriptionCount();
     Iterable<Product> getProductByAdvertiserId(Integer id);
+    Iterable<Product> getAllNewProduct();
+    void confirmNewProduct(Product product);
 }

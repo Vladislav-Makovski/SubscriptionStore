@@ -1,5 +1,6 @@
 package com.netcracker.edu.fapi.service.impl;
 
+import com.netcracker.edu.fapi.models.ProductViewModel;
 import com.netcracker.edu.fapi.models.SaveProductViewModel;
 import com.netcracker.edu.fapi.service.ProductDataService;
 import org.springframework.beans.factory.annotation.Value;
@@ -16,5 +17,19 @@ public class ProductDataServiceImpl implements ProductDataService {
     public void saveNewProduct(SaveProductViewModel prod) {
         RestTemplate restTemplate = new RestTemplate();
         restTemplate.postForEntity(backendServerUrl + "/api/product/create/new", prod, SaveProductViewModel.class);
+    }
+
+    @Override
+    public void deleteProduct(Integer id) {
+        RestTemplate restTemplate = new RestTemplate();
+        restTemplate.delete(backendServerUrl + "/api/product/delete/" + id);
+    }
+
+    @Override
+    public void changeStatusProduct(Integer id) {
+        RestTemplate restTemplate = new RestTemplate();
+        SaveProductViewModel save = new SaveProductViewModel();
+        save.setId(id);
+        restTemplate.postForEntity(backendServerUrl + "/api/product/changeStatus/pause",save, SaveProductViewModel.class);
     }
 }

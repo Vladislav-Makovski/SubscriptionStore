@@ -21,6 +21,11 @@ public class SubscriptionServiceImpl implements SubscriptionService {
     }
 
     @Override
+    public Iterable<Subscription> getSubscriptionByProductId(Integer id){
+        return subscriptionRepository.findByProductId(id);
+    }
+
+    @Override
     public void deleteSubscription(Integer id) {
         subscriptionRepository.deleteById(id);
     }

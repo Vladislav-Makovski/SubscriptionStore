@@ -16,6 +16,7 @@ import java.util.Optional;
 @Component
 public class CatalogItemServiceImpl implements CatalogItemService {
 
+    private ProductAdvertiserRepository productAdvertiserRepository;
     private CatalogItemRepository repository;
     private ProductAdvertiserRepository advertiserRepository;
     Sort sort = Sort.by(Sort.Order.desc("SubscriptionCount"));
@@ -25,9 +26,10 @@ public class CatalogItemServiceImpl implements CatalogItemService {
     Pageable pageable = PageRequest.of(0, 2);
 
     @Autowired
-    public CatalogItemServiceImpl(CatalogItemRepository repository,ProductAdvertiserRepository advRepository) {
+    public CatalogItemServiceImpl(CatalogItemRepository repository,ProductAdvertiserRepository advRepository,ProductAdvertiserRepository productAdvertiserRepository) {
         this.repository = repository;
         this.advertiserRepository = advRepository;
+        this.productAdvertiserRepository = productAdvertiserRepository;
     }
 
     @Override
@@ -66,6 +68,18 @@ public class CatalogItemServiceImpl implements CatalogItemService {
     @Override
     public Iterable<Product> getProductByAdvertiserId(Integer id){
         return advertiserRepository.findByOrganizationId(id);
+    }
+
+    @Override
+    public Iterable<Product> getAllNewProduct() {
+        return productAdvertiserRepository.findByStatusProductId(3);
+    }
+
+    @Override
+    public void confirmNewProduct(Product id) {
+        Product product = repository.findById(id.getId()).orElse(new Product());
+        product.setStatusProductId(1);
+        repository.save(product);
     }
 }
 

@@ -32,7 +32,6 @@
          *ngIf="myFormUser.controls['name'].invalid && myFormUser.controls['name'].touched">
       incorrect name
     </div>
-    <!--скрыть если не кастомер-->
     <ng-container *ngIf="currentRegistrationType !== 'Advertiser'">
       <label><b>Surname</b></label>
       <input type="text" placeholder="Surname" name="surname" required formControlName="surname">
@@ -44,20 +43,11 @@
 
     <hr>
     <button type="submit" class="registerbtn" [disabled]="myFormUser.invalid">Register</button>
-    <!--<p>Already have an account? <a href="#" routerLink="/login">Sign in</a>.</p>-->
   </div>
 </form>
 <ng-template #registrationSuccessful>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
-  <p>hello</p>
+  <div class="modal-header">
+  You have signed up successfully
+  </div>
+  <button type="submit" class="registerbtn" (click)="_closeModal()">Ok</button>
 </ng-template>

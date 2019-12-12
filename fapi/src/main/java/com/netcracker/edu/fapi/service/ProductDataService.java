@@ -5,5 +5,8 @@ import com.netcracker.edu.fapi.models.SaveProductViewModel;
 public interface ProductDataService {
 
     void saveNewProduct(SaveProductViewModel prod);
+    void deleteProduct(Integer id);
+    void changeStatusProduct(Integer id);
+
 
 }

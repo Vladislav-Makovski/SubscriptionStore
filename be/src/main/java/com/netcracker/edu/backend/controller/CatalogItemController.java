@@ -67,5 +67,16 @@ public class CatalogItemController {
     public Iterable<Product> getProductByAdvertiserId(@PathVariable(name = "id") Integer id) {
         return catalogItemService.getProductByAdvertiserId(id);
     }
+
+    @RequestMapping("/api/catalog-item/new/product")
+    @GetMapping
+    public Iterable<Product> getAllNewProduct() {
+        return catalogItemService.getAllNewProduct();
+    }
+
+    @RequestMapping(value = "/api/product/new/confirm", method = RequestMethod.POST)
+    public void confirmNewProduct(@RequestBody Product product) {
+        catalogItemService.confirmNewProduct(product);
+    }
 }
 

@@ -35,7 +35,6 @@ export class RegistrationComponent implements OnInit {
 
 
   ngOnInit() {
-    this.modalService.show(this.registrationSuccessful);
     this.myFormUser = new FormGroup({
       "email": new FormControl("", [Validators.required, Validators.email]),
       "password": new FormControl("", Validators.required),
@@ -73,6 +72,8 @@ export class RegistrationComponent implements OnInit {
       this.subscriptions.push(this.registrationService.saveNewAdvertiser(this.advertiserInformation).subscribe(accounts => {
         this.user = accounts as UserSignature ;
         console.log(this.user);
+
+        // this._openModal(this.registrationSuccessful);
         this.loadingService.hide();
       }));
     }

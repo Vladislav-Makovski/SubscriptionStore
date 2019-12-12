@@ -1,13 +1,22 @@
 <div class="productlist">
   <table>
+    <thead>
     <tr>
-      <td class = "blocktext">Name</td><td class = "blocktext">Advertiser</td><td class = "blocktext">Cost</td><td class = "blocktext">Status</td><td class = "blocktext">Delete</td>
+      <td class="blocktext" scope="col">Name</td>
+      <td class="blocktext" scope="col">Number of subscriptions</td>
+      <td class="blocktext">Cost</td>
+      <td class="blocktext" scope="col">Status</td>
+      <td class="blocktext" scope="col">Delete</td>
     </tr>
-    <tr>
-      <td class = "blocktext">Twitch</td><td class="blocktext">vladik322</td><td class = "blocktext">10</td><td class = "blocktext">Active</td><td><button class="blockbtn">Delete</button></td>
+    </thead>
+    <tbody>
+    <tr *ngFor="let product of siteProduct">
+      <td scope="row" class="blocktext">{{product.name}}</td>
+      <td scope="row" class="blocktext">{{product.subscriptionCount}}</td>
+      <td class="blocktext">{{product.cost}}</td>
+      <td class="blocktext">{{product.status}}</td>
+      <td><button class="blockbtn" (click)="deleteProduct(product.id)">Delete</button></td>
     </tr>
-    <tr>
-      <td class = "blocktext">Yandex music</td><td class = "blocktext">kate666</td><td class = "blocktext">15</td><td class = "blocktext">Pause</td><td><button class="blockbtn">Delete</button></td>
-    </tr>
+    </tbody>
   </table>
 </div>
