@@ -4,6 +4,7 @@ import {Ng4LoadingSpinnerService} from "ng4-loading-spinner";
 import {CatalogService} from "../../../../services/catalog.service";
 import {Subscription} from "rxjs/index";
 import {DefultAdvertiser} from "../../../../UserInformation/defult-advertiser";
+import {ProductService} from "../../../../services/product.service";
 
 @Component({
   selector :'my-product',
@@ -17,7 +18,8 @@ export class MyProductComponent implements OnInit{
   public currentAdvertiser: DefultAdvertiser = new DefultAdvertiser();
 
   constructor(private catalogItemService: CatalogService,
-              private loadingService: Ng4LoadingSpinnerService) {
+              private loadingService: Ng4LoadingSpinnerService,
+              private productService: ProductService) {
   }
   ngOnInit(){
     this.loadProduct();
@@ -36,6 +38,12 @@ export class MyProductComponent implements OnInit{
     this.subscriptions.forEach(subscription => subscription.unsubscribe());
   }
 
-  public pause(id: string): void{}
+  public pause(id: string): void{
+    this.loadingService.show();
+    this.subscriptions.push(this.productService.pauseAdvertiserProduct(id).subscribe(() => {
+      this.loadProduct();
+      this.loadingService.hide();
+    }));
+  }
 
 }

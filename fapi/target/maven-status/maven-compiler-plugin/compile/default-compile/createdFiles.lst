@@ -19,6 +19,7 @@ com\netcracker\edu\fapi\controller\LoginControler.class
 com\netcracker\edu\fapi\service\impl\WalletDataServiceImpl.class
 com\netcracker\edu\fapi\controller\ProductController.class
 com\netcracker\edu\fapi\models\SaveProductViewModel.class
+com\netcracker\edu\fapi\controller\SubscribeController.class
 com\netcracker\edu\fapi\models\SubscriptionViewModel.class
 com\netcracker\edu\fapi\service\CustomerDataService.class
 com\netcracker\edu\fapi\converter\WalletAndStatus.class

@@ -3,6 +3,10 @@ import {CatalogItem} from "../../models/catalog-item";
 import {Subscription} from "rxjs/internal/Subscription";
 import {Ng4LoadingSpinnerService} from "ng4-loading-spinner";
 import {CatalogService} from "../../../../services/catalog.service";
+import {DefultUser} from "../../../../UserInformation/defult-user";
+import {ProductService} from "../../../../services/product.service";
+import {SubscribeService} from "../../../../services/subscribe.service";
+import {SubscribeModel} from "../../models/subscribe-model";
 
 @Component({
   selector :'Catalog',
@@ -16,9 +20,12 @@ export class CatalogComponent implements OnInit{
 
   public catalogItem: CatalogItem[] = [];
   private subscriptions: Subscription[] = [];
+  public currentUser: DefultUser = new DefultUser();
+  public sub: SubscribeModel = new SubscribeModel();
 
 
   constructor(private catalogItemService: CatalogService,
+              private subscribeService: SubscribeService,
               private loadingService: Ng4LoadingSpinnerService) {
     }
 
@@ -115,6 +122,17 @@ export class CatalogComponent implements OnInit{
       this.loadCatalogItemByPriceAsc();
       this.booleanForPrice = !this.booleanForPrice;
     }
+  }
+
+  public subscribeProduct(id: string): void{
+    this.sub.userId = this.currentUser.id;
+    this.sub.statusSubId = "1";
+    this.sub.productId = id;
+    this.loadingService.show();
+    this.subscriptions.push(this.subscribeService.subscribeProduct(this.sub).subscribe(() => {
+      this.loadingService.hide();
+    }));
+
   }
 
   ngOnDestroy(): void {

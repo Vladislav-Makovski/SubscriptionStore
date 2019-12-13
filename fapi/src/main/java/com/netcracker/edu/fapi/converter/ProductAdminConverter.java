@@ -66,6 +66,10 @@ public class ProductAdminConverter {
             productService.deleteProduct(Integer.valueOf(id));
     }
 
+    @RequestMapping(value = "/api/product/advertiser/pause/", method = RequestMethod.POST)
+    public void pauseProduct(@RequestBody Integer id) {
+        productService.changeStatusProduct(Integer.valueOf(id));
+    }
     public List<ProductAdminViewModel> fillConvertModel(List<ProductViewModel> catalogItem, List<StatusProductViewModel> status) {
         List<ProductAdminViewModel> productAdminViewModels = new ArrayList<>();
         for (ProductViewModel item : catalogItem) {

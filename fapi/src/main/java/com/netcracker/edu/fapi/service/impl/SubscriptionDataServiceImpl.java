@@ -1,6 +1,7 @@
 package com.netcracker.edu.fapi.service.impl;
 
 import com.netcracker.edu.fapi.models.SubscriptionViewModel;
+import com.netcracker.edu.fapi.models.WalletViewModel;
 import com.netcracker.edu.fapi.service.SubscriptionDataService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -33,5 +34,11 @@ public class SubscriptionDataServiceImpl implements SubscriptionDataService {
         RestTemplate restTemplate = new RestTemplate();
         SubscriptionViewModel[] subscriptionViewModelResponse = restTemplate.getForObject(backendServerUrl + "/api/customerSubscription/product/" + id, SubscriptionViewModel[].class);
         return subscriptionViewModelResponse == null ? Collections.emptyList() : Arrays.asList(subscriptionViewModelResponse);
+    }
+
+    @Override
+    public void subscribeProduct(SubscriptionViewModel prod) {
+        RestTemplate restTemplate = new RestTemplate();
+         restTemplate.postForEntity(backendServerUrl + "/api/new/subscription/costumer",prod, SubscriptionViewModel.class);
     }
 }

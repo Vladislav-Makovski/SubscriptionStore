@@ -26,7 +26,12 @@ export class ProductService{
   }
 
   confirmNewProduct(productId: string): Observable<void> {
-    return this.http.post<void>('/api/product/new/confirm/',productId);
+    return this.http.post<void>('/api/product/new/confirm/', productId);
+  }
+
+  pauseAdvertiserProduct(productId: string): Observable<void> {
+    return this.http.post<void>('/api/product/advertiser/pause/',productId)
+
   }
 
 }

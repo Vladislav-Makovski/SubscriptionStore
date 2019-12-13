@@ -11,12 +11,12 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let Item of catalogItem">
-      <td scope="row">{{Item.name}}</td>
-      <td>{{Item.description}}</td>
-      <td>{{Item.category}}</td>
-      <td>{{Item.cost}}</td>
-      <td><button class="subbtn">Subscribe</button></td>
+    <tr *ngFor="let item of catalogItem">
+      <td scope="row">{{item.name}}</td>
+      <td>{{item.description}}</td>
+      <td>{{item.category}}</td>
+      <td>{{item.cost}}</td>
+      <td><button class="subbtn" (click) = "subscribeProduct(item.id)">Subscribe</button></td>
     </tr>
     </tbody>
 

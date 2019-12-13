@@ -31,6 +31,7 @@ import {AdvertiserService} from "./services/advertiser.service";
 import {CustomerService} from "./services/customer.service";
 import {LoginService} from "./services/LoginService";
 import {ProductService} from "./services/product.service";
+import {SubscribeService} from "./services/subscribe.service";
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -81,7 +82,7 @@ const appRoutes: Routes = [
 
   bootstrap: [AppComponent],
   exports: [],
-  providers: [CatalogService,CategoryService,HttpClient,BsModalService,WalletService,CustomerSubscriptionService,RegistrationService,AddProductService,AdvertiserService,CustomerService,LoginService,ProductService]
+  providers: [CatalogService,CategoryService,HttpClient,BsModalService,WalletService,CustomerSubscriptionService,RegistrationService,AddProductService,AdvertiserService,CustomerService,LoginService,ProductService,SubscribeService]
 })
 
 export class AppModule {
