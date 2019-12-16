@@ -3,6 +3,7 @@ package com.netcracker.edu.backend.service.impl;
 import com.netcracker.edu.backend.entity.Customer;
 import com.netcracker.edu.backend.entity.Organization;
 import com.netcracker.edu.backend.entity.Wallet;
+import com.netcracker.edu.backend.repository.CustomerJpaRepository;
 import com.netcracker.edu.backend.repository.CustomerRepository;
 import com.netcracker.edu.backend.repository.CustomerSortRepository;
 import com.netcracker.edu.backend.service.CustomerService;
@@ -17,11 +18,13 @@ public class CustomerServiceImpl implements CustomerService {
 
     private CustomerRepository repository;
     private CustomerSortRepository repositorySort;
+    private CustomerJpaRepository repositoryJpa;
 
     @Autowired
-    public CustomerServiceImpl(CustomerRepository repository,CustomerSortRepository repositorySort) {
+    public CustomerServiceImpl(CustomerRepository repository,CustomerSortRepository repositorySort,CustomerJpaRepository repositoryJpa) {
         this.repository = repository;
         this.repositorySort = repositorySort;
+        this.repositoryJpa = repositoryJpa;
     }
 
     @Override
@@ -43,5 +46,10 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public Optional<Customer> getCustomerById(Integer id){
         return repository.findById(id);
+    }
+
+    @Override
+    public Optional<Customer> getCustomerByUserDetailsId(Integer id){
+        return repositoryJpa.findByUserDetailsId(id);
     }
 }

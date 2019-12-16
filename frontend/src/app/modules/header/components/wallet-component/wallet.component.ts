@@ -55,10 +55,10 @@ export class WalletComponent implements OnInit{
       this.loadingService.hide();
 
     }));
-
   }
+
   walletWithdraw():void{
-    if((this.currentWallet.status != 'active') && (this.currentWallet.balance < this.myFormWallet.controls['total'].value)){
+    if(this.currentWallet.balance <= this.myFormWallet.controls['total'].value){
       console.log('Error');
     }else{
       this.rechargeWallet.id = this.currentWallet.id;

@@ -1,9 +1,6 @@
 package com.netcracker.edu.fapi.service;
 
-import com.netcracker.edu.fapi.models.CustomerViewModel;
-import com.netcracker.edu.fapi.models.RegistrationCustomerViewModel;
-import com.netcracker.edu.fapi.models.UserDetailsViewModel;
-import com.netcracker.edu.fapi.models.WalletViewModel;
+import com.netcracker.edu.fapi.models.*;
 
 import java.util.List;
 
@@ -13,4 +10,5 @@ public interface CustomerDataService {
     List<CustomerViewModel> getAllByNameAsc();
     void deleteCustomerById(Integer id);
     CustomerViewModel getCustomerById(Integer id);
+    UserSignatureViewModel getCustomerByUserDetailsId(Integer id);
 }

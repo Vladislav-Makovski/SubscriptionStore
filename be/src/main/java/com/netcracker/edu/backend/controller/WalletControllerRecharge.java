@@ -20,6 +20,10 @@ public class WalletControllerRecharge {
 
     @RequestMapping(value = "recharge",method = RequestMethod.POST)
     public Wallet saveBalanceRecharge(@RequestBody Wallet wallet) {
-        return walletService.saveBalanceRecharge(wallet);
+        if(wallet.getBalance()>=0) {
+            return walletService.saveBalanceRecharge(wallet);
+        }else {
+            return null;
+        }
     }
 }

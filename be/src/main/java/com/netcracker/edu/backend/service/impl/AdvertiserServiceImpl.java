@@ -3,6 +3,7 @@ package com.netcracker.edu.backend.service.impl;
 import com.netcracker.edu.backend.entity.Customer;
 import com.netcracker.edu.backend.entity.Organization;
 import com.netcracker.edu.backend.entity.Product;
+import com.netcracker.edu.backend.repository.AdvertiserJpaRepository;
 import com.netcracker.edu.backend.repository.AdvertiserRepository;
 import com.netcracker.edu.backend.repository.AdvertiserSortRepository;
 import com.netcracker.edu.backend.service.AdvertiserService;
@@ -17,11 +18,13 @@ public class AdvertiserServiceImpl implements AdvertiserService {
 
     private AdvertiserRepository repository;
     private AdvertiserSortRepository repositorySort;
+    private AdvertiserJpaRepository repositoryJpa;
 
     @Autowired
-    public AdvertiserServiceImpl(AdvertiserRepository repository, AdvertiserSortRepository repositorySort) {
+    public AdvertiserServiceImpl(AdvertiserRepository repository, AdvertiserSortRepository repositorySort,AdvertiserJpaRepository repositoryJpa) {
         this.repository = repository;
         this.repositorySort = repositorySort;
+        this.repositoryJpa = repositoryJpa;
     }
 
     @Override
@@ -43,6 +46,11 @@ public class AdvertiserServiceImpl implements AdvertiserService {
     @Override
     public Optional<Organization> getAdvertiserById(Integer id){
         return repository.findById(id);
+    }
+
+    @Override
+    public Optional<Organization> getAdvertiserByUserDetailsId(Integer id){
+        return repositoryJpa.findByUserDetailsId(id);
     }
 
 }

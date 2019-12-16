@@ -11,4 +11,5 @@ public interface CustomerService {
     Iterable<Customer> getAllCustomerByNameAsc();
     void deleteCustomerById(Integer id);
     Optional<Customer> getCustomerById(Integer id);
+    Optional<Customer> getCustomerByUserDetailsId(Integer id);
 }

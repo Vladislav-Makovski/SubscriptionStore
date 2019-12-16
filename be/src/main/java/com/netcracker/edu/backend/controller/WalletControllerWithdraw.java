@@ -20,7 +20,12 @@ public class WalletControllerWithdraw {
     }
 
     @RequestMapping(value = "withdraw" ,method = RequestMethod.POST)
-    public Wallet saveBalanceWithdraw(@RequestBody Wallet wallet) {
-        return walletService.saveBalanceWithdraw(wallet);
+    public Wallet saveBalanceWithdraw(@RequestBody Wallet wallet)
+    {
+        if(wallet.getBalance()>=0) {
+            return walletService.saveBalanceWithdraw(wallet);
+        }else {
+            return null;
+        }
     }
 }

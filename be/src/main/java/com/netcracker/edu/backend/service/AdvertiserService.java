@@ -12,4 +12,5 @@ public interface AdvertiserService {
     Iterable<Organization> getAllOrganizationByNameAsc();
     void deleteAdvertiserById(Integer id);
     Optional<Organization> getAdvertiserById(Integer id);
+    Optional<Organization> getAdvertiserByUserDetailsId(Integer id);
 }

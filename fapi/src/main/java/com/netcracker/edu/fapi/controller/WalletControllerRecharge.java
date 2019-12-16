@@ -18,6 +18,7 @@ public class WalletControllerRecharge {
 
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<WalletViewModel> saveBalanceRecharge(@RequestBody WalletViewModel wallet) {
+
         return ResponseEntity.ok(walletDataService.saveBalanceRecharge(wallet));
     }
 }

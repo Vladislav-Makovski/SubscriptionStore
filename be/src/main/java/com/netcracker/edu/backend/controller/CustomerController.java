@@ -42,4 +42,11 @@ public class CustomerController {
     public Optional<Customer> getCustomerById(@PathVariable(name = "id") Integer id) {
         return customerService.getCustomerById(id);
     }
+
+    @GetMapping
+    @RequestMapping(value = "information/userDetails/{id}", method = RequestMethod.GET)
+    public Optional<Customer> getCustomerByUserDetailsId(@PathVariable(name = "id") Integer id) {
+        return customerService.getCustomerByUserDetailsId(id);
+    }
+
 }

@@ -5,6 +5,8 @@ import {Ng4LoadingSpinnerService} from "ng4-loading-spinner";
 import {UserLogin} from "../../models/UserLogin";
 import {UserTest} from "../../../../UserInformation/user-test";
 import {LoginService} from "../../../../services/LoginService";
+import {CurrentUserService} from "../../../../services/current-user.service";
+import {UserSignature} from "../../../../UserInformation/user-signature";
 
 @Component({
   selector :'my-login',
@@ -19,7 +21,8 @@ export class LoginComponent implements OnInit{
   private subscriptions: Subscription[] = [];
 
   constructor(private loginService: LoginService,
-              private loadingService: Ng4LoadingSpinnerService) {
+              private loadingService: Ng4LoadingSpinnerService,
+              private currentUser: CurrentUserService) {
   }
 
   ngOnInit(){
@@ -36,7 +39,9 @@ export class LoginComponent implements OnInit{
       this.loadingService.show();
       this.subscriptions.push(this.loginService.loginUser(this.loginUser).subscribe(accounts => {
         this.userTest = accounts as UserTest ;
-        console.log(this.userTest);
+        delete this.userTest.jwttoken;
+        this.currentUser.saveCurrentUser(this.userTest);
+        console.log(this.currentUser._currentUser);
         this.loadingService.hide();
       }));
   }

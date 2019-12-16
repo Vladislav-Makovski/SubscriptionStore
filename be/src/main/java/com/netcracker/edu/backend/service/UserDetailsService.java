@@ -12,5 +12,4 @@ public interface UserDetailsService {
     void deleteUserDetailsById(Integer id);
     List<UserDetails> findAll();
     UserDetails findByUsername(String login);
-
 }

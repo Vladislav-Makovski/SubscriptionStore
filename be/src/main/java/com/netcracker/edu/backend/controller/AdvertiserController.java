@@ -41,4 +41,10 @@ public class AdvertiserController {
     public Optional<Organization> getAdvertiserById(@PathVariable(name = "id") Integer id) {
         return advertiserService.getAdvertiserById(id);
     }
+
+    @GetMapping
+    @RequestMapping(value = "information/userDetails/{id}", method = RequestMethod.GET)
+    public Optional<Organization> getAdvertiserByUserDetailsId(@PathVariable(name = "id") Integer id) {
+        return advertiserService.getAdvertiserByUserDetailsId(id);
+    }
 }

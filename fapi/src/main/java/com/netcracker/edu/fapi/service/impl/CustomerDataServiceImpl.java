@@ -44,4 +44,10 @@ public class CustomerDataServiceImpl implements CustomerDataService {
         RestTemplate restTemplate = new RestTemplate();
         return restTemplate.getForObject(backendServerUrl + "/api/customer/information/" + id, CustomerViewModel.class);
     }
+
+    @Override
+    public UserSignatureViewModel getCustomerByUserDetailsId(Integer id) {
+        RestTemplate restTemplate = new RestTemplate();
+        return restTemplate.getForObject(backendServerUrl + "/api/customer/information/userDetails/" + id, UserSignatureViewModel.class);
+    }
 }

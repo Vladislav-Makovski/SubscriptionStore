@@ -44,4 +44,10 @@ public class AdvertiserDataServiceImpl implements AdvertiserDataService {
         RestTemplate restTemplate = new RestTemplate();
         return restTemplate.getForObject(backendServerUrl + "/api/advertiser/information/" + id, AdvertiserViewModel.class);
     }
+
+    @Override
+    public AdvertiserViewModel getAdvertiserByUserDetailsId(Integer id) {
+        RestTemplate restTemplate = new RestTemplate();
+        return restTemplate.getForObject(backendServerUrl + "/api/advertiser/information/userDetails/" + id, AdvertiserViewModel.class);
+    }
 }

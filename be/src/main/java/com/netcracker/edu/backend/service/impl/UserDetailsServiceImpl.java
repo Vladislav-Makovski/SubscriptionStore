@@ -45,4 +45,5 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     public UserDetails findByUsername(String login) {
         return userDetailsRepository.findByUsername(login);
     }
+
 }

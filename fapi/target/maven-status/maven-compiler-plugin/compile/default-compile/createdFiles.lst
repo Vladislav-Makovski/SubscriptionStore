@@ -21,6 +21,7 @@ com\netcracker\edu\fapi\controller\ProductController.class
 com\netcracker\edu\fapi\models\SaveProductViewModel.class
 com\netcracker\edu\fapi\controller\SubscribeController.class
 com\netcracker\edu\fapi\models\SubscriptionViewModel.class
+com\netcracker\edu\fapi\service\UserInformationService.class
 com\netcracker\edu\fapi\service\CustomerDataService.class
 com\netcracker\edu\fapi\converter\WalletAndStatus.class
 com\netcracker\edu\fapi\converter\CustomerConverter.class
@@ -39,6 +40,7 @@ com\netcracker\edu\fapi\service\AdvertiserDataService.class
 com\netcracker\edu\fapi\models\ProductAdminViewModel.class
 com\netcracker\edu\fapi\controller\RegistrationController.class
 com\netcracker\edu\fapi\service\impl\SubscriptionDataServiceImpl.class
+com\netcracker\edu\fapi\service\impl\UserInformationServiceImpl.class
 com\netcracker\edu\fapi\models\ProductViewModel.class
 com\netcracker\edu\fapi\service\impl\UserDetailsDataServiceImpl.class
 com\netcracker\edu\fapi\service\UserDetailsDataService.class

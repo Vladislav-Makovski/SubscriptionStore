@@ -10,5 +10,6 @@ public interface AdvertiserDataService {
     List<AdvertiserViewModel> getAllByNameAsc();
     void deleteAdvertiserById(Integer id);
     AdvertiserViewModel getAdvertiserById(Integer id);
+    AdvertiserViewModel getAdvertiserByUserDetailsId(Integer id);
 }
 
