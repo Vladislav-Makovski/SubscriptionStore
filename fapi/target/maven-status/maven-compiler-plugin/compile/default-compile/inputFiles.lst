@@ -15,6 +15,7 @@ C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\confi
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\SubscriptionViewModel.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\service\UserInformationService.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\SaveProductViewModel.java
+C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\Validator\CustomerValidator.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\service\CustomerDataService.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\service\SubscriptionDataService.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\converter\AdvertiserConverter.java
@@ -42,6 +43,7 @@ C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\servi
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\service\impl\JwtUserDetailsServiceImpl.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\controller\RegistrationController.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\RegistrationCustomerViewModel.java
+C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\Validator\AdvertiserValidator.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\service\CategoryDataService.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\config\JwtTokenUtil.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\service\impl\CustomerDataServiceImpl.java
