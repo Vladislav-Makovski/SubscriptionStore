@@ -20,7 +20,7 @@ import {WalletComponent} from "./modules/header/components/wallet-component/wall
 import {HeaderComponent} from "./modules/header/components/header-site/header.component";
 import {CatalogService} from "./services/catalog.service";
 import {Ng4LoadingSpinnerModule} from "ng4-loading-spinner";
-import {HttpClient, HttpClientModule, HttpHeaders} from "@angular/common/http";
+import {HTTP_INTERCEPTORS, HttpClient, HttpClientModule, HttpHeaders} from "@angular/common/http";
 import {BsModalService, ModalModule} from "ngx-bootstrap";
 import {CategoryService} from "./services/category.service";
 import {WalletService} from "./services/wallet.service";
@@ -33,6 +33,7 @@ import {LoginService} from "./services/LoginService";
 import {ProductService} from "./services/product.service";
 import {SubscribeService} from "./services/subscribe.service";
 import {CurrentUserService} from "./services/current-user.service";
+import {AuthInterceptor} from "./services/AuthInterceptor";
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -85,7 +86,11 @@ const appRoutes: Routes = [
   exports: [],
   providers: [CatalogService,CategoryService,HttpClient,BsModalService,WalletService,CustomerSubscriptionService,
     RegistrationService,AddProductService,AdvertiserService,CustomerService,LoginService,ProductService,
-    SubscribeService,CurrentUserService]
+    SubscribeService,CurrentUserService,{
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true
+    }]
 })
 
 export class AppModule {

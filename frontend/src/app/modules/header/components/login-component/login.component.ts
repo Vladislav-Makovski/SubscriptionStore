@@ -39,6 +39,9 @@ export class LoginComponent implements OnInit{
       this.loadingService.show();
       this.subscriptions.push(this.loginService.loginUser(this.loginUser).subscribe(accounts => {
         this.userTest = accounts as UserTest ;
+        localStorage.setItem('token', this.userTest.jwttoken);
+        console.log(this.userTest);
+        console.log(localStorage.getItem("token"));
         delete this.userTest.jwttoken;
         this.currentUser.saveCurrentUser(this.userTest);
         console.log(this.currentUser._currentUser);

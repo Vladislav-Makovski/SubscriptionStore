@@ -59,7 +59,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 // нам не нужен CSRF для этого примера
         httpSecurity.csrf().disable()
 // не аутифицируем этот конкретный запрос
-                .authorizeRequests().antMatchers("/api/authenticate","/api/new/customer").permitAll().
+                .authorizeRequests().antMatchers("/api/authenticate","/api/new/customer","/api/new/advertiser","/api/bc","/api/NameAsc").permitAll().
 // все остальные запросы должны быть authenticated
         anyRequest().authenticated().and().
 // убедитесь что мы используем сессию без сохранения состояния;сессия не будет использоваться для

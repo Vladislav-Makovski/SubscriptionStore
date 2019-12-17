@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit{
 
   ngOnInit(){
     // this.user = this.currentUser._currentUser.userRole;
-    this.user ="admin";
+    this.user ="customer";
     console.log(this.user);
   }
 

@@ -7,11 +7,13 @@ import {Subscription} from "rxjs/internal/Subscription";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {WalletUpdate} from "../../models/walletUpdate";
 import {DefultUser} from "../../../../UserInformation/defult-user";
+import {AuthInterceptor} from "../../../../services/AuthInterceptor";
 
 @Component({
   selector :'wallet',
   templateUrl: './wallet.component.html',
-  styleUrls: ['./wallet.component.css']
+  styleUrls: ['./wallet.component.css'],
+  providers:[AuthInterceptor]
 })
 export class WalletComponent implements OnInit{
 
