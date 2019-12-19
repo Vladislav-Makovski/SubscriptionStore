@@ -10,7 +10,7 @@ export class CurrentUserService{
 
    saveCurrentUser(newUser: UserSignature):void{
     // this._currentUser = newUser;
-     this._currentUser.userRole = newUser.userRole;
+     this._currentUser = newUser;
     }
 
 }

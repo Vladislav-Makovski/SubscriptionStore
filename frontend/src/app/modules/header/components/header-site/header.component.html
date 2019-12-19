@@ -4,16 +4,16 @@
       <p>SubscriptionStore</p>
     </div>
     <div class="panel" [ngSwitch]="true">
-      <a href="" title="Каталог" routerLink="/catalog" *ngSwitchCase="user === 'guest' || user === 'customer'|| user === 'advertiser'">Catalog</a>
-      <a href="" title="Популярные приложения" routerLink="/top" *ngSwitchCase="user === 'guest'||user === 'customer'">TOP - 10</a>
-      <a href="" title="Мои подписки" routerLink="/subscription" *ngSwitchCase="user === 'customer'">My subscriptions</a>
-      <a href="" title="Мои подписки" routerLink="/myProduct" *ngSwitchCase="user === 'advertiser'">My product</a>
-      <a href="" title="Популярные приложения" routerLink="/add"*ngSwitchCase="user === 'advertiser'">Add product</a>
-      <a href="" title="кошелёк" routerLink="/wallet"*ngSwitchCase="user==='customer'||user ==='advertiser'"> My wallet</a>
-      <a href="" title="Мои подписки" routerLink="/blockAdvertiser" *ngSwitchCase="user === 'admin'">Block advertiser</a>
-      <a href="" title="Популярные приложения" routerLink="/blockCustomer"*ngSwitchCase="user === 'admin'">Block customer</a>
-      <a href="" title="кошелёк" routerLink="/productConfirm"*ngSwitchCase="user ==='admin'">Product confirm</a>
-      <a href="" title="кошелёк" routerLink="/productDelete"*ngSwitchCase="user ==='admin'">Product delete</a>
+      <a href="" title="Каталог" routerLink="/catalog" *ngSwitchCase="currentUser._currentUser.userRole === 'guest' || currentUser._currentUser.userRole === 'customer'">Catalog</a>
+      <a href="" title="Популярные приложения" routerLink="/top" *ngSwitchCase="currentUser._currentUser.userRole === 'guest'||currentUser._currentUser.userRole === 'customer'">TOP - 10</a>
+      <a href="" title="Мои подписки" routerLink="/subscription" *ngSwitchCase="currentUser._currentUser.userRole === 'customer'">My subscriptions</a>
+      <a href="" title="Мои продукты" routerLink="/myProduct" *ngSwitchCase="currentUser._currentUser.userRole === 'advertiser'">My product</a>
+      <a href="" title="Популярные приложения" routerLink="/add"*ngSwitchCase="currentUser._currentUser.userRole === 'advertiser'">Add product</a>
+      <a href="" title="кошелёк" routerLink="/wallet"*ngSwitchCase="currentUser._currentUser.userRole ==='customer'||currentUser._currentUser.userRole ==='advertiser'"> My wallet</a>
+      <a href="" title="Мои подписки" routerLink="/blockAdvertiser" *ngSwitchCase="currentUser._currentUser.userRole === 'admin'">Block advertiser</a>
+      <a href="" title="Популярные приложения" routerLink="/blockCustomer"*ngSwitchCase="currentUser._currentUser.userRole === 'admin'">Block customer</a>
+      <a href="" title="кошелёк" routerLink="/productConfirm"*ngSwitchCase="currentUser._currentUser.userRole ==='admin'">Product confirm</a>
+      <a href="" title="кошелёк" routerLink="/productDelete"*ngSwitchCase="currentUser._currentUser.userRole ==='admin'">Product delete</a>
     </div>
     <div class="login">
       <a href="#" title="Login" routerLink="/login">

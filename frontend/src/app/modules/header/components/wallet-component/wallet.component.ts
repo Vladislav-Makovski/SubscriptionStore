@@ -1,13 +1,12 @@
 import {Component, OnInit} from '@angular/core';
-import {UserSignature} from "../../../../UserInformation/user-signature";
 import {Ng4LoadingSpinnerService} from "ng4-loading-spinner";
 import {WalletService} from "../../../../services/wallet.service";
 import {Wallet} from "../../models/wallet";
 import {Subscription} from "rxjs/internal/Subscription";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {WalletUpdate} from "../../models/walletUpdate";
-import {DefultUser} from "../../../../UserInformation/defult-user";
 import {AuthInterceptor} from "../../../../services/AuthInterceptor";
+import {CurrentUserService} from "../../../../services/current-user.service";
 
 @Component({
   selector :'wallet',
@@ -17,21 +16,21 @@ import {AuthInterceptor} from "../../../../services/AuthInterceptor";
 })
 export class WalletComponent implements OnInit{
 
-  public currentUser: DefultUser = new DefultUser();
   public currentWallet: Wallet = new Wallet();
   private subscriptions: Subscription[] = [];
   myFormWallet: FormGroup;
   rechargeWallet : WalletUpdate = new WalletUpdate();
 
   constructor(private walletService: WalletService,
-              private loadingService: Ng4LoadingSpinnerService) {
+              private loadingService: Ng4LoadingSpinnerService,
+              private currentUserService: CurrentUserService) {
   }
 
   ngOnInit(){
     this.myFormWallet = new FormGroup({
       "total": new FormControl("1", [Validators.required,Validators.min(1)]),
     });
-    this.loadUserWallet(this.currentUser.walletId);
+    this.loadUserWallet(this.currentUserService._currentUser.walletId);
   }
 
   private loadUserWallet(walletUserId: string): void {
@@ -60,7 +59,7 @@ export class WalletComponent implements OnInit{
   }
 
   walletWithdraw():void{
-    if(this.currentWallet.balance <= this.myFormWallet.controls['total'].value){
+    if(this.currentWallet.balance < this.myFormWallet.controls['total'].value){
       console.log('Error');
     }else{
       this.rechargeWallet.id = this.currentWallet.id;

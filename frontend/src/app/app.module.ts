@@ -81,7 +81,6 @@ const appRoutes: Routes = [
     Ng4LoadingSpinnerModule.forRoot(),
     HttpClientModule,
   ],
-
   bootstrap: [AppComponent],
   exports: [],
   providers: [CatalogService,CategoryService,HttpClient,BsModalService,WalletService,CustomerSubscriptionService,

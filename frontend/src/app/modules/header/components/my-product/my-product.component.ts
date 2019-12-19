@@ -3,8 +3,8 @@ import {CatalogItem} from "../../models/catalog-item";
 import {Ng4LoadingSpinnerService} from "ng4-loading-spinner";
 import {CatalogService} from "../../../../services/catalog.service";
 import {Subscription} from "rxjs/index";
-import {DefultAdvertiser} from "../../../../UserInformation/defult-advertiser";
 import {ProductService} from "../../../../services/product.service";
+import {CurrentUserService} from "../../../../services/current-user.service";
 
 @Component({
   selector :'my-product',
@@ -15,11 +15,11 @@ export class MyProductComponent implements OnInit{
 
   private subscriptions: Subscription[] = [];
   public myProduct: CatalogItem[] = [];
-  public currentAdvertiser: DefultAdvertiser = new DefultAdvertiser();
 
   constructor(private catalogItemService: CatalogService,
               private loadingService: Ng4LoadingSpinnerService,
-              private productService: ProductService) {
+              private productService: ProductService,
+              private currentUserService: CurrentUserService) {
   }
   ngOnInit(){
     this.loadProduct();
@@ -27,7 +27,7 @@ export class MyProductComponent implements OnInit{
 
   private loadProduct(): void {
     this.loadingService.show();
-    this.subscriptions.push(this.catalogItemService.getProductByAdvertiserId(this.currentAdvertiser.id).subscribe(accounts => {
+    this.subscriptions.push(this.catalogItemService.getProductByAdvertiserId(this.currentUserService._currentUser.id).subscribe(accounts => {
       this.myProduct = accounts as CatalogItem[];
       console.log(this.myProduct);
       this.loadingService.hide();

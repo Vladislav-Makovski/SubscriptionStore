@@ -9,9 +9,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Component;
-
-import javax.naming.ldap.SortKey;
-import java.util.Optional;
+import java.util.*;
 
 @Component
 public class CatalogItemServiceImpl implements CatalogItemService {
@@ -19,7 +17,7 @@ public class CatalogItemServiceImpl implements CatalogItemService {
     private ProductAdvertiserRepository productAdvertiserRepository;
     private CatalogItemRepository repository;
     private ProductAdvertiserRepository advertiserRepository;
-    Sort sort = Sort.by(Sort.Order.desc("SubscriptionCount"));
+    Sort sortProd = Sort.by(Sort.Order.desc("SubscriptionCount"));
     Sort sortNameDesc = Sort.by(Sort.Order.desc("Name"));
     Sort sortCategoryDesc = Sort.by(Sort.Order.desc("CategoryId"));
     Sort sortPriceDesc = Sort.by(Sort.Order.desc("Cost"));
@@ -62,7 +60,17 @@ public class CatalogItemServiceImpl implements CatalogItemService {
 
     @Override
     public  Iterable<Product> getAllCatalogItemBySubscriptionCount() {
-        return repository.findAll(PageRequest.of(0, 1)).getContent();
+        List<Product> prod = advertiserRepository.findByStatusProductId(1);
+        Collections.sort(prod, new Comparator<Product>() {
+            @Override
+            public int compare(Product prod1, Product prod2) {
+                return prod1.getSubscriptionCount() > prod2.getSubscriptionCount() ? -1 : (prod1.getSubscriptionCount() < prod2.getSubscriptionCount()) ? 1 : 0;
+            }
+        });
+        while (prod.size() != 2){
+           prod.remove(prod.size()-1);
+        }
+        return prod;
     }
 
     @Override

@@ -1,3 +1,7 @@
+<div class = "errorMes" *ngIf="errorRegistration == true">
+  <p>User with such data is already registered</p>
+  <button class="okbtn" (click)="submitReg()">Ok</button>
+</div>
 <form class="registrationUser" [formGroup]="myFormUser" novalidate (ngSubmit)="submitUser()">
   <div class="container">
     <h1>Register</h1>
@@ -42,7 +46,7 @@
     </ng-container>
 
     <hr>
-    <button type="submit" class="registerbtn" [disabled]="myFormUser.invalid">Register</button>
+    <button type="submit" class="registerbtn" [disabled]="myFormUser.invalid" (click)="navig()">Register</button>
   </div>
 </form>
 <ng-template #registrationSuccessful>

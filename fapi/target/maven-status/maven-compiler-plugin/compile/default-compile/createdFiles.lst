@@ -55,6 +55,7 @@ com\netcracker\edu\fapi\controller\CustomerController.class
 com\netcracker\edu\fapi\controller\WalletControllerRecharge.class
 com\netcracker\edu\fapi\converter\ProductAndCategory.class
 com\netcracker\edu\fapi\models\RegistrationAdvertiserViewModel.class
+com\netcracker\edu\fapi\controller\JwtAuthenticationController.class
 com\netcracker\edu\fapi\service\CategoryDataService.class
 com\netcracker\edu\fapi\FapiApplication.class
 com\netcracker\edu\fapi\service\impl\StatusProductDataServiceImpl.class

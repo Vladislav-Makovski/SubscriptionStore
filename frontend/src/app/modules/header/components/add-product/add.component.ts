@@ -6,8 +6,8 @@ import {Ng4LoadingSpinnerService} from "ng4-loading-spinner";
 import {CategoryService} from "../../../../services/category.service";
 import {Category} from "../../models/category";
 import {AddProductModel} from "../../models/add-product-model";
-import {log} from "util";
 import {AddProductService} from "../../../../services/add-product.service";
+import {CurrentUserService} from "../../../../services/current-user.service";
 
 @Component({
   selector :'add-product',
@@ -17,15 +17,14 @@ import {AddProductService} from "../../../../services/add-product.service";
 
 export class AddComponent implements OnInit{
   formProduct: FormGroup;
-  prod: AddProductModel;
-  currentAdvertiser: DefultAdvertiser = new DefultAdvertiser();
   productCategory: Category[] = [];
   productSave: AddProductModel = new AddProductModel();
   private subscriptions: Subscription[] = [];
 
   constructor(private categoryService: CategoryService,
               private addProductService: AddProductService,
-              private loadingService: Ng4LoadingSpinnerService) {
+              private loadingService: Ng4LoadingSpinnerService,
+              private currentUserService: CurrentUserService) {
   }
   ngOnInit() {
     this.loadCategory();
@@ -54,7 +53,10 @@ export class AddComponent implements OnInit{
     this.productSave.categoryId = this.productCategory.find(x => x.name == this.formProduct.controls['category'].value).id;
     this.productSave.subscriptionCount = "0";
     this.productSave.statusProductId = "3";
-    this.productSave.organizationId = this.currentAdvertiser.id;
+    this.productSave.organizationId = this.currentUserService._currentUser.id;
+    console.log(this.productSave.organizationId);
+    console.log(this.currentUserService._currentUser.id);
+
     console.log(this.productSave);
     this.loadingService.show();
     this.subscriptions.push(this.addProductService.saveNewProduct(this.productSave).subscribe(() => {

@@ -4,6 +4,7 @@ import {UserSignature} from "../UserInformation/user-signature";
 import {Observable} from "rxjs/index";
 import {RegistrationCustomer} from "../modules/header/models/registration-customer";
 import {RegistrationAdvertiser} from "../modules/header/models/registration-advertiser";
+import {map} from "rxjs/internal/operators";
 
 @Injectable()
 export class RegistrationService{
@@ -17,5 +18,4 @@ export class RegistrationService{
   saveNewAdvertiser(userInf: RegistrationAdvertiser): Observable<UserSignature> {
     return this.http.post<UserSignature>('/api/new/advertiser',userInf);
   }
-
 }

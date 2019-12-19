@@ -3,7 +3,7 @@ import {Subscription} from "rxjs/index";
 import {CustomerSubscription} from "../../models/customerSubscription";
 import {Ng4LoadingSpinnerService} from "ng4-loading-spinner";
 import {CustomerSubscriptionService} from "../../../../services/customerSubscription.service";
-import {DefultUser} from "../../../../UserInformation/defult-user";
+import {CurrentUserService} from "../../../../services/current-user.service";
 
 @Component({
   selector :'subscription-page',
@@ -11,13 +11,12 @@ import {DefultUser} from "../../../../UserInformation/defult-user";
   styleUrls: ['./subscription.component.css']
 })
 export class SubscriptionComponent implements OnInit{
-
-  public currentUser: DefultUser = new DefultUser();
   public mySubscription: CustomerSubscription[] = [];
   private subscriptions: Subscription[] = [];
 
   constructor(private customerSubscription: CustomerSubscriptionService,
-              private loadingService: Ng4LoadingSpinnerService) {
+              private loadingService: Ng4LoadingSpinnerService,
+              private currentUserService: CurrentUserService) {
   }
   ngOnInit() {
     this.loadSubscription();
@@ -25,7 +24,7 @@ export class SubscriptionComponent implements OnInit{
 
   private loadSubscription(): void {
     this.loadingService.show();
-    this.subscriptions.push(this.customerSubscription.getSubscriptionByUserId(this.currentUser.id).subscribe(accounts => {
+    this.subscriptions.push(this.customerSubscription.getSubscriptionByUserId(this.currentUserService._currentUser.id).subscribe(accounts => {
       this.mySubscription = accounts as CustomerSubscription[];
       console.log(this.mySubscription);
       this.loadingService.hide();

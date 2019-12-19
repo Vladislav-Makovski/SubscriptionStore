@@ -7,6 +7,7 @@ import {UserSignature} from "../../../../UserInformation/user-signature";
 import {RegistrationCustomer} from "../../models/registration-customer";
 import {RegistrationAdvertiser} from "../../models/registration-advertiser";
 import {BsModalRef, BsModalService} from "ngx-bootstrap";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'my-registration',
@@ -27,20 +28,22 @@ export class RegistrationComponent implements OnInit {
   public customerInformation: RegistrationCustomer = new RegistrationCustomer();
   public advertiserInformation: RegistrationAdvertiser = new RegistrationAdvertiser();
   private subscriptions: Subscription[] = [];
+  public errorRegistration: boolean = false;
 
   constructor(private registrationService: RegistrationService,
               private loadingService: Ng4LoadingSpinnerService,
-              private modalService: BsModalService) {
+              private modalService: BsModalService,
+              private  router : Router) {
   }
 
 
   ngOnInit() {
     this.myFormUser = new FormGroup({
-      "email": new FormControl("", [Validators.required, Validators.email]),
-      "password": new FormControl("", Validators.required),
-      "nickname": new FormControl("", Validators.required),
-      "name": new FormControl("", Validators.required),
-      "surname": new FormControl("", Validators.required),
+      "email": new FormControl("", [Validators.required, Validators.email,Validators.pattern(/^\S*$/)]),
+      "password": new FormControl("", [Validators.required,Validators.pattern(/^\S*$/)]),
+      "nickname": new FormControl("", [Validators.required,Validators.pattern(/^\S*$/)]),
+      "name": new FormControl("", [Validators.required,Validators.pattern(/^\S*$/)]),
+      "surname": new FormControl("", [Validators.required,Validators.pattern(/^\S*$/)]),
     });
   }
 
@@ -58,6 +61,11 @@ export class RegistrationComponent implements OnInit {
       this.subscriptions.push(this.registrationService.saveNewCustomer(this.customerInformation).subscribe(accounts => {
         this.user = accounts as UserSignature ;
         console.log(this.user);
+        if(this.user.id !== 0){
+          this.router.navigate("/login")
+        }else{
+          this.errorRegistration = true;
+        }
         this.loadingService.hide();
       }));
     }else{
@@ -72,8 +80,11 @@ export class RegistrationComponent implements OnInit {
       this.subscriptions.push(this.registrationService.saveNewAdvertiser(this.advertiserInformation).subscribe(accounts => {
         this.user = accounts as UserSignature ;
         console.log(this.user);
-
-        // this._openModal(this.registrationSuccessful);
+        if(this.user.id !== 0){
+          this.router.navigate("/login")
+        }else{
+          this.errorRegistration = true;
+        }
         this.loadingService.hide();
       }));
     }
@@ -91,8 +102,22 @@ export class RegistrationComponent implements OnInit {
     this.modalRef.hide();
   }
 
+  submitReg():void{
+    this.myFormUser = new FormGroup({
+      "email": new FormControl("", [Validators.required, Validators.email,Validators.pattern(/^\S*$/)]),
+      "password": new FormControl("", [Validators.required,Validators.pattern(/^\S*$/)]),
+      "nickname": new FormControl("", [Validators.required,Validators.pattern(/^\S*$/)]),
+      "name": new FormControl("", [Validators.required,Validators.pattern(/^\S*$/)]),
+      "surname": new FormControl("", [Validators.required,Validators.pattern(/^\S*$/)]),
+    });
+    this.errorRegistration = false;
+
+  }
   ngOnDestroy(): void {
     this.subscriptions.forEach(subscription => subscription.unsubscribe());
+  }
+  navig():void{
+    window.scroll(0,0);
   }
 
 }

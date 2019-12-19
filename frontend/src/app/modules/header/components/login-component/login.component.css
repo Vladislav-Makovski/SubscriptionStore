@@ -5,6 +5,29 @@
   padding: 0;
 }
 
+.errorMes{
+  width: 500px;
+  height: auto;
+  text-align: center;
+  margin-left: 400px;
+  margin-top: 20px;
+  background-color: #343434;
+  border: 3px solid #343434;
+  font-family: 'Roboto Slab', serif;
+  padding: 10px;
+}
+
+.okbtn{
+  background-color: rgba(102,204,204,1);
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  height: 35px;
+  opacity: 1;
+  margin-top: 10px;
+}
+
 .loginuser{
   width: 500px;
   height: 400px;
@@ -14,6 +37,7 @@
   background-color: #343434;
   border: 3px solid #343434;
   font-family: 'Roboto Slab', serif;
+  padding: 20px;
 }
 
 .loginbtn {
