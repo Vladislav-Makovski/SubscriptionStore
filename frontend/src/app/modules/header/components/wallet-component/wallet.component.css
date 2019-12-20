@@ -39,3 +39,30 @@ input[type=number]{
   border: none;
   background: #f1f1f1;
 }
+
+p{
+  color:  rgba(255,255,255,1);
+}
+
+.errorMes{
+  width: 500px;
+  height: auto;
+  text-align: center;
+  margin-left: 30%;
+  margin-top: 20px;
+  background-color: #454545;
+  border: 3px solid #343434;
+  font-family: 'Roboto Slab', serif;
+  padding: 10px;
+}
+
+.okbtn{
+  background-color: rgba(102,204,204,1);
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  height: 35px;
+  opacity: 1;
+  margin-top: 10px;
+}

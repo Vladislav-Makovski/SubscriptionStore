@@ -6,6 +6,8 @@ import com.netcracker.edu.backend.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.Optional;
+
 @Component
 public class ProductServiceImpl implements ProductService{
 
@@ -31,6 +33,16 @@ public class ProductServiceImpl implements ProductService{
         Product product = repository.findById(id.getId()).orElse(new Product());
         product.setStatusProductId(2);
         repository.save(product);
+    }
 
+    @Override
+    public Optional<Product> getProductById(Integer id) {
+            return repository.findById(id);
+    }
+
+    @Override
+    public Integer getAdvertiserIdById(Integer id) {
+        Product prod = repository.findById(id).orElse(new Product());
+        return prod.getOrganizationId();
     }
 }

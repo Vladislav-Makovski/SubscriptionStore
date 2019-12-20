@@ -11,11 +11,7 @@ import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.DisabledException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import com.netcracker.edu.fapi.service.JwtUserDetailsService;
 
 import com.netcracker.edu.fapi.config.JwtTokenUtil;
@@ -69,6 +65,24 @@ public class JwtAuthenticationController {
             throw new Exception("USER_DISABLED", e);
         } catch (BadCredentialsException e) {
             throw new Exception("INVALID_CREDENTIALS", e);
+        }
+    }
+
+    @RequestMapping("/api/oninit/{token}")
+    @GetMapping
+    public ResponseEntity<OnInitViewModel> getAllProductBySubscriptionCount(@PathVariable String token) {
+        String usernamee = jwtTokenUtil.getUsernameFromToken(token);
+        UserDetailsViewModel userInformation = userInformationService.getUserByUsername(usernamee);
+        if(userInformation.getUserRoleId()== 1 || userInformation.getUserRoleId() == 3){
+            UserSignatureViewModel userSignature = customerDataService.getCustomerByUserDetailsId(userInformation.getId());
+            if(userInformation.getUserRoleId()== 1){
+                return ResponseEntity.ok(new OnInitViewModel(userSignature.getId(),userInformation.getId(),userSignature.getWalletId(),"customer"));
+            }else {
+                return ResponseEntity.ok(new OnInitViewModel(userSignature.getId(), userInformation.getId(), userSignature.getWalletId(),"admin"));
+            }
+        }else{
+            AdvertiserViewModel advertiser = advertiserDataService.getAdvertiserByUserDetailsId(userInformation.getId());
+            return ResponseEntity.ok(new OnInitViewModel(advertiser.getId(),userInformation.getId(),advertiser.getWalletId(),"advertiser"));
         }
     }
 }

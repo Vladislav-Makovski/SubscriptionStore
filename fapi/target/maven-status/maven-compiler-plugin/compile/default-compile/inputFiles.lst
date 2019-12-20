@@ -10,6 +10,7 @@ C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\contr
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\service\impl\CatalogItemDataServiceImpl.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\controller\WalletControllerWithdraw.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\config\WebSecurityConfig.java
+C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\OnInitViewModel.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\ProductAdminViewModel.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\config\JwtAuthenticationEntryPoint.java
 C:\Netcracker\SubscriptionStore\fapi\src\main\java\com\netcracker\edu\fapi\models\SubscriptionViewModel.java

@@ -20,7 +20,6 @@ export class LoginComponent implements OnInit{
   myForm : FormGroup;
   registrationError :boolean = false;
   private subscriptions: Subscription[] = [];
-  error:any;
 
   constructor(private loginService: LoginService,
               private loadingService: Ng4LoadingSpinnerService,

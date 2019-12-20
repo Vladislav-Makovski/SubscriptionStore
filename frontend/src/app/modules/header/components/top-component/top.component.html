@@ -15,7 +15,7 @@
       <td>{{catalogItem.description}}</td>
       <td>{{catalogItem.subscriptionCount}}</td>
       <td>{{catalogItem.cost}}</td>
-      <td><button class="subbtn">Subscribe</button></td>
+      <td><button class="subbtn" (click) = "subscribeProduct(catalogItem.id)">Subscribe</button></td>
     </tr>
     </tbody>
   </table>

@@ -9,7 +9,6 @@ export class CurrentUserService{
   }
 
    saveCurrentUser(newUser: UserSignature):void{
-    // this._currentUser = newUser;
      this._currentUser = newUser;
     }
 

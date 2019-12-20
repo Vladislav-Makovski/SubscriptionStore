@@ -6,6 +6,7 @@ import {CatalogService} from "../../../../services/catalog.service";
 import {SubscribeService} from "../../../../services/subscribe.service";
 import {SubscribeModel} from "../../models/subscribe-model";
 import {CurrentUserService} from "../../../../services/current-user.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector :'Catalog',
@@ -25,7 +26,8 @@ export class CatalogComponent implements OnInit{
   constructor(private catalogItemService: CatalogService,
               private subscribeService: SubscribeService,
               private loadingService: Ng4LoadingSpinnerService,
-              private currentUserService: CurrentUserService) {
+              private currentUserService: CurrentUserService,
+              private  router: Router) {
     }
 
   ngOnInit(){
@@ -124,14 +126,17 @@ export class CatalogComponent implements OnInit{
   }
 
   public subscribeProduct(id: string): void{
-    this.sub.userId = this.currentUserService._currentUser.id;
-    this.sub.statusSubId = "1";
-    this.sub.productId = id;
-    this.loadingService.show();
-    this.subscriptions.push(this.subscribeService.subscribeProduct(this.sub).subscribe(() => {
-      this.loadingService.hide();
-    }));
-
+    if(this.currentUserService._currentUser.userRole == 'guest'){
+      this.router.navigate(['/login']);
+    }else {
+      this.sub.userId = this.currentUserService._currentUser.id;
+      this.sub.statusSubId = "1";
+      this.sub.productId = id;
+      this.loadingService.show();
+      this.subscriptions.push(this.subscribeService.subscribeProduct(this.sub).subscribe(() => {
+        this.loadingService.hide();
+      }));
+    }
   }
 
   ngOnDestroy(): void {

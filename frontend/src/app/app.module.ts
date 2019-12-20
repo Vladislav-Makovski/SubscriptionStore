@@ -1,4 +1,4 @@
-import {NgModule} from '@angular/core';
+import {APP_INITIALIZER, NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {RouterModule, Routes} from '@angular/router';
@@ -52,6 +52,20 @@ const appRoutes: Routes = [
   {path: 'wallet', component: WalletComponent},
 ];
 
+export function loadFromToken(http: HttpClient, currentUser: CurrentUserService){
+  return () => {
+    console.log('init');
+    if(localStorage.getItem('token')!=null){
+      return http.get<any>('/api/oninit/'+localStorage.getItem('token'))
+        .toPromise()
+        .then((resp) =>{
+          currentUser._currentUser = resp;
+          console.log(resp);
+        });
+    }
+  }
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -86,11 +100,19 @@ const appRoutes: Routes = [
   providers: [CatalogService,CategoryService,HttpClient,BsModalService,WalletService,CustomerSubscriptionService,
     RegistrationService,AddProductService,AdvertiserService,CustomerService,LoginService,ProductService,
     SubscribeService,CurrentUserService,{
-      provide: HTTP_INTERCEPTORS,
+    provide: APP_INITIALIZER,
+      useFactory: loadFromToken,
+      multi: true,
+      deps: [HttpClient,CurrentUserService]
+    },
+    {
+    provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptor,
       multi: true
-    }]
+  }]
 })
 
 export class AppModule {
 }
+
+

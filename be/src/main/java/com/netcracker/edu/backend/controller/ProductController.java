@@ -5,6 +5,8 @@ import com.netcracker.edu.backend.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Optional;
+
 @RestController
 public class ProductController {
 
@@ -29,4 +31,17 @@ public class ProductController {
     public void changeStatusProduct(@RequestBody Product product) {
         productService.changeStatusProduct(product);
     }
+
+    @GetMapping
+    @RequestMapping(value = "/api/product/custom/{id}", method = RequestMethod.GET)
+    public Optional<Product> getProductById(@PathVariable(name = "id") Integer id) {
+        return productService.getProductById(id);
+    }
+
+    @GetMapping
+    @RequestMapping(value = "/api/product/adverId/{id}", method = RequestMethod.GET)
+    public Integer getAdvertiserIdById(@PathVariable(name = "id") Integer id) {
+        return productService.getAdvertiserIdById(id);
+    }
+
 }

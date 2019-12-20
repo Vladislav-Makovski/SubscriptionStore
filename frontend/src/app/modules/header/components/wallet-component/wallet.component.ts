@@ -20,6 +20,7 @@ export class WalletComponent implements OnInit{
   private subscriptions: Subscription[] = [];
   myFormWallet: FormGroup;
   rechargeWallet : WalletUpdate = new WalletUpdate();
+  public walletError: boolean = false;
 
   constructor(private walletService: WalletService,
               private loadingService: Ng4LoadingSpinnerService,
@@ -60,7 +61,7 @@ export class WalletComponent implements OnInit{
 
   walletWithdraw():void{
     if(this.currentWallet.balance < this.myFormWallet.controls['total'].value){
-      console.log('Error');
+      this.walletError = true;
     }else{
       this.rechargeWallet.id = this.currentWallet.id;
       this.rechargeWallet.statusWalletId = "1";
@@ -73,7 +74,10 @@ export class WalletComponent implements OnInit{
 
       }));
     }
+  }
 
+  walletOk():void{
+    this.walletError = false;
   }
 
   ngOnDestroy(): void {

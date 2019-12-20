@@ -33,6 +33,7 @@ com\netcracker\edu\fapi\converter\CustomerConverter.class
 com\netcracker\edu\fapi\service\JwtUserDetailsService.class
 com\netcracker\edu\fapi\models\User.class
 com\netcracker\edu\fapi\models\StatusProductViewModel.class
+com\netcracker\edu\fapi\models\OnInitViewModel.class
 com\netcracker\edu\fapi\models\JwtResponse.class
 com\netcracker\edu\fapi\models\UserSignatureViewModel.class
 com\netcracker\edu\fapi\service\impl\CustomerDataServiceImpl.class

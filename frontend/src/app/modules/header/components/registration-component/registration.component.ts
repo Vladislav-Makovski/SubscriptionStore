@@ -61,8 +61,8 @@ export class RegistrationComponent implements OnInit {
       this.subscriptions.push(this.registrationService.saveNewCustomer(this.customerInformation).subscribe(accounts => {
         this.user = accounts as UserSignature ;
         console.log(this.user);
-        if(this.user.id !== 0){
-          this.router.navigate("/login")
+        if(this.user.id !== "0"){
+          this.router.navigate(['/login']);
         }else{
           this.errorRegistration = true;
         }
@@ -80,8 +80,8 @@ export class RegistrationComponent implements OnInit {
       this.subscriptions.push(this.registrationService.saveNewAdvertiser(this.advertiserInformation).subscribe(accounts => {
         this.user = accounts as UserSignature ;
         console.log(this.user);
-        if(this.user.id !== 0){
-          this.router.navigate("/login")
+        if(this.user.id !== '0'){
+          this.router.navigate(['/login']);
         }else{
           this.errorRegistration = true;
         }

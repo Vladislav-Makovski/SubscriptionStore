@@ -54,4 +54,9 @@ public class SubscriptionServiceImpl implements SubscriptionService {
             catalogItemRepository.save(product);
         }
     }
+
+    @Override
+    public List<Subscription> getAllSubscription() {
+        return subscriptionRepository.findAll();
+    }
 }

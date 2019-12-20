@@ -6,88 +6,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9936576c-781c-45c6-bde6-8a87560a0cdf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/FapiApplication.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/FapiApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/Validator/AdvertiserValidator.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/Validator/AdvertiserValidator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/Validator/CustomerValidator.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/Validator/CustomerValidator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/config/JwtAuthenticationEntryPoint.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/config/JwtAuthenticationEntryPoint.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/config/JwtRequestFilter.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/config/JwtRequestFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/config/JwtTokenUtil.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/config/JwtTokenUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/config/WebSecurityConfig.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/config/WebSecurityConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/controller/AdvertiserController.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/controller/AdvertiserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/controller/CustomerController.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/controller/CustomerController.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_17_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_22_0_GA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/controller/JwtAuthenticationController.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/controller/JwtAuthenticationController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/controller/ProductController.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/controller/ProductController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/controller/RegistrationController.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/controller/RegistrationController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/controller/SubscribeController.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/controller/SubscribeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/controller/WalletControllerRecharge.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/controller/WalletControllerRecharge.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/controller/WalletControllerWithdraw.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/controller/WalletControllerWithdraw.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/converter/AdvertiserConverter.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/converter/AdvertiserConverter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/converter/CustomerConverter.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/converter/CustomerConverter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/converter/ProductAdminConverter.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/converter/ProductAdminConverter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/converter/ProductAndCategory.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/converter/ProductAndCategory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/converter/SubscriptionConverter.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/converter/SubscriptionConverter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/converter/WalletAndStatus.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/converter/WalletAndStatus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/AdvertiserViewModel.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/AdvertiserViewModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/CategoryViewModel.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/CategoryViewModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/ConvertAdvertiser.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/ConvertAdvertiser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/ConvertCustomer.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/ConvertCustomer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/ConvertProductViewModel.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/ConvertProductViewModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/ConvertSubscriptionViewModel.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/ConvertSubscriptionViewModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/ConverterStatusWallet.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/ConverterStatusWallet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/CustomerViewModel.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/CustomerViewModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/JwtRequest.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/JwtRequest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/JwtResponse.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/JwtResponse.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/ProductAdminViewModel.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/ProductAdminViewModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/ProductViewModel.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/ProductViewModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/RegistrationAdvertiserViewModel.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/RegistrationAdvertiserViewModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/RegistrationCustomerViewModel.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/RegistrationCustomerViewModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/SaveProductViewModel.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/SaveProductViewModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/StatusProductViewModel.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/StatusProductViewModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/StatusWalletViewModel.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/StatusWalletViewModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/SubscriptionViewModel.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/SubscriptionViewModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/User.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/UserDetailsViewModel.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/UserDetailsViewModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/UserSignatureViewModel.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/UserSignatureViewModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/WalletViewModel.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/models/WalletViewModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/AdvertiserDataService.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/AdvertiserDataService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/CatalogItemDataService.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/CatalogItemDataService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/CustomerDataService.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/CustomerDataService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/JwtUserDetailsService.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/JwtUserDetailsService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/ProductDataService.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/ProductDataService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/SubscriptionDataService.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/SubscriptionDataService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/UserDetailsDataService.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/UserDetailsDataService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/UserInformationService.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/UserInformationService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/WalletDataService.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/WalletDataService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/impl/AdvertiserDataServiceImpl.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/impl/AdvertiserDataServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/impl/CatalogItemDataServiceImpl.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/impl/CatalogItemDataServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/impl/CustomerDataServiceImpl.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/impl/CustomerDataServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/impl/JwtUserDetailsServiceImpl.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/impl/JwtUserDetailsServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/impl/ProductDataServiceImpl.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/impl/ProductDataServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/impl/SubscriptionDataServiceImpl.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/impl/SubscriptionDataServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/impl/UserDetailsDataServiceImpl.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/impl/UserDetailsDataServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/impl/UserInformationServiceImpl.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/impl/UserInformationServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/impl/WalletDataServiceImpl.class" afterPath="$PROJECT_DIR$/fapi/target/classes/com/netcracker/edu/fapi/service/impl/WalletDataServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/fapi-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/fapi/target/fapi-0.0.1-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/CatalogItemServiceImpl.java" afterPath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/CatalogItemServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/be/pom.xml" afterPath="$PROJECT_DIR$/be/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/ProductController.java" afterPath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/ProductController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/ProductService.java" afterPath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/ProductService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/SubscriptionService.java" afterPath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/SubscriptionService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/ProductServiceImpl.java" afterPath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/ProductServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/SubscriptionServiceImpl.java" afterPath="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/SubscriptionServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/JwtAuthenticationController.java" afterPath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/JwtAuthenticationController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/SubscribeController.java" afterPath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/SubscribeController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/JwtResponse.java" afterPath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/JwtResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/ProductDataService.java" afterPath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/ProductDataService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/ProductDataServiceImpl.java" afterPath="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/ProductDataServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/fapi/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fapi/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/fapi/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/add-product/add.component.ts" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/add-product/add.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/catalog-component/catalog.component.ts" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/catalog-component/catalog.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/header-site/header.component.html" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/header-site/header.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/header-site/header.component.ts" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/header-site/header.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/login-component/login.component.css" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/login-component/login.component.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/login-component/login.component.html" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/login-component/login.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/login-component/login.component.ts" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/login-component/login.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/my-product/my-product.component.ts" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/my-product/my-product.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/product-confirm/product-confirm.component.css" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/product-confirm/product-confirm.component.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/registration-component/registration.component.css" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/registration-component/registration.component.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/registration-component/registration.component.html" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/registration-component/registration.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/registration-component/registration.component.ts" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/registration-component/registration.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/subscription-component/subscription.component.ts" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/subscription-component/subscription.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/top-component/top.component.html" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/top-component/top.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/top-component/top.component.ts" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/top-component/top.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/wallet-component/wallet.component.css" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/wallet-component/wallet.component.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/wallet-component/wallet.component.html" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/wallet-component/wallet.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/modules/header/components/wallet-component/wallet.component.ts" afterPath="$PROJECT_DIR$/frontend/src/app/modules/header/components/wallet-component/wallet.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/services/current-user.service.ts" afterPath="$PROJECT_DIR$/frontend/src/app/services/current-user.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/app/services/registration.service.ts" afterPath="$PROJECT_DIR$/frontend/src/app/services/registration.service.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/be/target/" />
@@ -137,106 +88,110 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="header.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/header-site/header.component.html">
+      <file leaf-file-name="SubscribeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/SubscribeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="295">
+              <caret line="34" column="93" lean-forward="false" selection-start-line="34" selection-start-column="93" selection-end-line="34" selection-end-column="93" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/login-component/login.component.ts">
+      <file leaf-file-name="ScheduledTask.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/scheduled/ScheduledTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="53" column="8" lean-forward="true" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
+            <state relative-caret-position="357">
+              <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
               <folding>
-                <element signature="e#0#48#0" expanded="true" />
+                <element signature="e#0#670#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registration.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/registration-component/registration.component.ts">
+      <file leaf-file-name="WalletDataService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/WalletDataService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="100" column="18" lean-forward="false" selection-start-line="100" selection-start-column="18" selection-end-line="100" selection-end-column="18" />
+            <state relative-caret-position="85">
+              <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/app.component.ts">
+      <file leaf-file-name="WalletDataServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/WalletDataServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="186">
+              <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/app.module.ts">
+      <file leaf-file-name="WalletController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/WalletController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="43" column="10" lean-forward="false" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="22" />
+            <state relative-caret-position="136">
+              <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WalletService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/WalletService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WalletServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/WalletServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#670#671#0" expanded="true" />
+                <element signature="e#722#723#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registration.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/registration-component/registration.component.html">
+      <file leaf-file-name="WalletRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/repository/WalletRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="48" column="94" lean-forward="false" selection-start-line="48" selection-start-column="94" selection-end-line="48" selection-end-column="94" />
+            <state relative-caret-position="85">
+              <caret line="7" column="70" lean-forward="true" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.component.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/add-product/add.component.css">
+      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/ProductController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-238">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="401">
+              <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registration.component.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/registration-component/registration.component.css">
+      <file leaf-file-name="ProductServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/ProductServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/login-component/login.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="40" lean-forward="true" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.component.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/login-component/login.component.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="469">
+              <caret line="45" column="40" lean-forward="false" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+              <folding>
+                <element signature="e#1108#1109#0" expanded="true" />
+                <element signature="e#1158#1159#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -249,8 +204,8 @@
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="TypeScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -281,23 +236,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/CustomerDataService.java" />
-        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/AdvertiserDataService.java" />
-        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/AdvertiserDataServiceImpl.java" />
-        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/CustomerDataServiceImpl.java" />
-        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/AdvertiserController.java" />
-        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/CustomerController.java" />
-        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/AdvertiserService.java" />
-        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/CustomerService.java" />
-        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/CustomerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/AdvertiserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/repository/CustomerJpaRepository.java" />
-        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/repository/AdvertiserJpaRepository.java" />
-        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/JwtResponse.java" />
-        <option value="$PROJECT_DIR$/frontend/src/app/UserInformation/user-test.ts" />
-        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/WalletControllerRecharge.java" />
-        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/WalletControllerRecharge.java" />
-        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/WalletControllerWithdraw.java" />
         <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/CustomerController.java" />
         <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/AdvertiserController.java" />
         <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/Validator/CustomerValidator.java" />
@@ -311,27 +249,44 @@
         <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/UserDetailsDataServiceImpl.java" />
         <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/config/JwtTokenUtil.java" />
-        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/JwtAuthenticationController.java" />
         <option value="$PROJECT_DIR$/frontend/src/app/services/AuthInterceptor.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/services/current-user.service.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/product-confirm/product-confirm.component.css" />
         <option value="$PROJECT_DIR$/frontend/src/app/services/change-header.service.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/header-site/header.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/add-product/add.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/catalog-component/catalog.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/my-product/my-product.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/subscription-component/subscription.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/wallet-component/wallet.component.ts" />
         <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/CatalogItemServiceImpl.java" />
         <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/header-site/header.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/services/registration.service.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/login-component/login.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/login-component/login.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/login-component/login.component.css" />
         <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/registration-component/registration.component.css" />
         <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/registration-component/registration.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/wallet-component/wallet.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/wallet-component/wallet.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/login-component/login.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/registration-component/registration.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/wallet-component/wallet.component.css" />
+        <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/catalog-component/catalog.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/top-component/top.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/modules/header/components/top-component/top.component.ts" />
+        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/JwtResponse.java" />
+        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/OnInitViewModel.java" />
+        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/JwtAuthenticationController.java" />
+        <option value="$PROJECT_DIR$/frontend/src/app/services/current-user.service.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/services/app-load.service.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/be/pom.xml" />
+        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/SubscriptionService.java" />
+        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/SubscriptionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/ProductDataService.java" />
+        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/ProductDataServiceImpl.java" />
+        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/ProductService.java" />
+        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/ProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/ProductController.java" />
+        <option value="$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/scheduled/ScheduledTask.java" />
+        <option value="$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/SubscribeController.java" />
       </list>
     </option>
   </component>
@@ -429,6 +384,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -509,6 +468,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="scheduled" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SubscriptionStore" type="462c0819:PsiDirectoryNode" />
+              <item name="be" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -521,6 +490,15 @@
               <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SubscriptionStore" type="462c0819:PsiDirectoryNode" />
+              <item name="be" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
@@ -709,6 +687,28 @@
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="header" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog-component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SubscriptionStore" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="header" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="footer-component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SubscriptionStore" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="header" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="header-site" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -750,6 +750,17 @@
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="header" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="wallet-component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edu-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SubscriptionStore" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -764,10 +775,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -814,7 +821,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.Unnamed">
+  <component name="RunManager" selected="Spring Boot.FapiApplication">
     <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.netcracker.edu.backend.BackendApplication" />
@@ -1052,12 +1059,15 @@
       <workItem from="1576751319499" duration="4587000" />
       <workItem from="1576769814298" duration="698000" />
       <workItem from="1576770685209" duration="507000" />
-      <workItem from="1576778542920" duration="8133000" />
+      <workItem from="1576778542920" duration="8222000" />
+      <workItem from="1576832601059" duration="1516000" />
+      <workItem from="1576834195749" duration="11259000" />
+      <workItem from="1576857248521" duration="4144000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="438837000" />
+    <option name="totallyTimeSpent" value="455845000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1082,21 +1092,20 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.49144253" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41666666" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3537415" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6258503" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45918366" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5782313" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64455783" sideWeight="0.4924357" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34114978" sideWeight="0.18707483" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3623298" sideWeight="0.81292516" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3797277" sideWeight="0.81292516" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4744898" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34114978" sideWeight="0.18707483" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1104,6 +1113,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4744898" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1114,7 +1124,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="100" />
+      <option name="time" value="106" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1123,250 +1133,124 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/config/JwtRequestFilter.java">
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/SubscriptionDataService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/config/JwtTokenUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/config/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="61" column="61" lean-forward="false" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/converter/ProductAdminConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="136">
+          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/UserInformation/defult-advertiser.ts">
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/SubscriptionDataServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="138">
+          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/UserInformation/user-test.ts">
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/StatusProductDataServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/services/AuthInterceptor.ts">
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/services/category.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/services/customerSubscription.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/services/customer.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/JwtAuthenticationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/product-confirm/product-confirm.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        <state relative-caret-position="102">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/services/current-user.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        <state relative-caret-position="51">
+          <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/UserInformation/user-signature.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="10" />
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/add-product/add.component.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="257">
+          <caret line="107" column="5" lean-forward="true" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/block-customer/block-customer.component.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/services/subscribe.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/catalog-component/catalog.html">
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/converter/SubscriptionConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="408">
+          <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/catalog-component/catalog.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1619">
-          <caret line="20" column="45" lean-forward="false" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/home-component/home.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/header-site/header.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/footer-component/footer.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/my-product/my-product.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/product-confirm/product-confirm.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/product-delete/product-delete.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/subscription-component/subscription.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/subscription-component/subscription.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="94" lean-forward="false" selection-start-line="4" selection-start-column="94" selection-end-line="4" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/wallet-component/wallet.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/top-component/top.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="26" column="70" lean-forward="false" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/services/catalog.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="36" column="42" lean-forward="false" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
-          <folding />
+        <state relative-caret-position="400">
+          <caret line="135" column="59" lean-forward="false" selection-start-line="135" selection-start-column="59" selection-end-line="135" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/CatalogItemController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        <state relative-caret-position="68">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/CatalogItemDataService.java">
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/converter/ProductAndCategory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-          <folding />
+        <state relative-caret-position="-72">
+          <caret line="82" column="102" lean-forward="false" selection-start-line="82" selection-start-column="78" selection-end-line="82" selection-end-column="102" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/CatalogItemDataServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="61" column="34" lean-forward="false" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
+        <state relative-caret-position="68">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/CatalogItemController.java">
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/ProductViewModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="60" column="59" lean-forward="false" selection-start-line="60" selection-start-column="59" selection-end-line="60" selection-end-column="59" />
+        <state relative-caret-position="85">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/CatalogItemService.java">
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/AdvertiserDataServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state relative-caret-position="217">
+          <caret line="41" column="3" lean-forward="false" selection-start-line="41" selection-start-column="3" selection-end-line="45" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1374,12 +1258,28 @@
     <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/repository/CatalogItemRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="11" column="61" lean-forward="false" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/repository/AdvertiserSortRepository.java">
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/repository/ProductAdvertiserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/repository/AdvertiserJpaRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/repository/AdvertiserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
@@ -1387,131 +1287,266 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/repository/ProductAdvertiserRepository.java">
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/AdvertiserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        <state relative-caret-position="391">
+          <caret line="46" column="28" lean-forward="false" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/CatalogItemServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/be/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="71" column="9" lean-forward="false" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/services/change-header.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/services/LoginService.ts">
+    <entry file="file://$PROJECT_DIR$/be/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/AdvertiserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="38" column="4" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/WalletViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/SubscriptionViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/CustomerDataServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="42" column="41" lean-forward="false" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/CustomerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="13" column="48" lean-forward="false" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+          <caret line="17" column="3" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="18" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/services/registration.service.ts">
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/CustomerDataService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="3" lean-forward="false" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        <state relative-caret-position="68">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/SubscriptionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/CatalogItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/SubscriptionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/header-site/header.component.html">
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/SubscriptionServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/add-product/add.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/login-component/login.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="53" column="8" lean-forward="true" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
+        <state relative-caret-position="367">
+          <caret line="58" column="26" lean-forward="false" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#2271#2272#0" expanded="true" />
+            <element signature="e#2326#2327#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/login-component/login.component.html">
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/StatusSub.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="40" lean-forward="true" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
+        <state relative-caret-position="102">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/login-component/login.component.css">
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/entity/Subscription.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.component.ts">
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/CatalogItemDataService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/registration-component/registration.component.css">
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/AdvertiserDataService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.module.ts">
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/models/OnInitViewModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="43" column="10" lean-forward="false" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="22" />
+        <state relative-caret-position="85">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/ProductDataService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="49" lean-forward="false" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/registration-component/registration.component.html">
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/ProductDataServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="94" lean-forward="false" selection-start-line="48" selection-start-column="94" selection-end-line="48" selection-end-column="94" />
+        <state relative-caret-position="408">
+          <caret line="44" column="61" lean-forward="true" selection-start-line="44" selection-start-column="61" selection-end-line="44" selection-end-column="82" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/modules/header/components/registration-component/registration.component.ts">
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/ProductService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="100" column="18" lean-forward="false" selection-start-line="100" selection-start-column="18" selection-end-line="100" selection-end-column="18" />
+        <state relative-caret-position="170">
+          <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="45" column="40" lean-forward="false" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+          <folding>
+            <element signature="e#1108#1109#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/WalletDataService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/service/impl/WalletDataServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/controller/WalletController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/WalletService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/service/impl/WalletServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding>
+            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/repository/WalletRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="70" lean-forward="true" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fapi/src/main/java/com/netcracker/edu/fapi/controller/SubscribeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="34" column="93" lean-forward="false" selection-start-line="34" selection-start-column="93" selection-end-line="34" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/be/src/main/java/com/netcracker/edu/backend/scheduled/ScheduledTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#670#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

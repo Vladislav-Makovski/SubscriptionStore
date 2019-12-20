@@ -32,4 +32,16 @@ public class ProductDataServiceImpl implements ProductDataService {
         save.setId(id);
         restTemplate.postForEntity(backendServerUrl + "/api/product/changeStatus/pause",save, SaveProductViewModel.class);
     }
+
+    @Override
+    public ProductViewModel getProductById(Integer id) {
+        RestTemplate restTemplate = new RestTemplate();
+        return restTemplate.getForObject(backendServerUrl + "/api/product/custom/" + id, ProductViewModel.class);
+    }
+
+    @Override
+    public Integer getAdvertiserByProductId(Integer id) {
+        RestTemplate restTemplate = new RestTemplate();
+        return restTemplate.getForObject(backendServerUrl + "/api/product/adverId/" + id, Integer.class);
+    }
 }

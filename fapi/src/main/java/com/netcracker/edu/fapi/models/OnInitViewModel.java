@@ -1,29 +1,26 @@
 package com.netcracker.edu.fapi.models;
 
-import java.io.Serializable;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-public class JwtResponse implements Serializable {
-
-    private static final long serialVersionUID = -8091879091924046844L;
-    private final String jwttoken;
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class OnInitViewModel {
     private int id;
     private int userDetailsId;
     private int walletId;
     private String userRole;
-    public JwtResponse(String jwttoken, int id, int userDetailsId, int walletId,String userRole) {
-        this.jwttoken = jwttoken;
+
+    public OnInitViewModel() {
+    }
+
+    public OnInitViewModel(int id, int userDetailsId, int walletId, String userRole) {
         this.id = id;
         this.userDetailsId = userDetailsId;
         this.walletId = walletId;
         this.userRole = userRole;
     }
 
-    public String getJwttoken() {
-        return this.jwttoken;
-    }
-
     public int getId() {
-        return this.id;
+        return id;
     }
 
     public void setId(int id) {
@@ -31,7 +28,7 @@ public class JwtResponse implements Serializable {
     }
 
     public int getUserDetailsId() {
-        return this.userDetailsId;
+        return userDetailsId;
     }
 
     public void setUserDetailsId(int userDetailsId) {
@@ -39,7 +36,7 @@ public class JwtResponse implements Serializable {
     }
 
     public int getWalletId() {
-        return this.walletId;
+        return walletId;
     }
 
     public void setWalletId(int walletId) {
@@ -47,7 +44,7 @@ public class JwtResponse implements Serializable {
     }
 
     public String getUserRole() {
-        return this.userRole;
+        return userRole;
     }
 
     public void setUserRole(String userRole) {

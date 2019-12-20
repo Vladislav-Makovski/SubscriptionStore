@@ -1,3 +1,7 @@
+<div class = "errorMes" *ngIf="walletError == true">
+  <p>Your account has insufficient funds</p>
+  <button class="okbtn" (click)="walletOk()">Ok</button>
+</div>
 <form [formGroup]="myFormWallet">
   <fieldset>
     <legend>Wallet</legend>
