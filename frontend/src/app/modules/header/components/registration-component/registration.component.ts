@@ -48,6 +48,7 @@ export class RegistrationComponent implements OnInit {
   }
 
   submitUser():void {
+    console.log("kek");
     if(this.currentRegistrationType == this.userRegistrationTypes[0]){
       this.customerInformation.username = this.myFormUser.controls['nickname'].value;
       this.customerInformation.password = this.myFormUser.controls['password'].value;
@@ -69,6 +70,7 @@ export class RegistrationComponent implements OnInit {
         this.loadingService.hide();
       }));
     }else{
+      console.log("gggggggggggggggggggggggggggggg");
       this.advertiserInformation.username = this.myFormUser.controls['nickname'].value;
       this.advertiserInformation.password = this.myFormUser.controls['password'].value;
       this.advertiserInformation.email = this.myFormUser.controls['email'].value;
@@ -92,6 +94,22 @@ export class RegistrationComponent implements OnInit {
 
   onChange(value: string) {
     this.currentRegistrationType = value;
+    if(this.currentRegistrationType == 'Advertiser'){
+      this.myFormUser = new FormGroup({
+        "email": new FormControl("", [Validators.required, Validators.email,Validators.pattern(/^\S*$/)]),
+        "password": new FormControl("", [Validators.required,Validators.pattern(/^\S*$/)]),
+        "nickname": new FormControl("", [Validators.required,Validators.pattern(/^\S*$/)]),
+        "name": new FormControl("", [Validators.required,Validators.pattern(/^\S*$/)]),
+      });
+    }else{
+      this.myFormUser = new FormGroup({
+        "email": new FormControl("", [Validators.required, Validators.email,Validators.pattern(/^\S*$/)]),
+        "password": new FormControl("", [Validators.required,Validators.pattern(/^\S*$/)]),
+        "nickname": new FormControl("", [Validators.required,Validators.pattern(/^\S*$/)]),
+        "name": new FormControl("", [Validators.required,Validators.pattern(/^\S*$/)]),
+        "surname": new FormControl("", [Validators.required,Validators.pattern(/^\S*$/)]),
+      });
+    }
   }
 
   public _openModal(template: TemplateRef<any>): void {

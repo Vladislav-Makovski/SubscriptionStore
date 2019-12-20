@@ -2,6 +2,7 @@
   <p>User with such data is already registered</p>
   <button class="okbtn" (click)="submitReg()">Ok</button>
 </div>
+
 <form class="registrationUser" [formGroup]="myFormUser" novalidate (ngSubmit)="submitUser()">
   <div class="container">
     <h1>Register</h1>
@@ -49,9 +50,10 @@
     <button type="submit" class="registerbtn" [disabled]="myFormUser.invalid" (click)="navig()">Register</button>
   </div>
 </form>
-<ng-template #registrationSuccessful>
-  <div class="modal-header">
-  You have signed up successfully
-  </div>
-  <button type="submit" class="registerbtn" (click)="_closeModal()">Ok</button>
-</ng-template>
+
+<!--<ng-template #registrationSuccessful>-->
+  <!--<div class="modal-header">-->
+  <!--You have signed up successfully-->
+  <!--</div>-->
+  <!--<button type="submit" class="registerbtn" (click)="_closeModal()">Ok</button>-->
+<!--</ng-template>-->
