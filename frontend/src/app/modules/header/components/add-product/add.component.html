@@ -1,3 +1,7 @@
+<div class = "errorMes" *ngIf="errorProduct == true">
+  <p>You product has been successfully submitted for consideration </p>
+  <button class="okbtn" (click)="submitReg()">Ok</button>
+</div>
 <form  class="addproduct" [formGroup]="formProduct" novalidate (ngSubmit)="addProduct()">
   <div class="container">
     <h1>Add product</h1>
@@ -5,10 +9,22 @@
     <hr>
     <label><b>Name</b></label>
     <input type="text" placeholder="Enter Name of product " name="name" required formControlName="name">
+    <div class="alert alert-danger"
+         *ngIf="formProduct.controls['name'].invalid && formProduct.controls['name'].touched">
+      incorrect name
+    </div>
     <label><b>Description</b></label>
     <input type="text" placeholder="Enter Description" name="Description" required formControlName="description">
+    <div class="alert alert-danger"
+         *ngIf="formProduct.controls['description'].invalid && formProduct.controls['description'].touched">
+      incorrect description
+    </div>
     <label><b>Cost</b></label>
     <input type="text" placeholder="Cost" name="Cost" required formControlName="cost">
+    <div class="alert alert-danger"
+         *ngIf="formProduct.controls['cost'].invalid && formProduct.controls['cost'].touched">
+      incorrect cost
+    </div>
     <label><b>Category</b></label>
     <select formControlName="category">
       <option *ngFor="let product of productCategory" value="{{product.name}}">{{product.name}}</option>

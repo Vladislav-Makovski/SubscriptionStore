@@ -19,6 +19,7 @@ export class AddComponent implements OnInit{
   formProduct: FormGroup;
   productCategory: Category[] = [];
   productSave: AddProductModel = new AddProductModel();
+  errorProduct:boolean = false;
   private subscriptions: Subscription[] = [];
 
   constructor(private categoryService: CategoryService,
@@ -29,10 +30,10 @@ export class AddComponent implements OnInit{
   ngOnInit() {
     this.loadCategory();
     this.formProduct = new FormGroup({
-      "name": new FormControl("", Validators.required),
+      "name": new FormControl("", [Validators.required,Validators.pattern(/^\S*$/)]),
       "description": new FormControl("",Validators.required),
-      "cost": new FormControl("",Validators.required),
-      "category": new FormControl("", Validators.required),
+      "cost": new FormControl("",[Validators.required,Validators.pattern(/^\S*$/),Validators.pattern(/^[ 0-9]+$/)]),
+      "category": new FormControl("", [Validators.required,Validators.pattern(/^\S*$/)]),
     });
   }
 
@@ -56,13 +57,21 @@ export class AddComponent implements OnInit{
     this.productSave.organizationId = this.currentUserService._currentUser.id;
     console.log(this.productSave.organizationId);
     console.log(this.currentUserService._currentUser.id);
-
     console.log(this.productSave);
     this.loadingService.show();
     this.subscriptions.push(this.addProductService.saveNewProduct(this.productSave).subscribe(() => {
       console.log("ok");
+      this.errorProduct = true;
       this.loadingService.hide();
     }));
-
+  }
+  public submitReg():void{
+    this.errorProduct = false;
+    this.formProduct  = new FormGroup({
+      "name": new FormControl("", [Validators.required,Validators.pattern(/^\S*$/)]),
+      "description": new FormControl("",Validators.required),
+      "cost": new FormControl("",[Validators.required,Validators.pattern(/^\S*$/),Validators.pattern(/^[ 0-9]+$/)]),
+      "category": new FormControl("", [Validators.required,Validators.pattern(/^\S*$/)]),
+    });
   }
 }

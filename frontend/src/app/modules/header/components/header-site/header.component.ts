@@ -7,8 +7,16 @@ import {CurrentUserService} from "../../../../services/current-user.service";
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit{
+  lod:boolean = true;
   constructor(private currentUser: CurrentUserService) {}
 
-  ngOnInit(){}
-
+  ngOnInit(){
+    if(localStorage.getItem("token")!== null){
+      this.lod = false;
+    }
+  }
+  logout():void{
+    localStorage.clear();
+    this.lod = true;
+  }
 }

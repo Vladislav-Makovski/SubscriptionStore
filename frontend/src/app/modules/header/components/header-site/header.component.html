@@ -16,9 +16,14 @@
       <a href="" title="кошелёк" routerLink="/productDelete"*ngSwitchCase="currentUser._currentUser.userRole ==='admin'">Product delete</a>
     </div>
     <div class="login">
-      <a href="#" title="Login" routerLink="/login">
+      <a href="#" title="Login" routerLink="/login" *ngIf="currentUser._currentUser.userRole === 'guest'">
         <div class="btn">
           Login
+        </div>
+      </a>
+      <a href="#" title="Login" (click)="logout()" *ngIf="currentUser._currentUser.userRole === 'customer'||currentUser._currentUser.userRole === 'advertiser'">
+        <div class="btn">
+          Logout
         </div>
       </a>
     </div>

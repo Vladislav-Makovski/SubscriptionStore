@@ -32,6 +32,7 @@ public class ScheduledTask {
         this.advertiserService = advertiserService;
         this.walletService = walletService;
     }
+
     @Scheduled(cron="0 52 20 20 * ?")
 //    @Scheduled(fixedRate = 500)
     public void reportCurrentTime() {

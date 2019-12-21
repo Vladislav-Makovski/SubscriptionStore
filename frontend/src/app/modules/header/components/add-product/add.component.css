@@ -18,6 +18,29 @@ input[type=text]:focus, input[type=password]:focus {
   outline: none;
 }
 
+.errorMes{
+  width: 500px;
+  height: auto;
+  text-align: center;
+  margin-left: 400px;
+  margin-top: 20px;
+  background-color: #343434;
+  border: 3px solid #343434;
+  font-family: 'Roboto Slab', serif;
+  padding: 10px;
+}
+
+.okbtn{
+  background-color: rgba(102,204,204,1);
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  height: 35px;
+  opacity: 1;
+  margin-top: 10px;
+}
+
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
@@ -26,13 +49,14 @@ hr {
 
 .addproduct{
   width: 500px;
-  height: 520px;
+  /*height: 520px;*/
   margin-left: 400px;
   margin-top: 50px;
   margin-bottom: 20px;
   background-color: #343434;
   border: 3px solid #343434;
   font-family: 'Roboto Slab', serif;
+  padding: 15px;
 }
 
 .addbtn{

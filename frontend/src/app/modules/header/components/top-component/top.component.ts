@@ -48,6 +48,7 @@ export class TopComponent implements OnInit{
       this.sub.productId = id;
       this.loadingService.show();
       this.subscriptions.push(this.subscribeService.subscribeProduct(this.sub).subscribe(() => {
+        this.router.navigate(['/subscription']);
         this.loadingService.hide();
       }));
     }
