@@ -1,5 +1,5 @@
 <ng4-loading-spinner> </ng4-loading-spinner>
-<div class="posts">
+<div class="posts" *ngIf="showParam">
   <table>
     <thead>
     <tr>
@@ -11,12 +11,13 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let item of catalogItem">
+    <tr *ngFor="let item of catalogItem"  >
       <td scope="row">{{item.name}}</td>
       <td>{{item.description}}</td>
       <td>{{item.category}}</td>
       <td>{{item.cost}}</td>
-      <td><button class="subbtn" (click) = "subscribeProduct(item.id)">Subscribe</button></td>
+      <td><button class="subbtn" (click) = "subscribeProduct(item.id)" *ngIf="item.cond == 'false'">Subscribe</button>
+      <button class="subbtn" (click) = "unsubscribe(item.id)" *ngIf="item.cond == 'true'">Unsubscribe</button></td>
     </tr>
     </tbody>
 

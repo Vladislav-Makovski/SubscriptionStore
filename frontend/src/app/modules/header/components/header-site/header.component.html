@@ -21,7 +21,7 @@
           Login
         </div>
       </a>
-      <a href="#" title="Login" (click)="logout()" *ngIf="currentUser._currentUser.userRole === 'customer'||currentUser._currentUser.userRole === 'advertiser'">
+      <a href="#" title="Login" (click)="logout()" *ngIf="currentUser._currentUser.userRole === 'customer'||currentUser._currentUser.userRole === 'advertiser'||currentUser._currentUser.userRole === 'admin'">
         <div class="btn">
           Logout
         </div>

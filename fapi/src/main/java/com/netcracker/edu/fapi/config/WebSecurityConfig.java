@@ -35,16 +35,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-// настраиваем AuthenticationManager чтобыон знал откуда грузить
-// пользователь для сопоставления учётных данных
-// используем BCryptPasswordEncoder
         auth.userDetailsService(jwtUserDetailsService).passwordEncoder(encoder());
     }
 
-//    @Bean
-//    public PasswordEncoder passwordEncoder() {
-//        return new BCryptPasswordEncoder();
-//    }
     @Bean
     public BCryptPasswordEncoder encoder(){
         return new BCryptPasswordEncoder();
@@ -56,17 +49,16 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
-// нам не нужен CSRF для этого примера
         httpSecurity.csrf().disable()
-// не аутифицируем этот конкретный запрос
-                .authorizeRequests().antMatchers("/api/authenticate","/api/new/customer","/api/new/advertiser","/api/bc","/api/NameAsc").permitAll().
-// все остальные запросы должны быть authenticated
+                .authorizeRequests().antMatchers("/api/authenticate","/api/new/customer",
+                "/api/new/advertiser","/api/bc","/api/NameAsc","/api/nameDesc","/api/CategoryAsc",
+                "/api/CategoryDesc","/api/PriceAsc","/api/PriceDesc" ).permitAll().
         anyRequest().authenticated().and().
-// убедитесь что мы используем сессию без сохранения состояния;сессия не будет использоваться для
-// сохранения состояния пользователя
         exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntryPoint).and().sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-// добавить фильтр для проверки токенов при каждом запросе
         httpSecurity.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
     }
 }
+
+
+

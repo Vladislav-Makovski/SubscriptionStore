@@ -44,7 +44,6 @@ public class JwtAuthenticationController {
         final UserDetails user = userDetailsService.loadUserByUsername(authenticationRequest.getUsername());
         final String token = jwtTokenUtil.generateToken(user);
         UserDetailsViewModel userInformation = userInformationService.getUserByUsername(authenticationRequest.getUsername());
-//        возвращать ещё и информациюкакую то
         if(userInformation.getUserRoleId()== 1 || userInformation.getUserRoleId() == 3){
             UserSignatureViewModel userSignature = customerDataService.getCustomerByUserDetailsId(userInformation.getId());
             if(userInformation.getUserRoleId()== 1){
@@ -71,8 +70,8 @@ public class JwtAuthenticationController {
     @RequestMapping("/api/oninit/{token}")
     @GetMapping
     public ResponseEntity<OnInitViewModel> getAllProductBySubscriptionCount(@PathVariable String token) {
-        String usernamee = jwtTokenUtil.getUsernameFromToken(token);
-        UserDetailsViewModel userInformation = userInformationService.getUserByUsername(usernamee);
+        String username = jwtTokenUtil.getUsernameFromToken(token);
+        UserDetailsViewModel userInformation = userInformationService.getUserByUsername(username);
         if(userInformation.getUserRoleId()== 1 || userInformation.getUserRoleId() == 3){
             UserSignatureViewModel userSignature = customerDataService.getCustomerByUserDetailsId(userInformation.getId());
             if(userInformation.getUserRoleId()== 1){

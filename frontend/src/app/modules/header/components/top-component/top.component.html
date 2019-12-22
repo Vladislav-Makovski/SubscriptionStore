@@ -1,4 +1,4 @@
-<div class="posts">
+<div class="posts" *ngIf="showParam">
   <table>
     <thead>
     <tr>
@@ -15,7 +15,8 @@
       <td>{{catalogItem.description}}</td>
       <td>{{catalogItem.subscriptionCount}}</td>
       <td>{{catalogItem.cost}}</td>
-      <td><button class="subbtn" (click) = "subscribeProduct(catalogItem.id)">Subscribe</button></td>
+      <td><button class="subbtn" (click) = "subscribeProduct(catalogItem.id)" *ngIf="catalogItem.cond == 'false'">Subscribe</button>
+        <button class="subbtn" (click) = "unsub()" *ngIf="catalogItem.cond == 'true'">Unsubscribe</button></td>
     </tr>
     </tbody>
   </table>

@@ -24,7 +24,8 @@ export class AuthInterceptor implements HttpInterceptor {
 
     if(token) {
       return next.handle(authReq)
-    } else if (req.url === "/api/new/customer" || req.url === "api/authenticate" || req.url === "/api/new/advertiser" || req.url === "/api/bc"|| req.url === "/api/NameAsc") {
+    } else if (req.url === "/api/new/customer" || req.url === "api/authenticate" || req.url === "/api/new/advertiser" || req.url === "/api/bc"|| req.url === "/api/NameAsc"||
+      req.url === "/api/nameDesc"||req.url === "/api/CategoryAsc" || req.url === "/api/CategoryDesc" || req.url === "/api/PriceAsc" || req.url === "/api/PriceDesc") {
       return next.handle(req);
     } else {
       this.router.navigate(['/login']);
