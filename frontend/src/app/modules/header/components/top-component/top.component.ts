@@ -39,7 +39,6 @@ export class TopComponent implements OnInit{
     this.loadingService.show();
     this.subscriptions.push(this.catalogItemService.getCatalogItemBySubscriptionCount().subscribe(accounts => {
       this.catalogItem = accounts as CatalogItem[];
-      console.log(this.catalogItem);
       if(this.currentUserService._currentUser.userRole !== "guest"){
         this.loadSubscription();
       }else{
@@ -71,7 +70,6 @@ export class TopComponent implements OnInit{
     this.loadingService.show();
     this.subscriptions.push(this.customerSubscription.getSubscriptionByUserId(this.currentUserService._currentUser.id).subscribe(accounts => {
       this.mySubscription = accounts as CustomerSubscription[];
-      console.log(this.mySubscription);
       this.fillSubProduct();
       this.loadingService.hide();
     }));
@@ -85,7 +83,6 @@ export class TopComponent implements OnInit{
           this.catalogItem[i].cond = 'true';
         }
       }
-      console.log(this.catalogItem[i].cond);
     }
     this.showParam = true;
   }

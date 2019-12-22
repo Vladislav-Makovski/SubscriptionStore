@@ -26,7 +26,6 @@ export class BlockAdvertiserComponent implements OnInit{
     this.loadingService.show();
     this.subscriptions.push(this.advertiserService.getAdvertiserByNameAsc().subscribe(accounts => {
       this.siteAdvertiser = accounts as Advertiser[];
-      console.log(this.siteAdvertiser);
       this.loadingService.hide();
     }));
   }

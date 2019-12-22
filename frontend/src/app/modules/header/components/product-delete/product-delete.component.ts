@@ -24,7 +24,6 @@ export class ProductDeleteComponent implements OnInit{
     this.loadingService.show();
     this.subscriptions.push(this.productService.getProductByNameAsc().subscribe(accounts => {
       this.siteProduct = accounts as Product[];
-      console.log(this.siteProduct);
       this.loadingService.hide();
     }));
   }

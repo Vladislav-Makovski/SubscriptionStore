@@ -48,8 +48,7 @@ export class WalletComponent implements OnInit{
 
      this.rechargeWallet.id = this.currentWallet.id;
      this.rechargeWallet.statusWalletId = "1";
-      this.rechargeWallet.balance =  this.currentWallet.balance + this.myFormWallet.controls['total'].value;
-     console.log(this.rechargeWallet);
+     this.rechargeWallet.balance =  this.currentWallet.balance + this.myFormWallet.controls['total'].value;
      this.loadingService.show();
     this.subscriptions.push(this.walletService.saveBalanceRecharge(this.rechargeWallet).subscribe(accounts => {
       this.rechargeWallet = accounts as WalletUpdate;

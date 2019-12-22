@@ -44,10 +44,8 @@ export class LoginComponent implements OnInit{
         accounts => {
         this.userTest = accounts as UserTest ;
         localStorage.setItem('token', this.userTest.jwttoken);
-        console.log(localStorage.getItem("token"));
         delete this.userTest.jwttoken;
         this.currentUser.saveCurrentUser(this.userTest);
-        console.log(this.currentUser._currentUser);
         this.router.navigate(['/home']);
         this.loadingService.hide();
       },

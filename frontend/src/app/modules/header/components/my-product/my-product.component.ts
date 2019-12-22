@@ -29,7 +29,6 @@ export class MyProductComponent implements OnInit{
     this.loadingService.show();
     this.subscriptions.push(this.catalogItemService.getProductByAdvertiserId(this.currentUserService._currentUser.id).subscribe(accounts => {
       this.myProduct = accounts as CatalogItem[];
-      console.log(this.myProduct);
       this.loadingService.hide();
     }));
   }

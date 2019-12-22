@@ -67,8 +67,10 @@ public class CatalogItemServiceImpl implements CatalogItemService {
                 return prod1.getSubscriptionCount() > prod2.getSubscriptionCount() ? -1 : (prod1.getSubscriptionCount() < prod2.getSubscriptionCount()) ? 1 : 0;
             }
         });
-        while (prod.size() != 2){
-           prod.remove(prod.size()-1);
+        if(prod.size() > 10) {
+            while (prod.size() != 10) {
+                prod.remove(prod.size() - 1);
+            }
         }
         return prod;
     }

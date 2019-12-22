@@ -30,7 +30,7 @@ export class AddComponent implements OnInit{
   ngOnInit() {
     this.loadCategory();
     this.formProduct = new FormGroup({
-      "name": new FormControl("", [Validators.required,Validators.pattern(/^\S*$/)]),
+      "name": new FormControl("", [Validators.required]),
       "description": new FormControl("",Validators.required),
       "cost": new FormControl("",[Validators.required,Validators.pattern(/^\S*$/),Validators.pattern(/^[ 0-9]+$/)]),
       "category": new FormControl("", [Validators.required,Validators.pattern(/^\S*$/)]),
@@ -41,13 +41,11 @@ export class AddComponent implements OnInit{
     this.loadingService.show();
     this.subscriptions.push(this.categoryService.getCategory().subscribe(accounts => {
       this.productCategory = accounts as Category[];
-      console.log(this.productCategory);
       this.loadingService.hide();
     }));
   }
 
   private  addProduct():void{
-    console.log(this.formProduct);
     this.productSave.name = this.formProduct.controls['name'].value;
     this.productSave.description = this.formProduct.controls['description'].value;
     this.productSave.cost = this.formProduct.controls['cost'].value;
@@ -55,12 +53,8 @@ export class AddComponent implements OnInit{
     this.productSave.subscriptionCount = "0";
     this.productSave.statusProductId = "3";
     this.productSave.organizationId = this.currentUserService._currentUser.id;
-    console.log(this.productSave.organizationId);
-    console.log(this.currentUserService._currentUser.id);
-    console.log(this.productSave);
     this.loadingService.show();
     this.subscriptions.push(this.addProductService.saveNewProduct(this.productSave).subscribe(() => {
-      console.log("ok");
       this.errorProduct = true;
       this.loadingService.hide();
     }));
@@ -68,7 +62,7 @@ export class AddComponent implements OnInit{
   public submitReg():void{
     this.errorProduct = false;
     this.formProduct  = new FormGroup({
-      "name": new FormControl("", [Validators.required,Validators.pattern(/^\S*$/)]),
+      "name": new FormControl("", [Validators.required]),
       "description": new FormControl("",Validators.required),
       "cost": new FormControl("",[Validators.required,Validators.pattern(/^\S*$/),Validators.pattern(/^[ 0-9]+$/)]),
       "category": new FormControl("", [Validators.required,Validators.pattern(/^\S*$/)]),

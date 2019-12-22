@@ -26,7 +26,6 @@ export class SubscriptionComponent implements OnInit{
     this.loadingService.show();
     this.subscriptions.push(this.customerSubscription.getSubscriptionByUserId(this.currentUserService._currentUser.id).subscribe(accounts => {
       this.mySubscription = accounts as CustomerSubscription[];
-      console.log(this.mySubscription);
       this.loadingService.hide();
     }));
   }

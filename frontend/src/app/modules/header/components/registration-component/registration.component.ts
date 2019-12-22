@@ -48,7 +48,6 @@ export class RegistrationComponent implements OnInit {
   }
 
   submitUser():void {
-    console.log("kek");
     if(this.currentRegistrationType == this.userRegistrationTypes[0]){
       this.customerInformation.username = this.myFormUser.controls['nickname'].value;
       this.customerInformation.password = this.myFormUser.controls['password'].value;
@@ -61,7 +60,6 @@ export class RegistrationComponent implements OnInit {
       this.loadingService.show();
       this.subscriptions.push(this.registrationService.saveNewCustomer(this.customerInformation).subscribe(accounts => {
         this.user = accounts as UserSignature ;
-        console.log(this.user);
         if(this.user.id !== "0"){
           this.router.navigate(['/login']);
         }else{
@@ -70,7 +68,6 @@ export class RegistrationComponent implements OnInit {
         this.loadingService.hide();
       }));
     }else{
-      console.log("gggggggggggggggggggggggggggggg");
       this.advertiserInformation.username = this.myFormUser.controls['nickname'].value;
       this.advertiserInformation.password = this.myFormUser.controls['password'].value;
       this.advertiserInformation.email = this.myFormUser.controls['email'].value;
@@ -78,10 +75,8 @@ export class RegistrationComponent implements OnInit {
       this.advertiserInformation.name = this.myFormUser.controls['name'].value;
       this.advertiserInformation.balance = "0";
       this.advertiserInformation.statusWalletId = "1";
-      console.log(this.advertiserInformation);
       this.subscriptions.push(this.registrationService.saveNewAdvertiser(this.advertiserInformation).subscribe(accounts => {
         this.user = accounts as UserSignature ;
-        console.log(this.user);
         if(this.user.id !== '0'){
           this.router.navigate(['/login']);
         }else{

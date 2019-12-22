@@ -48,7 +48,6 @@ export class CatalogComponent implements OnInit{
     this.loadingService.show();
     this.subscriptions.push(this.catalogItemService.getCatalogItemByNameAsc().subscribe(accounts => {
       this.catalogItem = accounts as CatalogItem[];
-      console.log(this.catalogItem);
       if(this.currentUserService._currentUser.userRole !== "guest"){
         this.loadSubscription();
       }else{
@@ -66,7 +65,6 @@ export class CatalogComponent implements OnInit{
     this.loadingService.show();
     this.subscriptions.push(this.catalogItemService.getCatalogItemByNameDesc().subscribe(accounts => {
       this.catalogItem = accounts as CatalogItem[];
-      console.log(this.catalogItem);
       if(this.currentUserService._currentUser.userRole !== "guest"){
         this.loadSubscription();
       }else{
@@ -84,7 +82,6 @@ export class CatalogComponent implements OnInit{
     this.loadingService.show();
     this.subscriptions.push(this.catalogItemService.getCatalogItemByCategoryAsc().subscribe(accounts => {
       this.catalogItem = accounts as CatalogItem[];
-      console.log(this.catalogItem);
       if(this.currentUserService._currentUser.userRole !== "guest"){
         this.loadSubscription();
       }else{
@@ -102,7 +99,6 @@ export class CatalogComponent implements OnInit{
     this.loadingService.show();
     this.subscriptions.push(this.catalogItemService.getCatalogItemByCategoryDesc().subscribe(accounts => {
       this.catalogItem = accounts as CatalogItem[];
-      console.log(this.catalogItem);
       if(this.currentUserService._currentUser.userRole !== "guest"){
         this.loadSubscription();
       }else{
@@ -120,7 +116,6 @@ export class CatalogComponent implements OnInit{
     this.loadingService.show();
     this.subscriptions.push(this.catalogItemService.getCatalogItemByPriceAsc().subscribe(accounts => {
       this.catalogItem = accounts as CatalogItem[];
-      console.log(this.catalogItem);
       if(this.currentUserService._currentUser.userRole !== "guest"){
         this.loadSubscription();
       }else{
@@ -138,7 +133,6 @@ export class CatalogComponent implements OnInit{
     this.loadingService.show();
     this.subscriptions.push(this.catalogItemService.getCatalogItemByPriceDesc().subscribe(accounts => {
       this.catalogItem = accounts as CatalogItem[];
-      console.log(this.catalogItem);
       if(this.currentUserService._currentUser.userRole !== "guest"){
         this.loadSubscription();
       }else{
@@ -204,7 +198,6 @@ export class CatalogComponent implements OnInit{
     this.loadingService.show();
     this.subscriptions.push(this.customerSubscription.getSubscriptionByUserId(this.currentUserService._currentUser.id).subscribe(accounts => {
       this.mySubscription = accounts as CustomerSubscription[];
-      console.log(this.mySubscription);
       this.fillSubProduct();
       this.loadingService.hide();
     }));
@@ -218,7 +211,6 @@ export class CatalogComponent implements OnInit{
           this.catalogItem[i].cond = 'true';
         }
       }
-      console.log(this.catalogItem[i].cond);
     }
     this.showParam = true;
   }

@@ -25,7 +25,6 @@ export class BlockCustomerComponent implements OnInit{
     this.loadingService.show();
     this.subscriptions.push(this.customerService.getCustomerByNameAsc().subscribe(accounts => {
       this.siteCustomer = accounts as Customer[];
-      console.log(this.siteCustomer);
       this.loadingService.hide();
     }));
   }
